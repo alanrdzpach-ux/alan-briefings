@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arqon.ia — Dashboard Publicitario</title>
+<title>Alan Pacheco — Dashboard Publicitario</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
@@ -209,7 +209,7 @@
 <body>
 
 <div class="topbar">
-  <div class="logo">Arqon.ia <span>Dashboard Publicitario</span></div>
+  <div class="logo">Alan Pacheco <span>Dashboard Publicitario</span></div>
   <div class="last-update">
     <div class="dot"></div>
     <span id="last-update-text">Cargando...</span>
@@ -488,7 +488,7 @@ function buildPromptPanel() {
 
   const doctorsList = allData.doctors.map(d => `   - ${d.name}: ad_account_id ${d.account_id}`).join('\n');
 
-  const prompt = `Eres el sistema de briefing diario de Alan Pacheco / Arqon.ia.
+  const prompt = `Eres el sistema de briefing diario de Alan Pacheco.
 
 Ejecuta esto en orden cada vez que corras:
 
@@ -505,7 +505,7 @@ ${doctorsList}
 
 3. Genera el briefing del día:
 
-   === BRIEFING DIARIO ARQON.IA — [FECHA] ===
+   === BRIEFING DIARIO ALAN — [FECHA] ===
 
    Por cada doctor:
    • Gasto: $X | Clics: X | CTR: X% | CPC: $X
