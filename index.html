@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arqon.ia — Dashboard Publicitario</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0f0f0f;
+    --surface: #191919;
+    --surface2: #222222;
+    --border: rgba(255,255,255,0.07);
+    --text: #f0ede8;
+    --muted: #888580;
+    --gold: #F6D269;
+    --gold-dim: rgba(246,210,105,0.12);
+    --green: #4ade80;
+    --red: #f87171;
+    --yellow: #fbbf24;
+    --radius: 12px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .topbar {
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: rgba(15,15,15,0.92);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: var(--gold);
+    letter-spacing: 0.01em;
+  }
+
+  .logo span { color: var(--muted); font-size: 13px; font-family: 'Inter', sans-serif; font-weight: 300; margin-left: 10px; }
+
+  .last-update {
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+  .main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+  .page-header { margin-bottom: 2rem; }
+  .page-header h1 { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; color: var(--text); margin-bottom: 4px; }
+  .page-header p { color: var(--muted); font-size: 13px; }
+
+  .tabs { display: flex; gap: 4px; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+  .tab { padding: 8px 16px; font-size: 13px; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all .15s; background: none; border-top: none; border-left: none; border-right: none; font-family: inherit; }
+  .tab:hover { color: var(--text); }
+  .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  .doctor-panel { display: none; }
+  .doctor-panel.active { display: block; }
+
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
+
+  .kpi {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+  }
+
+  .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  .kpi-value { font-size: 22px; font-weight: 600; color: var(--text); line-height: 1; }
+  .kpi-delta { font-size: 11px; margin-top: 6px; }
+  .up { color: var(--green); }
+  .down { color: var(--red); }
+  .flat { color: var(--muted); }
+
+  .cpa-banner {
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .cpa-banner.rentable { background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); color: var(--green); }
+  .cpa-banner.ajustar { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.2); color: var(--yellow); }
+  .cpa-banner.fuera { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); color: var(--red); }
+  .cpa-banner.sin-datos { background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+
+  .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 1.5rem; }
+  @media(max-width: 700px) { .charts-grid { grid-template-columns: 1fr; } }
+
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+
+  .chart-card.full { grid-column: 1 / -1; }
+
+  .chart-title { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 16px; }
+
+  .chart-wrap { position: relative; width: 100%; }
+
+  .table-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+
+  .table-header { padding: 14px 18px; border-bottom: 1px solid var(--border); font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { padding: 10px 16px; text-align: right; color: var(--muted); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: .04em; border-bottom: 1px solid var(--border); }
+  th:first-child { text-align: left; }
+  td { padding: 11px 16px; text-align: right; border-bottom: 1px solid var(--border); color: var(--text); }
+  td:first-child { text-align: left; color: var(--muted); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--surface2); }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 500; }
+  .badge-green { background: rgba(74,222,128,0.12); color: var(--green); }
+  .badge-yellow { background: rgba(251,191,36,0.12); color: var(--yellow); }
+  .badge-red { background: rgba(248,113,113,0.12); color: var(--red); }
+  .badge-gray { background: var(--surface2); color: var(--muted); }
+
+  .overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 1.5rem; }
+
+  .doctor-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+
+  .doctor-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .doctor-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .doctor-name { font-weight: 500; font-size: 15px; }
+  .doctor-specialty { font-size: 11px; color: var(--muted); }
+
+  .mini-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .mini-stat { background: var(--surface2); border-radius: 8px; padding: 10px 12px; }
+  .mini-stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
+  .mini-stat-value { font-size: 16px; font-weight: 600; }
+
+  .section-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; margin-top: 1.5rem; }
+
+  .empty { text-align: center; padding: 3rem; color: var(--muted); font-size: 13px; }
+
+  .prompt-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 1.5rem;
+  }
+  .prompt-box pre {
+    font-family: 'Inter', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    white-space: pre-wrap;
+    line-height: 1.7;
+  }
+  .prompt-box .highlight { color: var(--gold); }
+
+  .copy-btn {
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 12px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .copy-btn:hover { border-color: var(--gold); color: var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">Arqon.ia <span>Dashboard Publicitario</span></div>
+  <div class="last-update">
+    <div class="dot"></div>
+    <span id="last-update-text">Cargando...</span>
+  </div>
+</div>
+
+<div class="main">
+  <div class="page-header">
+    <h1>Panel de rendimiento</h1>
+    <p>Métricas diarias de Meta Ads — actualizadas automáticamente cada mañana a las 5am</p>
+  </div>
+
+  <div class="tabs" id="tabs-container"></div>
+  <div id="panels-container"></div>
+</div>
+
+<script>
+const DATA_URL = './data.json';
+const MXN = v => '$' + Number(v).toLocaleString('es-MX', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+const PCT = v => Number(v).toFixed(2) + '%';
+const NUM = v => Number(v).toLocaleString('es-MX');
+const deltaArrow = v => v > 0 ? '▲' : v < 0 ? '▼' : '—';
+const deltaClass = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
+
+let allData = null;
+let charts = {};
+
+async function loadData() {
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now());
+    allData = await res.json();
+    render();
+  } catch(e) {
+    document.getElementById('panels-container').innerHTML = '<div class="empty">No se pudieron cargar los datos. Verifica que data.json exista en el repositorio.</div>';
+  }
+}
+
+function render() {
+  const updated = new Date(allData.updated_at);
+  document.getElementById('last-update-text').textContent = 'Actualizado: ' + updated.toLocaleDateString('es-MX', {day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'});
+
+  const tabs = document.getElementById('tabs-container');
+  const panels = document.getElementById('panels-container');
+  tabs.innerHTML = '';
+  panels.innerHTML = '';
+
+  const overviewTab = document.createElement('button');
+  overviewTab.className = 'tab active';
+  overviewTab.textContent = 'Vista general';
+  overviewTab.onclick = () => switchTab('overview');
+  tabs.appendChild(overviewTab);
+
+  allData.doctors.forEach((doc, i) => {
+    const tab = document.createElement('button');
+    tab.className = 'tab';
+    tab.textContent = doc.name;
+    tab.onclick = () => switchTab('doc-' + i);
+    tabs.appendChild(tab);
+  });
+
+  const promptTab = document.createElement('button');
+  promptTab.className = 'tab';
+  promptTab.textContent = 'Prompt Routine';
+  promptTab.onclick = () => switchTab('prompt');
+  tabs.appendChild(promptTab);
+
+  panels.appendChild(buildOverview());
+  allData.doctors.forEach((doc, i) => panels.appendChild(buildDoctorPanel(doc, i)));
+  panels.appendChild(buildPromptPanel());
+
+  document.getElementById('overview').classList.add('active');
+}
+
+function switchTab(id) {
+  document.querySelectorAll('.tab').forEach((t,i) => {
+    const ids = ['overview', ...allData.doctors.map((_,j) => 'doc-'+j), 'prompt'];
+    t.classList.toggle('active', ids[i] === id);
+  });
+  document.querySelectorAll('.doctor-panel').forEach(p => p.classList.toggle('active', p.id === id));
+  if (id.startsWith('doc-')) {
+    const idx = parseInt(id.split('-')[1]);
+    setTimeout(() => renderCharts(allData.doctors[idx], idx), 50);
+  }
+}
+
+function buildOverview() {
+  const div = document.createElement('div');
+  div.className = 'doctor-panel';
+  div.id = 'overview';
+
+  const totalSpend7d = allData.doctors.reduce((s, d) => s + d.history.slice(-7).reduce((a,b) => a + b.spend, 0), 0);
+  const totalClicks7d = allData.doctors.reduce((s, d) => s + d.history.slice(-7).reduce((a,b) => a + b.clicks, 0), 0);
+
+  let html = `
+    <p class="section-title">Resumen últimos 7 días — todos los doctores</p>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="kpi-label">Gasto total</div><div class="kpi-value">${MXN(totalSpend7d)}</div><div class="kpi-delta flat">7 días</div></div>
+      <div class="kpi"><div class="kpi-label">Clics totales</div><div class="kpi-value">${NUM(totalClicks7d)}</div><div class="kpi-delta flat">7 días</div></div>
+      <div class="kpi"><div class="kpi-label">Doctores activos</div><div class="kpi-value">${allData.doctors.filter(d=>d.history.slice(-1)[0]?.spend > 0).length}</div><div class="kpi-delta flat">de ${allData.doctors.length} total</div></div>
+    </div>
+    <p class="section-title">Por doctor</p>
+    <div class="overview-grid">`;
+
+  allData.doctors.forEach((doc, i) => {
+    const last7 = doc.history.slice(-7);
+    const spend7 = last7.reduce((a,b) => a+b.spend, 0);
+    const clicks7 = last7.reduce((a,b) => a+b.clicks, 0);
+    const avgCtr = last7.length ? last7.reduce((a,b)=>a+b.ctr,0)/last7.length : 0;
+    const lastDay = last7[last7.length-1];
+    const hasData = spend7 > 0;
+
+    const cpaTargets = allData.cpa_targets[doc.name] || {};
+    const mainCpa = Object.values(cpaTargets)[0] || 0;
+    const convRate = 0.08 * 0.30 * 0.25;
+    const cpaEst = convRate > 0 && lastDay?.cpc > 0 ? lastDay.cpc / convRate : 0;
+    const estado = !hasData ? 'sin-datos' : !mainCpa ? 'sin-datos' : cpaEst <= mainCpa ? 'rentable' : cpaEst <= mainCpa*2 ? 'ajustar' : 'fuera';
+    const estadoLabel = {rentable:'Rentable', ajustar:'Ajustar', fuera:'Fuera de rango', 'sin-datos': 'Sin datos'}[estado];
+    const badgeClass = {rentable:'badge-green', ajustar:'badge-yellow', fuera:'badge-red', 'sin-datos':'badge-gray'}[estado];
+
+    html += `<div class="doctor-card">
+      <div class="doctor-card-header">
+        <div class="doctor-dot" style="background:${doc.color}"></div>
+        <div>
+          <div class="doctor-name">${doc.full_name}</div>
+          <div class="doctor-specialty">${doc.specialty}</div>
+        </div>
+        <span class="badge ${badgeClass}" style="margin-left:auto">${estadoLabel}</span>
+      </div>
+      <div class="mini-stats">
+        <div class="mini-stat"><div class="mini-stat-label">Gasto 7d</div><div class="mini-stat-value" style="color:${doc.color}">${hasData ? MXN(spend7) : '—'}</div></div>
+        <div class="mini-stat"><div class="mini-stat-label">Clics 7d</div><div class="mini-stat-value">${hasData ? NUM(clicks7) : '—'}</div></div>
+        <div class="mini-stat"><div class="mini-stat-label">CTR prom.</div><div class="mini-stat-value">${hasData ? PCT(avgCtr) : '—'}</div></div>
+        <div class="mini-stat"><div class="mini-stat-label">CPA est. ayer</div><div class="mini-stat-value">${hasData && cpaEst > 0 ? MXN(cpaEst) : '—'}</div></div>
+      </div>
+    </div>`;
+  });
+
+  html += '</div>';
+  div.innerHTML = html;
+  return div;
+}
+
+function buildDoctorPanel(doc, idx) {
+  const div = document.createElement('div');
+  div.className = 'doctor-panel';
+  div.id = 'doc-' + idx;
+
+  const last7 = doc.history.slice(-7);
+  const yesterday = last7[last7.length - 1];
+  const prev7 = doc.history.slice(-14, -7);
+  const hasData = yesterday?.spend > 0;
+
+  const spend7 = last7.reduce((a,b)=>a+b.spend,0);
+  const prevSpend7 = prev7.reduce((a,b)=>a+b.spend,0);
+  const clicks7 = last7.reduce((a,b)=>a+b.clicks,0);
+  const avgCtr7 = last7.length ? last7.reduce((a,b)=>a+b.ctr,0)/last7.length : 0;
+  const avgCpm7 = last7.length ? last7.reduce((a,b)=>a+b.cpm,0)/last7.length : 0;
+
+  const spendDelta = prevSpend7 > 0 ? ((spend7-prevSpend7)/prevSpend7)*100 : 0;
+
+  const cpaTargets = allData.cpa_targets[doc.name] || {};
+  const mainProcedure = Object.keys(cpaTargets)[0] || 'Procedimiento principal';
+  const mainCpa = Object.values(cpaTargets)[0] || 0;
+  const convRate = 0.08 * 0.30 * 0.25;
+  const cpaEst = convRate > 0 && yesterday?.cpc > 0 ? Math.round(yesterday.cpc / convRate) : 0;
+
+  let estadoClass = 'sin-datos', estadoText = 'Sin datos de CPA objetivo aún';
+  if (mainCpa > 0 && cpaEst > 0) {
+    if (cpaEst <= mainCpa) { estadoClass = 'rentable'; estadoText = `CPA estimado ${MXN(cpaEst)} ≤ objetivo ${MXN(mainCpa)} — rentable`; }
+    else if (cpaEst <= mainCpa*2) { estadoClass = 'ajustar'; estadoText = `CPA estimado ${MXN(cpaEst)} por encima del objetivo ${MXN(mainCpa)} — ajustar`; }
+    else { estadoClass = 'fuera'; estadoText = `CPA estimado ${MXN(cpaEst)} muy por encima del objetivo ${MXN(mainCpa)} — fuera de rango`; }
+  }
+
+  const icons = { rentable:'✓', ajustar:'⚠', fuera:'✕', 'sin-datos':'—' };
+
+  let html = `
+    <div class="cpa-banner ${estadoClass}">${icons[estadoClass]} ${estadoText}</div>
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-label">Gasto 7 días</div>
+        <div class="kpi-value" style="color:${doc.color}">${MXN(spend7)}</div>
+        <div class="kpi-delta ${deltaClass(spendDelta)}">${deltaArrow(spendDelta)} ${Math.abs(spendDelta).toFixed(1)}% vs semana anterior</div>
+      </div>
+      <div class="kpi"><div class="kpi-label">Clics 7 días</div><div class="kpi-value">${NUM(clicks7)}</div><div class="kpi-delta flat">—</div></div>
+      <div class="kpi"><div class="kpi-label">CTR promedio</div><div class="kpi-value">${PCT(avgCtr7)}</div><div class="kpi-delta ${avgCtr7 >= 2.5 ? 'up':'down'}">${avgCtr7 >= 2.5 ? '▲ Bueno':'▼ Bajo'}</div></div>
+      <div class="kpi"><div class="kpi-label">CPM promedio</div><div class="kpi-value">${MXN(avgCpm7)}</div><div class="kpi-delta flat">MXN por mil</div></div>
+      ${mainCpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA máx. ${mainProcedure}</div><div class="kpi-value">${MXN(mainCpa)}</div><div class="kpi-delta flat">objetivo</div></div>` : ''}
+      ${cpaEst > 0 ? `<div class="kpi"><div class="kpi-label">CPA est. ayer</div><div class="kpi-value" style="color:${cpaEst<=mainCpa?'var(--green)':cpaEst<=mainCpa*2?'var(--yellow)':'var(--red)'}">${MXN(cpaEst)}</div><div class="kpi-delta flat">estimado</div></div>` : ''}
+    </div>
+    <div class="charts-grid">
+      <div class="chart-card"><div class="chart-title">Gasto diario (MXN)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-spend-${idx}" role="img" aria-label="Gasto diario de ${doc.name}">Gasto diario en MXN.</canvas></div></div>
+      <div class="chart-card"><div class="chart-title">CTR diario (%)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-ctr-${idx}" role="img" aria-label="CTR diario de ${doc.name}">CTR diario en porcentaje.</canvas></div></div>
+      <div class="chart-card full"><div class="chart-title">CPA estimado vs objetivo ${mainProcedure ? '('+mainProcedure+')' : ''}</div><div class="chart-wrap" style="height:180px"><canvas id="chart-cpa-${idx}" role="img" aria-label="CPA estimado vs objetivo">CPA estimado vs objetivo.</canvas></div></div>
+    </div>
+    <div class="table-card">
+      <div class="table-header">Desglose día a día — últimos 7 días</div>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Fecha</th><th>Gasto</th><th>Clics</th><th>CTR</th><th>CPM</th><th>CPC</th><th>CPA est.</th><th>Estado</th></tr></thead>
+        <tbody>`;
+
+  last7.slice().reverse().forEach(d => {
+    const noData = d.spend === 0;
+    const cpa = convRate > 0 && d.cpc > 0 ? Math.round(d.cpc / convRate) : 0;
+    let badge = '<span class="badge badge-gray">Sin datos</span>';
+    if (!noData && mainCpa > 0 && cpa > 0) {
+      if (cpa <= mainCpa) badge = '<span class="badge badge-green">Rentable</span>';
+      else if (cpa <= mainCpa*2) badge = '<span class="badge badge-yellow">Ajustar</span>';
+      else badge = '<span class="badge badge-red">Fuera de rango</span>';
+    }
+    html += `<tr>
+      <td>${d.date}</td>
+      <td>${noData ? '—' : MXN(d.spend)}</td>
+      <td>${noData ? '—' : NUM(d.clicks)}</td>
+      <td>${noData ? '—' : PCT(d.ctr)}</td>
+      <td>${noData ? '—' : MXN(d.cpm)}</td>
+      <td>${noData ? '—' : MXN(d.cpc)}</td>
+      <td>${noData || cpa === 0 ? '—' : MXN(cpa)}</td>
+      <td>${badge}</td>
+    </tr>`;
+  });
+
+  html += '</tbody></table></div></div>';
+  div.innerHTML = html;
+  return div;
+}
+
+function renderCharts(doc, idx) {
+  const last7 = doc.history.slice(-7);
+  const labels = last7.map(d => d.date.slice(5));
+  const color = doc.color;
+  const convRate = 0.08 * 0.30 * 0.25;
+  const cpaTargets = allData.cpa_targets[doc.name] || {};
+  const mainCpa = Object.values(cpaTargets)[0] || 0;
+
+  const defaults = {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
+    scales: {
+      x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#888580', font: { size: 11 } } },
+      y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#888580', font: { size: 11 } } }
+    }
+  };
+
+  const makeChart = (id, type, data, opts = {}) => {
+    if (charts[id]) charts[id].destroy();
+    const canvas = document.getElementById(id);
+    if (!canvas) return;
+    charts[id] = new Chart(canvas, { type, data, options: { ...defaults, ...opts } });
+  };
+
+  makeChart(`chart-spend-${idx}`, 'bar', {
+    labels,
+    datasets: [{ data: last7.map(d => Math.round(d.spend)), backgroundColor: color + '99', borderRadius: 4 }]
+  }, { scales: { ...defaults.scales, y: { ...defaults.scales.y, ticks: { ...defaults.scales.y.ticks, callback: v => '$'+v } } } });
+
+  makeChart(`chart-ctr-${idx}`, 'line', {
+    labels,
+    datasets: [{ data: last7.map(d => parseFloat(d.ctr.toFixed(2))), borderColor: color, backgroundColor: color + '15', borderWidth: 2, tension: 0.3, fill: true, pointBackgroundColor: color, pointRadius: 4 }]
+  }, { scales: { ...defaults.scales, y: { ...defaults.scales.y, ticks: { ...defaults.scales.y.ticks, callback: v => v+'%' } } } });
+
+  const cpas = last7.map(d => d.cpc > 0 && convRate > 0 ? Math.round(d.cpc / convRate) : 0);
+  const datasets = [{ label: 'CPA estimado', data: cpas, borderColor: color, backgroundColor: color+'15', borderWidth: 2, tension: 0.3, fill: false, pointBackgroundColor: color, pointRadius: 4 }];
+  if (mainCpa > 0) datasets.push({ label: 'CPA máximo', data: last7.map(() => mainCpa), borderColor: '#4ade80', borderWidth: 1.5, borderDash: [4,4], pointRadius: 0, fill: false });
+
+  makeChart(`chart-cpa-${idx}`, 'line', { labels, datasets }, {
+    plugins: { legend: { display: mainCpa > 0, labels: { color: '#888580', font: { size: 11 }, boxWidth: 10 } }, tooltip: { mode: 'index', intersect: false } },
+    scales: { ...defaults.scales, y: { ...defaults.scales.y, ticks: { ...defaults.scales.y.ticks, callback: v => '$'+v.toLocaleString('es-MX') } } }
+  });
+}
+
+function buildPromptPanel() {
+  const div = document.createElement('div');
+  div.className = 'doctor-panel';
+  div.id = 'prompt';
+
+  const doctorsList = allData.doctors.map(d => `   - ${d.name}: ad_account_id ${d.account_id}`).join('\n');
+
+  const prompt = `Eres el sistema de briefing diario de Alan Pacheco / Arqon.ia.
+
+Ejecuta esto en orden cada vez que corras:
+
+1. Usa el MCP de Meta Ads para jalar las métricas de AYER
+   (date_preset: yesterday) de estas cuentas:
+${doctorsList}
+
+   Métricas por cuenta: spend, impressions, reach, clicks, CPM, CTR, CPC.
+
+2. Lee el archivo data.json del repositorio alan-briefings.
+   Agrega los datos de ayer al array "history" de cada doctor.
+   Actualiza el campo "updated_at" con la fecha y hora actual.
+   Guarda el archivo data.json actualizado en el repositorio.
+
+3. Genera el briefing del día:
+
+   === BRIEFING DIARIO ARQON.IA — [FECHA] ===
+
+   Por cada doctor:
+   • Gasto: $X | Clics: X | CTR: X% | CPC: $X
+   • CPA estimado: $X vs objetivo $X → [RENTABLE / AJUSTAR / FUERA DE RANGO]
+   • Variación vs 7d: gasto [+/-X%] | CTR [+/-X%]
+   • Alerta si alguna métrica varió más de 20% vs promedio 7d
+
+   RECOMENDACIÓN DEL DÍA (1 acción por cuenta)
+
+Supuestos del embudo:
+- Tasa clic → mensaje: 8%
+- Mensaje → valoración: 30%
+- Valoración → cirugía: 25%
+- CPA máx. Lipoescultura Dr. Moreno: $6,450 MXN`;
+
+  div.innerHTML = `
+    <p class="section-title">Prompt para Claude Routines</p>
+    <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Copia este prompt y pégalo en las instrucciones de tu Routine en <a href="https://claude.ai/code/routines" style="color:var(--gold)">claude.ai/code/routines</a>. Se actualiza automáticamente cuando agregas un doctor nuevo al data.json.</p>
+    <div class="prompt-box">
+      <pre id="prompt-text">${prompt}</pre>
+      <button class="copy-btn" onclick="copyPrompt()">Copiar prompt</button>
+    </div>`;
+
+  return div;
+}
+
+function copyPrompt() {
+  const text = document.getElementById('prompt-text').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copiado';
+    setTimeout(() => btn.textContent = 'Copiar prompt', 2000);
+  });
+}
+
+loadData();
+</script>
+</body>
+</html>

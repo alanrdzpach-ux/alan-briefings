@@ -1,0 +1,46 @@
+{
+  "updated_at": "2026-06-27T05:00:00-06:00",
+  "cpa_targets": {
+    "Dr. Moreno": {
+      "Lipoescultura": 6450,
+      "Mommy Makeover": 13200,
+      "Aumento mamario": 5100,
+      "Mastopexia": 5400
+    },
+    "Dr. Andrei": {}
+  },
+  "doctors": [
+    {
+      "name": "Dr. Moreno",
+      "full_name": "Dr. Esteban Moreno",
+      "specialty": "Cirujano Estético",
+      "account_id": "232798342073067",
+      "color": "#F6D269",
+      "history": [
+        {"date": "2026-06-20", "spend": 210.80, "impressions": 7230, "reach": 6580, "clicks": 212, "cpm": 29.16, "ctr": 2.93, "cpc": 0.99, "messages": 17, "cpa_est": 12400},
+        {"date": "2026-06-21", "spend": 158.84, "impressions": 7138, "reach": 6580, "clicks": 197, "cpm": 22.25, "ctr": 2.76, "cpc": 0.81, "messages": 16, "cpa_est": 9930},
+        {"date": "2026-06-22", "spend": 167.51, "impressions": 7109, "reach": 6743, "clicks": 174, "cpm": 23.56, "ctr": 2.45, "cpc": 0.96, "messages": 14, "cpa_est": 11965},
+        {"date": "2026-06-23", "spend": 151.55, "impressions": 6190, "reach": 5766, "clicks": 137, "cpm": 24.48, "ctr": 2.21, "cpc": 1.11, "messages": 11, "cpa_est": 13777},
+        {"date": "2026-06-24", "spend": 139.83, "impressions": 5865, "reach": 5446, "clicks": 166, "cpm": 23.84, "ctr": 2.83, "cpc": 0.84, "messages": 13, "cpa_est": 10756},
+        {"date": "2026-06-25", "spend": 153.71, "impressions": 6582, "reach": 6340, "clicks": 175, "cpm": 23.35, "ctr": 2.66, "cpc": 0.88, "messages": 14, "cpa_est": 10979},
+        {"date": "2026-06-26", "spend": 155.69, "impressions": 5978, "reach": 5598, "clicks": 145, "cpm": 26.04, "ctr": 2.43, "cpc": 1.07, "messages": 12, "cpa_est": 12974}
+      ]
+    },
+    {
+      "name": "Dr. Andrei",
+      "full_name": "Dr. Andrei",
+      "specialty": "Rinoplastias",
+      "account_id": "1336068978463399",
+      "color": "#7F77DD",
+      "history": [
+        {"date": "2026-06-20", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-06-21", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-06-22", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-06-23", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-06-24", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-06-25", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-06-26", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0}
+      ]
+    }
+  ]
+}
