@@ -183,34 +183,7 @@
 
   .empty { text-align: center; padding: 3rem; color: var(--muted); font-size: 13px; }
 
-  .prompt-box {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px;
-    margin-bottom: 1.5rem;
-  }
-  .prompt-box pre {
-    font-family: 'Inter', monospace;
-    font-size: 12px;
-    color: var(--muted);
-    white-space: pre-wrap;
-    line-height: 1.7;
-  }
-  .prompt-box .highlight { color: var(--gold); }
 
-  .copy-btn {
-    margin-top: 12px;
-    padding: 6px 14px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    background: var(--surface2);
-    color: var(--text);
-    font-size: 12px;
-    cursor: pointer;
-    font-family: inherit;
-  }
-  .copy-btn:hover { border-color: var(--gold); color: var(--gold); }
 </style>
 </head>
 <body>
@@ -277,15 +250,11 @@ function render() {
     tabs.appendChild(tab);
   });
 
-  const promptTab = document.createElement('button');
-  promptTab.className = 'tab';
-  promptTab.textContent = 'Prompt Routine';
-  promptTab.onclick = () => switchTab('prompt');
-  tabs.appendChild(promptTab);
+
 
   panels.appendChild(buildOverview());
   allData.doctors.forEach((doc, i) => panels.appendChild(buildDoctorPanel(doc, i)));
-  panels.appendChild(buildPromptPanel());
+
 
   document.getElementById('overview').classList.add('active');
 }
@@ -488,65 +457,7 @@ function renderCharts(doc, idx) {
   });
 }
 
-function buildPromptPanel() {
-  const div = document.createElement('div');
-  div.className = 'doctor-panel';
-  div.id = 'prompt';
 
-  const doctorsList = allData.doctors.map(d => `   - ${d.name}: ad_account_id ${d.account_id}`).join('\n');
-
-  const prompt = `Eres el sistema de briefing diario de Alan Pacheco.
-
-Ejecuta esto en orden cada vez que corras:
-
-1. Usa el MCP de Meta Ads para jalar las métricas de AYER
-   (date_preset: yesterday) de estas cuentas:
-${doctorsList}
-
-   Métricas por cuenta: spend, impressions, reach, clicks, CPM, CTR, CPC.
-
-2. Lee el archivo data.json del repositorio alan-briefings.
-   Agrega los datos de ayer al array "history" de cada doctor.
-   Actualiza el campo "updated_at" con la fecha y hora actual.
-   Guarda el archivo data.json actualizado en el repositorio.
-
-3. Genera el briefing del día:
-
-   === BRIEFING DIARIO ALAN — [FECHA] ===
-
-   Por cada doctor:
-   • Gasto: $X | Clics: X | CTR: X% | CPC: $X
-   • CPA estimado: $X vs objetivo $X → [RENTABLE / AJUSTAR / FUERA DE RANGO]
-   • Variación vs 7d: gasto [+/-X%] | CTR [+/-X%]
-   • Alerta si alguna métrica varió más de 20% vs promedio 7d
-
-   RECOMENDACIÓN DEL DÍA (1 acción por cuenta)
-
-Supuestos del embudo:
-- Tasa clic → mensaje: 8%
-- Mensaje → valoración: 30%
-- Valoración → cirugía: 25%
-- CPA máx. Lipoescultura Dr. Moreno: $6,450 MXN`;
-
-  div.innerHTML = `
-    <p class="section-title">Prompt para Claude Routines</p>
-    <p style="color:var(--muted);font-size:13px;margin-bottom:1rem;">Copia este prompt y pégalo en las instrucciones de tu Routine en <a href="https://claude.ai/code/routines" style="color:var(--gold)">claude.ai/code/routines</a>. Se actualiza automáticamente cuando agregas un doctor nuevo al data.json.</p>
-    <div class="prompt-box">
-      <pre id="prompt-text">${prompt}</pre>
-      <button class="copy-btn" onclick="copyPrompt()">Copiar prompt</button>
-    </div>`;
-
-  return div;
-}
-
-function copyPrompt() {
-  const text = document.getElementById('prompt-text').textContent;
-  navigator.clipboard.writeText(text).then(() => {
-    const btn = document.querySelector('.copy-btn');
-    btn.textContent = 'Copiado';
-    setTimeout(() => btn.textContent = 'Copiar prompt', 2000);
-  });
-}
 
 loadData();
 </script>
