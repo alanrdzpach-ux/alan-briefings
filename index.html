@@ -29,6 +29,7 @@
     --green: #4ade80;
     --red: #f87171;
     --yellow: #fbbf24;
+    --blue: #7dd3fc;
     --radius: 12px;
   }
 
@@ -74,17 +75,62 @@
 
   .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+  @media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
 
   .main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 
-  .page-header { margin-bottom: 2rem; }
+  .page-header { margin-bottom: 1.5rem; }
   .page-header h1 { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; color: var(--text); margin-bottom: 4px; }
   .page-header p { color: var(--muted); font-size: 13px; }
 
-  .tabs { display: flex; gap: 4px; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0; }
-  .tab { padding: 8px 16px; font-size: 13px; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all .15s; background: none; border-top: none; border-left: none; border-right: none; font-family: inherit; }
+  /* ── Selector de fechas ─────────────────────────────── */
+  .range-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    margin-bottom: 1.5rem;
+  }
+  .range-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-right: 4px; }
+  .range-chip {
+    padding: 6px 14px;
+    font-size: 12px;
+    font-family: inherit;
+    color: var(--muted);
+    background: var(--surface2);
+    border: 1px solid transparent;
+    border-radius: 99px;
+    cursor: pointer;
+    transition: all .15s;
+  }
+  .range-chip:hover { color: var(--text); }
+  .range-chip:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .range-chip.active { color: #0f0f0f; background: var(--gold); font-weight: 600; }
+  .range-custom { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+  .range-custom input[type="date"] {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 12px;
+    padding: 5px 8px;
+    color-scheme: dark;
+  }
+  .range-custom input[type="date"]:focus-visible { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .range-custom span { color: var(--muted); font-size: 12px; }
+  .range-info { width: 100%; font-size: 11px; color: var(--muted); margin-top: 4px; }
+  @media(max-width: 700px) { .range-custom { margin-left: 0; width: 100%; } }
+
+  .tabs { display: flex; gap: 4px; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0; overflow-x: auto; }
+  .tab { padding: 8px 16px; font-size: 13px; cursor: pointer; color: var(--muted); border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all .15s; background: none; border-top: none; border-left: none; border-right: none; font-family: inherit; white-space: nowrap; }
   .tab:hover { color: var(--text); }
   .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+  .tab:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
 
   .doctor-panel { display: none; }
   .doctor-panel.active { display: block; }
@@ -119,6 +165,33 @@
   .cpa-banner.ajustar { background: rgba(251,191,36,0.08); border: 1px solid rgba(251,191,36,0.2); color: var(--yellow); }
   .cpa-banner.fuera { background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.2); color: var(--red); }
   .cpa-banner.sin-datos { background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+  .cpa-banner .tag { font-size: 10px; padding: 2px 8px; border-radius: 99px; background: rgba(255,255,255,0.08); color: var(--text); font-weight: 400; margin-left: auto; white-space: nowrap; }
+
+  /* ── Campañas activas ───────────────────────────────── */
+  .campaign-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 1.5rem; }
+  .campaign-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+  .campaign-head { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; }
+  .campaign-name { font-weight: 500; font-size: 14px; line-height: 1.4; }
+  .campaign-type { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; border-radius: 99px; white-space: nowrap; margin-left: auto; flex-shrink: 0; }
+  .type-landing { background: rgba(125,211,252,0.12); color: var(--blue); }
+  .type-video { background: var(--gold-dim); color: var(--gold); }
+  .type-mensajes { background: rgba(74,222,128,0.12); color: var(--green); }
+  .type-leads { background: rgba(251,191,36,0.12); color: var(--yellow); }
+  .campaign-result { margin-bottom: 12px; }
+  .campaign-result-value { font-size: 26px; font-weight: 600; line-height: 1.1; }
+  .campaign-result-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; margin-top: 2px; }
+  .campaign-cost { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+  .campaign-cost strong { color: var(--text); font-weight: 600; font-size: 15px; }
+  .campaign-extras { display: flex; flex-wrap: wrap; gap: 6px; }
+  .extra-pill { background: var(--surface2); border-radius: 8px; padding: 6px 10px; font-size: 11px; color: var(--muted); }
+  .extra-pill b { color: var(--text); font-weight: 600; }
+  .alert-pill { background: rgba(248,113,113,0.12); color: var(--red); border-radius: 8px; padding: 6px 10px; font-size: 11px; font-weight: 500; }
+  .ok-pill { background: rgba(74,222,128,0.10); color: var(--green); border-radius: 8px; padding: 6px 10px; font-size: 11px; }
 
   .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 1.5rem; }
   @media(max-width: 700px) { .charts-grid { grid-template-columns: 1fr; } }
@@ -182,8 +255,6 @@
   .section-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; margin-top: 1.5rem; }
 
   .empty { text-align: center; padding: 3rem; color: var(--muted); font-size: 13px; }
-
-
 </style>
 </head>
 <body>
@@ -202,6 +273,21 @@
     <p>Métricas diarias de Meta Ads — actualizadas automáticamente cada mañana a las 5am</p>
   </div>
 
+  <div class="range-bar" id="range-bar">
+    <span class="range-label">Periodo</span>
+    <button class="range-chip" data-range="7">7 días</button>
+    <button class="range-chip" data-range="14">14 días</button>
+    <button class="range-chip" data-range="30">30 días</button>
+    <button class="range-chip" data-range="all">Todo</button>
+    <div class="range-custom">
+      <span>Desde</span>
+      <input type="date" id="range-from" aria-label="Fecha inicio">
+      <span>hasta</span>
+      <input type="date" id="range-to" aria-label="Fecha fin">
+    </div>
+    <div class="range-info" id="range-info"></div>
+  </div>
+
   <div class="tabs" id="tabs-container"></div>
   <div id="panels-container"></div>
 </div>
@@ -209,59 +295,180 @@
 <script>
 const DATA_URL = './data.json';
 const MXN = v => '$' + Number(v).toLocaleString('es-MX', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+const MXN2 = v => '$' + Number(v).toLocaleString('es-MX', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 const PCT = v => Number(v).toFixed(2) + '%';
 const NUM = v => Number(v).toLocaleString('es-MX');
 const deltaArrow = v => v > 0 ? '▲' : v < 0 ? '▼' : '—';
 const deltaClass = v => v > 0 ? 'up' : v < 0 ? 'down' : 'flat';
 
+// Tasas del embudo (mensaje → valoración → cirugía)
+const RATE_MSG_VAL = 0.30;
+const RATE_VAL_CIR = 0.25;
+const RATE_CLICK_MSG = 0.08; // solo para estimación cuando no hay conversaciones reales
+
+const TIPO_LABELS = { landing: 'Vistas de landing', video: 'ThruPlays', mensajes: 'Conversaciones', leads: 'Leads' };
+const TIPO_NAMES  = { landing: 'Landing', video: 'Video', mensajes: 'Mensajes', leads: 'Leads' };
+const COSTO_UNIT  = { landing: 'por vista', video: 'por ThruPlay', mensajes: 'por conversación', leads: 'por lead' };
+
 let allData = null;
 let charts = {};
+let activeTab = 'overview';
+let range = { mode: '7', from: null, to: null }; // fechas en 'YYYY-MM-DD'
 
 async function loadData() {
   try {
     const res = await fetch(DATA_URL + '?t=' + Date.now());
     allData = await res.json();
+    initRange();
     render();
   } catch(e) {
     document.getElementById('panels-container').innerHTML = '<div class="empty">No se pudieron cargar los datos. Verifica que data.json exista en el repositorio.</div>';
   }
 }
 
+/* ── Rango de fechas ─────────────────────────────────── */
+function allDates() {
+  const s = new Set();
+  allData.doctors.forEach(d => {
+    (d.history||[]).forEach(e => s.add(e.date));
+    (d.campaigns||[]).forEach(c => (c.history||[]).forEach(e => s.add(e.date)));
+  });
+  return [...s].sort();
+}
+
+function initRange() {
+  const dates = allDates();
+  if (!dates.length) return;
+  const minD = dates[0], maxD = dates[dates.length-1];
+  const fromInput = document.getElementById('range-from');
+  const toInput = document.getElementById('range-to');
+  fromInput.min = minD; fromInput.max = maxD;
+  toInput.min = minD; toInput.max = maxD;
+  applyPreset('7');
+
+  document.querySelectorAll('.range-chip').forEach(chip => {
+    chip.addEventListener('click', () => applyPreset(chip.dataset.range));
+  });
+  fromInput.addEventListener('change', onCustomRange);
+  toInput.addEventListener('change', onCustomRange);
+}
+
+function applyPreset(mode) {
+  const dates = allDates();
+  const maxD = dates[dates.length-1];
+  range.mode = mode;
+  range.to = maxD;
+  if (mode === 'all') {
+    range.from = dates[0];
+  } else {
+    const n = parseInt(mode);
+    const idx = Math.max(0, dates.length - n);
+    range.from = dates[idx];
+  }
+  document.getElementById('range-from').value = range.from;
+  document.getElementById('range-to').value = range.to;
+  syncChips();
+  render();
+}
+
+function onCustomRange() {
+  const f = document.getElementById('range-from').value;
+  const t = document.getElementById('range-to').value;
+  if (!f || !t || f > t) return;
+  range.mode = 'custom';
+  range.from = f;
+  range.to = t;
+  syncChips();
+  render();
+}
+
+function syncChips() {
+  document.querySelectorAll('.range-chip').forEach(c => c.classList.toggle('active', c.dataset.range === range.mode));
+  const days = filterDates().length;
+  document.getElementById('range-info').textContent =
+    `Mostrando ${days} día${days===1?'':'s'}: ${fmtDate(range.from)} → ${fmtDate(range.to)}`;
+}
+
+function fmtDate(d) {
+  if (!d) return '';
+  const [y,m,dd] = d.split('-');
+  return `${dd}/${m}/${y}`;
+}
+
+function filterDates() { return allDates().filter(d => d >= range.from && d <= range.to); }
+function inRange(list) { return (list||[]).filter(e => e.date >= range.from && e.date <= range.to); }
+
+// Periodo anterior de la misma duración (para comparativas)
+function prevPeriod(list) {
+  const dates = allDates();
+  const fromIdx = dates.indexOf(range.from);
+  const len = filterDates().length;
+  if (fromIdx <= 0 || len === 0) return [];
+  const prevDates = dates.slice(Math.max(0, fromIdx - len), fromIdx);
+  const set = new Set(prevDates);
+  return (list||[]).filter(e => set.has(e.date));
+}
+
+/* ── CPA con datos reales ────────────────────────────── */
+// Devuelve {cpa, real:bool, convs, costoConv} para el rango actual
+function cpaForDoctor(doc) {
+  let spendMsj = 0, convs = 0;
+  (doc.campaigns||[]).filter(c => c.tipo === 'mensajes').forEach(c => {
+    inRange(c.history).forEach(e => { spendMsj += e.spend; convs += (e.resultado||0); });
+  });
+  if (convs > 0) {
+    const costoConv = spendMsj / convs;
+    return { cpa: Math.round(costoConv / (RATE_MSG_VAL * RATE_VAL_CIR)), real: true, convs, costoConv };
+  }
+  // Fallback: estimación desde CPC del último día con datos
+  const hist = inRange(doc.history);
+  const last = [...hist].reverse().find(e => e.spend > 0);
+  if (last && last.cpc > 0) {
+    return { cpa: Math.round(last.cpc / (RATE_CLICK_MSG * RATE_MSG_VAL * RATE_VAL_CIR)), real: false, convs: 0, costoConv: 0 };
+  }
+  return { cpa: 0, real: false, convs: 0, costoConv: 0 };
+}
+
+/* ── Render ──────────────────────────────────────────── */
 function render() {
+  if (!allData) return;
   const updated = new Date(allData.updated_at);
   document.getElementById('last-update-text').textContent = 'Actualizado: ' + updated.toLocaleDateString('es-MX', {day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'});
+
+  Object.values(charts).forEach(c => c.destroy());
+  charts = {};
 
   const tabs = document.getElementById('tabs-container');
   const panels = document.getElementById('panels-container');
   tabs.innerHTML = '';
   panels.innerHTML = '';
 
-  const overviewTab = document.createElement('button');
-  overviewTab.className = 'tab active';
-  overviewTab.textContent = 'Vista general';
-  overviewTab.onclick = () => switchTab('overview');
-  tabs.appendChild(overviewTab);
+  const mkTab = (id, label) => {
+    const t = document.createElement('button');
+    t.className = 'tab' + (activeTab === id ? ' active' : '');
+    t.textContent = label;
+    t.onclick = () => switchTab(id);
+    tabs.appendChild(t);
+  };
 
-  allData.doctors.forEach((doc, i) => {
-    const tab = document.createElement('button');
-    tab.className = 'tab';
-    tab.textContent = doc.name;
-    tab.onclick = () => switchTab('doc-' + i);
-    tabs.appendChild(tab);
-  });
-
-
+  mkTab('overview', 'Vista general');
+  allData.doctors.forEach((doc, i) => mkTab('doc-' + i, doc.name));
 
   panels.appendChild(buildOverview());
   allData.doctors.forEach((doc, i) => panels.appendChild(buildDoctorPanel(doc, i)));
 
-
-  document.getElementById('overview').classList.add('active');
+  const activePanel = document.getElementById(activeTab) || document.getElementById('overview');
+  activePanel.classList.add('active');
+  if (activeTab.startsWith('doc-')) {
+    const idx = parseInt(activeTab.split('-')[1]);
+    setTimeout(() => renderCharts(allData.doctors[idx], idx), 50);
+  }
 }
 
 function switchTab(id) {
+  activeTab = id;
   document.querySelectorAll('.tab').forEach((t,i) => {
-    const ids = ['overview', ...allData.doctors.map((_,j) => 'doc-'+j), 'prompt'];
+    const ids = ['overview', ...allData.doctors.map((_,j) => 'doc-'+j)];
     t.classList.toggle('active', ids[i] === id);
   });
   document.querySelectorAll('.doctor-panel').forEach(p => p.classList.toggle('active', p.id === id));
@@ -276,32 +483,35 @@ function buildOverview() {
   div.className = 'doctor-panel';
   div.id = 'overview';
 
-  const totalSpend7d = allData.doctors.reduce((s, d) => s + d.history.slice(-7).reduce((a,b) => a + b.spend, 0), 0);
-  const totalClicks7d = allData.doctors.reduce((s, d) => s + d.history.slice(-7).reduce((a,b) => a + b.clicks, 0), 0);
+  const nDays = filterDates().length;
+  const totalSpend = allData.doctors.reduce((s, d) => s + inRange(d.history).reduce((a,b) => a + b.spend, 0), 0);
+  const totalClicks = allData.doctors.reduce((s, d) => s + inRange(d.history).reduce((a,b) => a + b.clicks, 0), 0);
+  let totalConvs = 0;
+  allData.doctors.forEach(d => (d.campaigns||[]).filter(c=>c.tipo==='mensajes').forEach(c => inRange(c.history).forEach(e => totalConvs += (e.resultado||0))));
 
   let html = `
-    <p class="section-title">Resumen últimos 7 días — todos los doctores</p>
+    <p class="section-title">Resumen del periodo — todos los doctores</p>
     <div class="kpi-grid">
-      <div class="kpi"><div class="kpi-label">Gasto total</div><div class="kpi-value">${MXN(totalSpend7d)}</div><div class="kpi-delta flat">7 días</div></div>
-      <div class="kpi"><div class="kpi-label">Clics totales</div><div class="kpi-value">${NUM(totalClicks7d)}</div><div class="kpi-delta flat">7 días</div></div>
-      <div class="kpi"><div class="kpi-label">Doctores activos</div><div class="kpi-value">${allData.doctors.filter(d=>d.history.slice(-1)[0]?.spend > 0).length}</div><div class="kpi-delta flat">de ${allData.doctors.length} total</div></div>
+      <div class="kpi"><div class="kpi-label">Gasto total</div><div class="kpi-value">${MXN(totalSpend)}</div><div class="kpi-delta flat">${nDays} días</div></div>
+      <div class="kpi"><div class="kpi-label">Clics totales</div><div class="kpi-value">${NUM(totalClicks)}</div><div class="kpi-delta flat">${nDays} días</div></div>
+      <div class="kpi"><div class="kpi-label">Conversaciones reales</div><div class="kpi-value">${totalConvs > 0 ? NUM(totalConvs) : '—'}</div><div class="kpi-delta flat">WhatsApp iniciadas</div></div>
+      <div class="kpi"><div class="kpi-label">Doctores activos</div><div class="kpi-value">${allData.doctors.filter(d=>inRange(d.history).some(e=>e.spend>0)).length}</div><div class="kpi-delta flat">de ${allData.doctors.length} total</div></div>
     </div>
     <p class="section-title">Por doctor</p>
     <div class="overview-grid">`;
 
   allData.doctors.forEach((doc, i) => {
-    const last7 = doc.history.slice(-7);
-    const spend7 = last7.reduce((a,b) => a+b.spend, 0);
-    const clicks7 = last7.reduce((a,b) => a+b.clicks, 0);
-    const avgCtr = last7.length ? last7.reduce((a,b)=>a+b.ctr,0)/last7.length : 0;
-    const lastDay = last7[last7.length-1];
-    const hasData = spend7 > 0;
+    const hist = inRange(doc.history);
+    const spend = hist.reduce((a,b) => a+b.spend, 0);
+    const clicks = hist.reduce((a,b) => a+b.clicks, 0);
+    const activeDays = hist.filter(e => e.spend > 0);
+    const avgCtr = activeDays.length ? activeDays.reduce((a,b)=>a+b.ctr,0)/activeDays.length : 0;
+    const hasData = spend > 0;
 
     const cpaTargets = allData.cpa_targets[doc.name] || {};
     const mainCpa = Object.values(cpaTargets)[0] || 0;
-    const convRate = 0.08 * 0.30 * 0.25;
-    const cpaEst = convRate > 0 && lastDay?.cpc > 0 ? lastDay.cpc / convRate : 0;
-    const estado = !hasData ? 'sin-datos' : !mainCpa ? 'sin-datos' : cpaEst <= mainCpa ? 'rentable' : cpaEst <= mainCpa*2 ? 'ajustar' : 'fuera';
+    const cpaInfo = cpaForDoctor(doc);
+    const estado = !hasData ? 'sin-datos' : !mainCpa || !cpaInfo.cpa ? 'sin-datos' : cpaInfo.cpa <= mainCpa ? 'rentable' : cpaInfo.cpa <= mainCpa*2 ? 'ajustar' : 'fuera';
     const estadoLabel = {rentable:'Rentable', ajustar:'Ajustar', fuera:'Fuera de rango', 'sin-datos': 'Sin datos'}[estado];
     const badgeClass = {rentable:'badge-green', ajustar:'badge-yellow', fuera:'badge-red', 'sin-datos':'badge-gray'}[estado];
 
@@ -315,10 +525,10 @@ function buildOverview() {
         <span class="badge ${badgeClass}" style="margin-left:auto">${estadoLabel}</span>
       </div>
       <div class="mini-stats">
-        <div class="mini-stat"><div class="mini-stat-label">Gasto 7d</div><div class="mini-stat-value" style="color:${doc.color}">${hasData ? MXN(spend7) : '—'}</div></div>
-        <div class="mini-stat"><div class="mini-stat-label">Clics 7d</div><div class="mini-stat-value">${hasData ? NUM(clicks7) : '—'}</div></div>
+        <div class="mini-stat"><div class="mini-stat-label">Gasto</div><div class="mini-stat-value" style="color:${doc.color}">${hasData ? MXN(spend) : '—'}</div></div>
+        <div class="mini-stat"><div class="mini-stat-label">Clics</div><div class="mini-stat-value">${hasData ? NUM(clicks) : '—'}</div></div>
         <div class="mini-stat"><div class="mini-stat-label">CTR prom.</div><div class="mini-stat-value">${hasData ? PCT(avgCtr) : '—'}</div></div>
-        <div class="mini-stat"><div class="mini-stat-label">CPA est. ayer</div><div class="mini-stat-value">${hasData && cpaEst > 0 ? MXN(cpaEst) : '—'}</div></div>
+        <div class="mini-stat"><div class="mini-stat-label">CPA ${cpaInfo.real ? 'real' : 'est.'}</div><div class="mini-stat-value">${hasData && cpaInfo.cpa > 0 ? MXN(cpaInfo.cpa) : '—'}</div></div>
       </div>
     </div>`;
   });
@@ -328,82 +538,140 @@ function buildOverview() {
   return div;
 }
 
+/* ── Tarjetas de campañas activas ────────────────────── */
+function buildCampaignCards(doc) {
+  const camps = (doc.campaigns||[]).filter(c => inRange(c.history).some(e => e.spend > 0));
+  if (!camps.length) return '';
+
+  let html = '<p class="section-title">Campañas activas — cada una medida por su objetivo</p><div class="campaign-grid">';
+
+  camps.forEach(c => {
+    const hist = inRange(c.history);
+    const spend = hist.reduce((a,b)=>a+b.spend,0);
+    const resultado = hist.reduce((a,b)=>a+(b.resultado||0),0);
+    const costo = resultado > 0 ? spend/resultado : 0;
+    const activeDays = hist.filter(e=>e.spend>0);
+    const avgCtr = activeDays.length ? activeDays.reduce((a,b)=>a+b.ctr,0)/activeDays.length : 0;
+    const lastFreq = activeDays.length ? activeDays[activeDays.length-1].frecuencia : 0;
+    const label = TIPO_LABELS[c.tipo] || 'Resultados';
+    const unit = COSTO_UNIT[c.tipo] || 'por resultado';
+    const costoFmt = costo >= 1 ? MXN2(costo) : '$' + costo.toFixed(2);
+
+    let extras = '';
+    if (c.tipo === 'video') {
+      const last = activeDays[activeDays.length-1] || {};
+      if (last.hook_rate != null) extras += `<div class="extra-pill">Hook rate <b>${last.hook_rate.toFixed(1)}%</b></div>`;
+      if (last.retencion_completa != null) extras += `<div class="extra-pill">Retención 100% <b>${last.retencion_completa.toFixed(1)}%</b></div>`;
+    }
+    if (c.tipo === 'landing') {
+      const last = activeDays[activeDays.length-1] || {};
+      if (last.tasa_aterrizaje != null) {
+        const ok = last.tasa_aterrizaje >= 80;
+        extras += `<div class="${ok?'extra-pill':'alert-pill'}">Aterrizaje <b>${last.tasa_aterrizaje.toFixed(0)}%</b>${ok?'':' — revisar landing'}</div>`;
+      }
+    }
+    if (c.tipo === 'mensajes') {
+      const clicksTot = hist.reduce((a,b)=>a+(b.clicks||0),0);
+      if (clicksTot > 0 && resultado > 0) {
+        extras += `<div class="extra-pill">Clic→Conv <b>${(resultado/clicksTot*100).toFixed(1)}%</b></div>`;
+      }
+    }
+    extras += `<div class="extra-pill">CTR <b>${PCT(avgCtr)}</b></div>`;
+    if (lastFreq > 2.5) extras += `<div class="alert-pill">Frecuencia ${lastFreq.toFixed(1)} — saturación, rotar creativo</div>`;
+    else if (lastFreq > 0) extras += `<div class="ok-pill">Frecuencia ${lastFreq.toFixed(1)}</div>`;
+
+    html += `<div class="campaign-card">
+      <div class="campaign-head">
+        <div class="campaign-name">${c.name}</div>
+        <span class="campaign-type type-${c.tipo}">${TIPO_NAMES[c.tipo]||c.tipo}</span>
+      </div>
+      <div class="campaign-result">
+        <div class="campaign-result-value" style="color:${doc.color}">${NUM(resultado)}</div>
+        <div class="campaign-result-label">${label}</div>
+      </div>
+      <div class="campaign-cost">Costo: <strong>${costoFmt}</strong> ${unit} · Gasto ${MXN(spend)}</div>
+      <div class="campaign-extras">${extras}</div>
+    </div>`;
+  });
+
+  html += '</div>';
+  return html;
+}
+
 function buildDoctorPanel(doc, idx) {
   const div = document.createElement('div');
   div.className = 'doctor-panel';
   div.id = 'doc-' + idx;
 
-  const last7 = doc.history.slice(-7);
-  const yesterday = last7[last7.length - 1];
-  const prev7 = doc.history.slice(-14, -7);
-  const hasData = yesterday?.spend > 0;
+  const hist = inRange(doc.history);
+  const prev = prevPeriod(doc.history);
+  const hasData = hist.some(e => e.spend > 0);
 
-  const spend7 = last7.reduce((a,b)=>a+b.spend,0);
-  const prevSpend7 = prev7.reduce((a,b)=>a+b.spend,0);
-  const clicks7 = last7.reduce((a,b)=>a+b.clicks,0);
-  const avgCtr7 = last7.length ? last7.reduce((a,b)=>a+b.ctr,0)/last7.length : 0;
-  const avgCpm7 = last7.length ? last7.reduce((a,b)=>a+b.cpm,0)/last7.length : 0;
-
-  const spendDelta = prevSpend7 > 0 ? ((spend7-prevSpend7)/prevSpend7)*100 : 0;
+  const spend = hist.reduce((a,b)=>a+b.spend,0);
+  const prevSpend = prev.reduce((a,b)=>a+b.spend,0);
+  const clicks = hist.reduce((a,b)=>a+b.clicks,0);
+  const activeDays = hist.filter(e=>e.spend>0);
+  const avgCtr = activeDays.length ? activeDays.reduce((a,b)=>a+b.ctr,0)/activeDays.length : 0;
+  const avgCpm = activeDays.length ? activeDays.reduce((a,b)=>a+b.cpm,0)/activeDays.length : 0;
+  const spendDelta = prevSpend > 0 ? ((spend-prevSpend)/prevSpend)*100 : 0;
 
   const cpaTargets = allData.cpa_targets[doc.name] || {};
   const mainProcedure = Object.keys(cpaTargets)[0] || 'Procedimiento principal';
   const mainCpa = Object.values(cpaTargets)[0] || 0;
-  const convRate = 0.08 * 0.30 * 0.25;
-  const cpaEst = convRate > 0 && yesterday?.cpc > 0 ? Math.round(yesterday.cpc / convRate) : 0;
+  const cpaInfo = cpaForDoctor(doc);
 
   let estadoClass = 'sin-datos', estadoText = 'Sin datos de CPA objetivo aún';
-  if (mainCpa > 0 && cpaEst > 0) {
-    if (cpaEst <= mainCpa) { estadoClass = 'rentable'; estadoText = `CPA estimado ${MXN(cpaEst)} ≤ objetivo ${MXN(mainCpa)} — rentable`; }
-    else if (cpaEst <= mainCpa*2) { estadoClass = 'ajustar'; estadoText = `CPA estimado ${MXN(cpaEst)} por encima del objetivo ${MXN(mainCpa)} — ajustar`; }
-    else { estadoClass = 'fuera'; estadoText = `CPA estimado ${MXN(cpaEst)} muy por encima del objetivo ${MXN(mainCpa)} — fuera de rango`; }
+  if (mainCpa > 0 && cpaInfo.cpa > 0) {
+    const src = cpaInfo.real ? `${cpaInfo.convs} conversaciones reales a ${MXN2(cpaInfo.costoConv)}` : 'estimado desde CPC';
+    if (cpaInfo.cpa <= mainCpa) { estadoClass = 'rentable'; estadoText = `CPA ${MXN(cpaInfo.cpa)} ≤ objetivo ${MXN(mainCpa)} — rentable (${src})`; }
+    else if (cpaInfo.cpa <= mainCpa*2) { estadoClass = 'ajustar'; estadoText = `CPA ${MXN(cpaInfo.cpa)} por encima del objetivo ${MXN(mainCpa)} — ajustar (${src})`; }
+    else { estadoClass = 'fuera'; estadoText = `CPA ${MXN(cpaInfo.cpa)} muy por encima del objetivo ${MXN(mainCpa)} — fuera de rango (${src})`; }
+  } else if (cpaInfo.cpa > 0) {
+    estadoClass = 'sin-datos';
+    estadoText = `CPA ${cpaInfo.real?'real':'estimado'} ${MXN(cpaInfo.cpa)} — sin objetivo definido para comparar`;
   }
 
   const icons = { rentable:'✓', ajustar:'⚠', fuera:'✕', 'sin-datos':'—' };
+  const tag = cpaInfo.real ? '<span class="tag">datos reales</span>' : (cpaInfo.cpa>0 ? '<span class="tag">estimación</span>' : '');
 
   let html = `
-    <div class="cpa-banner ${estadoClass}">${icons[estadoClass]} ${estadoText}</div>
+    <div class="cpa-banner ${estadoClass}">${icons[estadoClass]} ${estadoText} ${tag}</div>
+    ${buildCampaignCards(doc)}
+    <p class="section-title">Totales de la cuenta en el periodo</p>
     <div class="kpi-grid">
       <div class="kpi">
-        <div class="kpi-label">Gasto 7 días</div>
-        <div class="kpi-value" style="color:${doc.color}">${MXN(spend7)}</div>
-        <div class="kpi-delta ${deltaClass(spendDelta)}">${deltaArrow(spendDelta)} ${Math.abs(spendDelta).toFixed(1)}% vs semana anterior</div>
+        <div class="kpi-label">Gasto</div>
+        <div class="kpi-value" style="color:${doc.color}">${MXN(spend)}</div>
+        <div class="kpi-delta ${deltaClass(spendDelta)}">${prevSpend>0 ? deltaArrow(spendDelta)+' '+Math.abs(spendDelta).toFixed(1)+'% vs periodo anterior' : '—'}</div>
       </div>
-      <div class="kpi"><div class="kpi-label">Clics 7 días</div><div class="kpi-value">${NUM(clicks7)}</div><div class="kpi-delta flat">—</div></div>
-      <div class="kpi"><div class="kpi-label">CTR promedio</div><div class="kpi-value">${PCT(avgCtr7)}</div><div class="kpi-delta ${avgCtr7 >= 2.5 ? 'up':'down'}">${avgCtr7 >= 2.5 ? '▲ Bueno':'▼ Bajo'}</div></div>
-      <div class="kpi"><div class="kpi-label">CPM promedio</div><div class="kpi-value">${MXN(avgCpm7)}</div><div class="kpi-delta flat">MXN por mil</div></div>
+      <div class="kpi"><div class="kpi-label">Clics</div><div class="kpi-value">${NUM(clicks)}</div><div class="kpi-delta flat">—</div></div>
+      <div class="kpi"><div class="kpi-label">CTR promedio</div><div class="kpi-value">${PCT(avgCtr)}</div><div class="kpi-delta ${avgCtr >= 2.5 ? 'up':'down'}">${avgCtr >= 2.5 ? '▲ Bueno':'▼ Bajo'}</div></div>
+      <div class="kpi"><div class="kpi-label">CPM promedio</div><div class="kpi-value">${MXN(avgCpm)}</div><div class="kpi-delta flat">MXN por mil</div></div>
       ${mainCpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA máx. ${mainProcedure}</div><div class="kpi-value">${MXN(mainCpa)}</div><div class="kpi-delta flat">objetivo</div></div>` : ''}
-      ${cpaEst > 0 ? `<div class="kpi"><div class="kpi-label">CPA est. ayer</div><div class="kpi-value" style="color:${cpaEst<=mainCpa?'var(--green)':cpaEst<=mainCpa*2?'var(--yellow)':'var(--red)'}">${MXN(cpaEst)}</div><div class="kpi-delta flat">estimado</div></div>` : ''}
+      ${cpaInfo.cpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA ${cpaInfo.real?'real':'est.'}</div><div class="kpi-value" style="color:${mainCpa>0 ? (cpaInfo.cpa<=mainCpa?'var(--green)':cpaInfo.cpa<=mainCpa*2?'var(--yellow)':'var(--red)') : 'var(--text)'}">${MXN(cpaInfo.cpa)}</div><div class="kpi-delta flat">${cpaInfo.real ? cpaInfo.convs + ' conversaciones' : 'estimado'}</div></div>` : ''}
     </div>
     <div class="charts-grid">
       <div class="chart-card"><div class="chart-title">Gasto diario (MXN)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-spend-${idx}" role="img" aria-label="Gasto diario de ${doc.name}">Gasto diario en MXN.</canvas></div></div>
       <div class="chart-card"><div class="chart-title">CTR diario (%)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-ctr-${idx}" role="img" aria-label="CTR diario de ${doc.name}">CTR diario en porcentaje.</canvas></div></div>
-      <div class="chart-card full"><div class="chart-title">CPA estimado vs objetivo ${mainProcedure ? '('+mainProcedure+')' : ''}</div><div class="chart-wrap" style="height:180px"><canvas id="chart-cpa-${idx}" role="img" aria-label="CPA estimado vs objetivo">CPA estimado vs objetivo.</canvas></div></div>
+      <div class="chart-card full"><div class="chart-title">Gasto vs clics por día</div><div class="chart-wrap" style="height:180px"><canvas id="chart-combo-${idx}" role="img" aria-label="Gasto y clics por día">Gasto y clics por día.</canvas></div></div>
     </div>
     <div class="table-card">
-      <div class="table-header">Desglose día a día — últimos 7 días</div>
+      <div class="table-header">Desglose día a día — ${fmtDate(range.from)} a ${fmtDate(range.to)}</div>
       <div style="overflow-x:auto">
       <table>
-        <thead><tr><th>Fecha</th><th>Gasto</th><th>Clics</th><th>CTR</th><th>CPM</th><th>CPC</th><th>CPA est.</th><th>Estado</th></tr></thead>
+        <thead><tr><th>Fecha</th><th>Gasto</th><th>Clics</th><th>CTR</th><th>CPM</th><th>CPC</th><th>Estado</th></tr></thead>
         <tbody>`;
 
-  last7.slice().reverse().forEach(d => {
+  hist.slice().reverse().forEach(d => {
     const noData = d.spend === 0;
-    const cpa = convRate > 0 && d.cpc > 0 ? Math.round(d.cpc / convRate) : 0;
-    let badge = '<span class="badge badge-gray">Sin datos</span>';
-    if (!noData && mainCpa > 0 && cpa > 0) {
-      if (cpa <= mainCpa) badge = '<span class="badge badge-green">Rentable</span>';
-      else if (cpa <= mainCpa*2) badge = '<span class="badge badge-yellow">Ajustar</span>';
-      else badge = '<span class="badge badge-red">Fuera de rango</span>';
-    }
+    let badge = noData ? '<span class="badge badge-gray">Sin actividad</span>' : (d.ctr >= 2.5 ? '<span class="badge badge-green">CTR sano</span>' : '<span class="badge badge-yellow">CTR bajo</span>');
     html += `<tr>
       <td>${d.date}</td>
       <td>${noData ? '—' : MXN(d.spend)}</td>
       <td>${noData ? '—' : NUM(d.clicks)}</td>
       <td>${noData ? '—' : PCT(d.ctr)}</td>
       <td>${noData ? '—' : MXN(d.cpm)}</td>
-      <td>${noData ? '—' : MXN(d.cpc)}</td>
-      <td>${noData || cpa === 0 ? '—' : MXN(cpa)}</td>
+      <td>${noData ? '—' : MXN2(d.cpc)}</td>
       <td>${badge}</td>
     </tr>`;
   });
@@ -414,18 +682,15 @@ function buildDoctorPanel(doc, idx) {
 }
 
 function renderCharts(doc, idx) {
-  const last7 = doc.history.slice(-7);
-  const labels = last7.map(d => d.date.slice(5));
+  const hist = inRange(doc.history);
+  const labels = hist.map(d => d.date.slice(5));
   const color = doc.color;
-  const convRate = 0.08 * 0.30 * 0.25;
-  const cpaTargets = allData.cpa_targets[doc.name] || {};
-  const mainCpa = Object.values(cpaTargets)[0] || 0;
 
   const defaults = {
     responsive: true, maintainAspectRatio: false,
     plugins: { legend: { display: false }, tooltip: { mode: 'index', intersect: false } },
     scales: {
-      x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#888580', font: { size: 11 } } },
+      x: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#888580', font: { size: 11 }, maxTicksLimit: 15 } },
       y: { grid: { color: 'rgba(255,255,255,0.04)' }, ticks: { color: '#888580', font: { size: 11 } } }
     }
   };
@@ -439,25 +704,29 @@ function renderCharts(doc, idx) {
 
   makeChart(`chart-spend-${idx}`, 'bar', {
     labels,
-    datasets: [{ data: last7.map(d => Math.round(d.spend)), backgroundColor: color + '99', borderRadius: 4 }]
+    datasets: [{ data: hist.map(d => Math.round(d.spend)), backgroundColor: color + '99', borderRadius: 4 }]
   }, { scales: { ...defaults.scales, y: { ...defaults.scales.y, ticks: { ...defaults.scales.y.ticks, callback: v => '$'+v } } } });
 
   makeChart(`chart-ctr-${idx}`, 'line', {
     labels,
-    datasets: [{ data: last7.map(d => parseFloat(d.ctr.toFixed(2))), borderColor: color, backgroundColor: color + '15', borderWidth: 2, tension: 0.3, fill: true, pointBackgroundColor: color, pointRadius: 4 }]
+    datasets: [{ data: hist.map(d => parseFloat(d.ctr.toFixed(2))), borderColor: color, backgroundColor: color + '15', borderWidth: 2, tension: 0.3, fill: true, pointBackgroundColor: color, pointRadius: 3 }]
   }, { scales: { ...defaults.scales, y: { ...defaults.scales.y, ticks: { ...defaults.scales.y.ticks, callback: v => v+'%' } } } });
 
-  const cpas = last7.map(d => d.cpc > 0 && convRate > 0 ? Math.round(d.cpc / convRate) : 0);
-  const datasets = [{ label: 'CPA estimado', data: cpas, borderColor: color, backgroundColor: color+'15', borderWidth: 2, tension: 0.3, fill: false, pointBackgroundColor: color, pointRadius: 4 }];
-  if (mainCpa > 0) datasets.push({ label: 'CPA máximo', data: last7.map(() => mainCpa), borderColor: '#4ade80', borderWidth: 1.5, borderDash: [4,4], pointRadius: 0, fill: false });
-
-  makeChart(`chart-cpa-${idx}`, 'line', { labels, datasets }, {
-    plugins: { legend: { display: mainCpa > 0, labels: { color: '#888580', font: { size: 11 }, boxWidth: 10 } }, tooltip: { mode: 'index', intersect: false } },
-    scales: { ...defaults.scales, y: { ...defaults.scales.y, ticks: { ...defaults.scales.y.ticks, callback: v => '$'+v.toLocaleString('es-MX') } } }
+  makeChart(`chart-combo-${idx}`, 'bar', {
+    labels,
+    datasets: [
+      { type: 'bar', label: 'Gasto', data: hist.map(d => Math.round(d.spend)), backgroundColor: color + '55', borderRadius: 4, yAxisID: 'y' },
+      { type: 'line', label: 'Clics', data: hist.map(d => d.clicks), borderColor: '#7dd3fc', borderWidth: 2, tension: 0.3, pointRadius: 3, pointBackgroundColor: '#7dd3fc', yAxisID: 'y1' }
+    ]
+  }, {
+    plugins: { legend: { display: true, labels: { color: '#888580', font: { size: 11 }, boxWidth: 10 } }, tooltip: { mode: 'index', intersect: false } },
+    scales: {
+      x: defaults.scales.x,
+      y: { ...defaults.scales.y, position: 'left', ticks: { ...defaults.scales.y.ticks, callback: v => '$'+v } },
+      y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#7dd3fc', font: { size: 11 } } }
+    }
   });
 }
-
-
 
 loadData();
 </script>
