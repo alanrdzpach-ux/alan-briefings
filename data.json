@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T05:00:00-06:00",
+  "updated_at": "2026-07-02T06:00:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -23,7 +23,8 @@
         {"date": "2026-06-23", "spend": 151.55, "impressions": 6190, "reach": 5766, "clicks": 137, "cpm": 24.48, "ctr": 2.21, "cpc": 1.11, "messages": 11, "cpa_est": 13777},
         {"date": "2026-06-24", "spend": 139.83, "impressions": 5865, "reach": 5446, "clicks": 166, "cpm": 23.84, "ctr": 2.83, "cpc": 0.84, "messages": 13, "cpa_est": 10756},
         {"date": "2026-06-25", "spend": 153.71, "impressions": 6582, "reach": 6340, "clicks": 175, "cpm": 23.35, "ctr": 2.66, "cpc": 0.88, "messages": 14, "cpa_est": 10979},
-        {"date": "2026-06-26", "spend": 155.69, "impressions": 5978, "reach": 5598, "clicks": 145, "cpm": 26.04, "ctr": 2.43, "cpc": 1.07, "messages": 12, "cpa_est": 12974}
+        {"date": "2026-06-26", "spend": 155.69, "impressions": 5978, "reach": 5598, "clicks": 145, "cpm": 26.04, "ctr": 2.43, "cpc": 1.07, "messages": 12, "cpa_est": 12974},
+        {"date": "2026-07-01", "spend": 164.20, "impressions": 12486, "reach": 11828, "clicks": 382, "cpm": 13.15, "ctr": 3.06, "cpc": 0.43, "messages": 31, "cpa_est": 5297}
       ]
     },
     {
@@ -39,7 +40,8 @@
         {"date": "2026-06-23", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
         {"date": "2026-06-24", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
         {"date": "2026-06-25", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
-        {"date": "2026-06-26", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0}
+        {"date": "2026-06-26", "spend": 0, "impressions": 0, "reach": 0, "clicks": 0, "cpm": 0, "ctr": 0, "cpc": 0, "messages": 0, "cpa_est": 0},
+        {"date": "2026-07-01", "spend": 94.15, "impressions": 2349, "reach": 1311, "clicks": 43, "cpm": 40.08, "ctr": 1.83, "cpc": 2.19, "messages": 3, "cpa_est": 31383}
       ]
     }
   ]
