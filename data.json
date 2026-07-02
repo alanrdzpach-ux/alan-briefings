@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T12:50:00-06:00",
+  "updated_at": "2026-07-02T13:30:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -161,6 +161,49 @@
           "messages": 31,
           "cpa_est": 5297
         }
+      ],
+      "campaigns": [
+        {
+          "id": "120252353136110427",
+          "name": "Campaña ICP MANGA G.",
+          "tipo": "landing",
+          "history": [
+            {
+              "date": "2026-07-01",
+              "spend": 110.17,
+              "resultado": 155,
+              "costo_resultado": 0.71,
+              "impressions": 5561,
+              "clicks": 239,
+              "ctr": 4.3,
+              "frecuencia": 1.07,
+              "link_clicks": 178,
+              "tasa_aterrizaje": 87.1
+            }
+          ]
+        },
+        {
+          "id": "120251266751610427",
+          "name": "Campaña de reconocimiento MMO",
+          "tipo": "video",
+          "history": [
+            {
+              "date": "2026-07-01",
+              "spend": 54.25,
+              "resultado": 1379,
+              "costo_resultado": 0.039,
+              "impressions": 6952,
+              "clicks": 143,
+              "ctr": 2.06,
+              "frecuencia": 1.05,
+              "plays_3s": 3789,
+              "p25": 1175,
+              "p100": 177,
+              "hook_rate": 54.5,
+              "retencion_completa": 15.1
+            }
+          ]
+        }
       ]
     },
     {
@@ -314,7 +357,34 @@
           "messages": 3,
           "cpa_est": 31383
         }
+      ],
+      "campaigns": [
+        {
+          "id": "120247038264640733",
+          "name": "Campaña de ventas Carrusel",
+          "tipo": "mensajes",
+          "history": [
+            {
+              "date": "2026-07-01",
+              "spend": 94.25,
+              "resultado": 3,
+              "costo_resultado": 31.42,
+              "impressions": 2350,
+              "clicks": 43,
+              "ctr": 1.83,
+              "frecuencia": 1.79,
+              "tasa_conversacion": 7.0
+            }
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "tipo_labels": {
+    "landing": "Vistas de landing",
+    "video": "ThruPlays",
+    "mensajes": "Conversaciones",
+    "leads": "Leads"
+  }
+}
 }
