@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T13:30:00-06:00",
+  "updated_at": "2026-07-03T01:16:30-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -160,6 +160,18 @@
           "cpc": 0.43,
           "messages": 31,
           "cpa_est": 5297
+        },
+        {
+          "date": "2026-07-02",
+          "spend": 147.08,
+          "impressions": 10969,
+          "reach": 9971,
+          "clicks": 319,
+          "cpm": 13.41,
+          "ctr": 2.91,
+          "cpc": 0.46,
+          "messages": 26,
+          "cpa_est": 5658
         }
       ],
       "campaigns": [
@@ -179,6 +191,18 @@
               "frecuencia": 1.07,
               "link_clicks": 178,
               "tasa_aterrizaje": 87.1
+            },
+            {
+              "date": "2026-07-02",
+              "spend": 103.38,
+              "resultado": 154,
+              "costo_resultado": 0.67,
+              "impressions": 5553,
+              "clicks": 224,
+              "ctr": 4.03,
+              "frecuencia": 1.19,
+              "link_clicks": 172,
+              "tasa_aterrizaje": 89.5
             }
           ]
         },
@@ -201,6 +225,21 @@
               "p100": 177,
               "hook_rate": 54.5,
               "retencion_completa": 15.1
+            },
+            {
+              "date": "2026-07-02",
+              "spend": 43.7,
+              "resultado": 1106,
+              "costo_resultado": 0.0395,
+              "impressions": 5416,
+              "clicks": 95,
+              "ctr": 1.75,
+              "frecuencia": 1.02,
+              "plays_3s": 2911,
+              "p25": 968,
+              "p100": 131,
+              "hook_rate": 53.7,
+              "retencion_completa": 13.5
             }
           ]
         }
@@ -356,6 +395,18 @@
           "cpc": 2.19,
           "messages": 3,
           "cpa_est": 31383
+        },
+        {
+          "date": "2026-07-02",
+          "spend": 113.17,
+          "impressions": 6541,
+          "reach": 5822,
+          "clicks": 157,
+          "cpm": 17.3,
+          "ctr": 2.4,
+          "cpc": 0.72,
+          "messages": 13,
+          "cpa_est": 8705
         }
       ],
       "campaigns": [
@@ -376,6 +427,25 @@
               "tasa_conversacion": 7.0
             }
           ]
+        },
+        {
+          "id": "120247443733330733",
+          "name": "Campaña de ventas Carrusel - Copia",
+          "tipo": "landing",
+          "history": [
+            {
+              "date": "2026-07-02",
+              "spend": 40.98,
+              "resultado": 94,
+              "costo_resultado": 0.44,
+              "impressions": 4978,
+              "clicks": 130,
+              "ctr": 2.61,
+              "frecuencia": 1.04,
+              "link_clicks": 94,
+              "tasa_aterrizaje": null
+            }
+          ]
         }
       ]
     }
@@ -386,5 +456,4 @@
     "mensajes": "Conversaciones",
     "leads": "Leads"
   }
-}
 }
