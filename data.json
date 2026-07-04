@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T03:05:56-06:00",
+  "updated_at": "2026-07-04T03:07:47-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -172,6 +172,18 @@
           "cpc": 0.46,
           "messages": 26,
           "cpa_est": 5658
+        },
+        {
+          "date": "2026-07-03",
+          "spend": 204.75,
+          "impressions": 9995,
+          "reach": 8974,
+          "clicks": 321,
+          "cpm": 20.49,
+          "ctr": 3.21,
+          "cpc": 0.64,
+          "messages": 26,
+          "cpa_est": 7875
         }
       ],
       "campaigns": [
@@ -203,6 +215,18 @@
               "frecuencia": 1.19,
               "link_clicks": 172,
               "tasa_aterrizaje": 89.5
+            },
+            {
+              "date": "2026-07-03",
+              "spend": 76.61,
+              "resultado": 117,
+              "costo_resultado": 0.65,
+              "impressions": 3443,
+              "clicks": 188,
+              "ctr": 5.46,
+              "frecuencia": 1.1,
+              "link_clicks": 118,
+              "tasa_aterrizaje": 99.2
             }
           ]
         },
@@ -240,6 +264,39 @@
               "p100": 132,
               "hook_rate": 53.8,
               "retencion_completa": 13.6
+            },
+            {
+              "date": "2026-07-03",
+              "spend": 44.96,
+              "resultado": 1094,
+              "costo_resultado": 0.0411,
+              "impressions": 5449,
+              "clicks": 98,
+              "ctr": 1.8,
+              "frecuencia": 1.01,
+              "plays_3s": 2840,
+              "p25": 948,
+              "p100": 113,
+              "hook_rate": 52.1,
+              "retencion_completa": 11.9
+            }
+          ]
+        },
+        {
+          "id": "120252530377030427",
+          "name": "Campaña ICP MANGA G. Mensajes",
+          "tipo": "mensajes",
+          "history": [
+            {
+              "date": "2026-07-03",
+              "spend": 83.18,
+              "resultado": 1,
+              "costo_resultado": 83.18,
+              "impressions": 1103,
+              "clicks": 35,
+              "ctr": 3.17,
+              "frecuencia": 1.43,
+              "tasa_conversacion": 2.9
             }
           ]
         }
@@ -407,6 +464,18 @@
           "cpc": 0.72,
           "messages": 13,
           "cpa_est": 8710
+        },
+        {
+          "date": "2026-07-03",
+          "spend": 90.91,
+          "impressions": 11155,
+          "reach": 9919,
+          "clicks": 221,
+          "cpm": 8.15,
+          "ctr": 1.98,
+          "cpc": 0.41,
+          "messages": 18,
+          "cpa_est": 5051
         }
       ],
       "campaigns": [
@@ -443,6 +512,18 @@
               "ctr": 2.6,
               "frecuencia": 1.04,
               "link_clicks": 94,
+              "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-03",
+              "spend": 90.91,
+              "resultado": 179,
+              "costo_resultado": 0.51,
+              "impressions": 11155,
+              "clicks": 221,
+              "ctr": 1.98,
+              "frecuencia": 1.12,
+              "link_clicks": 179,
               "tasa_aterrizaje": null
             }
           ]
