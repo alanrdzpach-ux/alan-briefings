@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T03:06:05-06:00",
+  "updated_at": "2026-07-07T03:06:16-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -208,6 +208,18 @@
           "cpc": 0.79,
           "messages": 18,
           "cpa_est": 9756
+        },
+        {
+          "date": "2026-07-06",
+          "spend": 212.27,
+          "impressions": 5973,
+          "reach": 4886,
+          "clicks": 229,
+          "cpm": 35.54,
+          "ctr": 3.83,
+          "cpc": 0.93,
+          "messages": 18,
+          "cpa_est": 11793
         }
       ],
       "campaigns": [
@@ -275,6 +287,18 @@
               "frecuencia": 1.23,
               "link_clicks": 137,
               "tasa_aterrizaje": 99.3
+            },
+            {
+              "date": "2026-07-06",
+              "spend": 72.66,
+              "resultado": 112,
+              "costo_resultado": 0.65,
+              "impressions": 3676,
+              "clicks": 150,
+              "ctr": 4.08,
+              "frecuencia": 1.23,
+              "link_clicks": 124,
+              "tasa_aterrizaje": 90.3
             }
           ]
         },
@@ -374,6 +398,17 @@
               "ctr": 3.73,
               "frecuencia": 1.19,
               "tasa_conversacion": 10.5
+            },
+            {
+              "date": "2026-07-06",
+              "spend": 139.61,
+              "resultado": 9,
+              "costo_resultado": 15.51,
+              "impressions": 2297,
+              "clicks": 79,
+              "ctr": 3.44,
+              "frecuencia": 1.2,
+              "tasa_conversacion": 11.4
             }
           ]
         }
@@ -577,6 +612,18 @@
           "cpc": 3.27,
           "messages": 2,
           "cpa_est": 31055
+        },
+        {
+          "date": "2026-07-06",
+          "spend": 106.37,
+          "impressions": 3037,
+          "reach": 1813,
+          "clicks": 52,
+          "cpm": 35.02,
+          "ctr": 1.71,
+          "cpc": 2.05,
+          "messages": 4,
+          "cpa_est": 26593
         }
       ],
       "campaigns": [
@@ -666,6 +713,17 @@
               "clicks": 19,
               "ctr": 1.18,
               "frecuencia": 1.92,
+              "tasa_conversacion": 0.0
+            },
+            {
+              "date": "2026-07-06",
+              "spend": 106.37,
+              "resultado": 0,
+              "costo_resultado": 0,
+              "impressions": 3037,
+              "clicks": 52,
+              "ctr": 1.71,
+              "frecuencia": 1.68,
               "tasa_conversacion": 0.0
             }
           ]
