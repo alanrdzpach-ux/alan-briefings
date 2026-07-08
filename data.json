@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T03:06:16-06:00",
+  "updated_at": "2026-07-08T03:05:09-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -220,6 +220,18 @@
           "cpc": 0.93,
           "messages": 18,
           "cpa_est": 11793
+        },
+        {
+          "date": "2026-07-07",
+          "spend": 182.85,
+          "impressions": 4537,
+          "reach": 3689,
+          "clicks": 198,
+          "cpm": 40.3,
+          "ctr": 4.36,
+          "cpc": 0.92,
+          "messages": 16,
+          "cpa_est": 11428
         }
       ],
       "campaigns": [
@@ -299,6 +311,18 @@
               "frecuencia": 1.23,
               "link_clicks": 124,
               "tasa_aterrizaje": 90.3
+            },
+            {
+              "date": "2026-07-07",
+              "spend": 77.59,
+              "resultado": 127,
+              "costo_resultado": 0.61,
+              "impressions": 3117,
+              "clicks": 147,
+              "ctr": 4.72,
+              "frecuencia": 1.24,
+              "link_clicks": 125,
+              "tasa_aterrizaje": 101.6
             }
           ]
         },
@@ -409,6 +433,17 @@
               "ctr": 3.44,
               "frecuencia": 1.2,
               "tasa_conversacion": 11.4
+            },
+            {
+              "date": "2026-07-07",
+              "spend": 105.26,
+              "resultado": 8,
+              "costo_resultado": 13.16,
+              "impressions": 1420,
+              "clicks": 51,
+              "ctr": 3.59,
+              "frecuencia": 1.22,
+              "tasa_conversacion": 15.7
             }
           ]
         }
@@ -624,6 +659,18 @@
           "cpc": 2.05,
           "messages": 4,
           "cpa_est": 26593
+        },
+        {
+          "date": "2026-07-07",
+          "spend": 65.79,
+          "impressions": 1669,
+          "reach": 1157,
+          "clicks": 17,
+          "cpm": 39.42,
+          "ctr": 1.02,
+          "cpc": 3.87,
+          "messages": 1,
+          "cpa_est": 65790
         }
       ],
       "campaigns": [
