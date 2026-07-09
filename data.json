@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T03:05:09-06:00",
+  "updated_at": "2026-07-09T03:05:40-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -232,6 +232,18 @@
           "cpc": 0.92,
           "messages": 16,
           "cpa_est": 11428
+        },
+        {
+          "date": "2026-07-08",
+          "spend": 151.05,
+          "impressions": 4139,
+          "reach": 3463,
+          "clicks": 160,
+          "cpm": 36.49,
+          "ctr": 3.87,
+          "cpc": 0.94,
+          "messages": 13,
+          "cpa_est": 11619
         }
       ],
       "campaigns": [
@@ -323,6 +335,18 @@
               "frecuencia": 1.24,
               "link_clicks": 125,
               "tasa_aterrizaje": 101.6
+            },
+            {
+              "date": "2026-07-08",
+              "spend": 70.17,
+              "resultado": 103,
+              "costo_resultado": 0.68,
+              "impressions": 3223,
+              "clicks": 126,
+              "ctr": 3.91,
+              "frecuencia": 1.19,
+              "link_clicks": 109,
+              "tasa_aterrizaje": 94.5
             }
           ]
         },
@@ -444,6 +468,17 @@
               "ctr": 3.59,
               "frecuencia": 1.22,
               "tasa_conversacion": 15.7
+            },
+            {
+              "date": "2026-07-08",
+              "spend": 80.88,
+              "resultado": 5,
+              "costo_resultado": 16.18,
+              "impressions": 916,
+              "clicks": 34,
+              "ctr": 3.71,
+              "frecuencia": 1.27,
+              "tasa_conversacion": 14.7
             }
           ]
         }
@@ -671,6 +706,18 @@
           "cpc": 3.87,
           "messages": 1,
           "cpa_est": 65790
+        },
+        {
+          "date": "2026-07-08",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
