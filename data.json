@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T03:05:40-06:00",
+  "updated_at": "2026-07-10T03:06:32-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -244,6 +244,18 @@
           "cpc": 0.94,
           "messages": 13,
           "cpa_est": 11619
+        },
+        {
+          "date": "2026-07-09",
+          "spend": 157.77,
+          "impressions": 4208,
+          "reach": 3464,
+          "clicks": 159,
+          "cpm": 37.49,
+          "ctr": 3.78,
+          "cpc": 0.99,
+          "messages": 8,
+          "cpa_est": 19721
         }
       ],
       "campaigns": [
@@ -347,6 +359,18 @@
               "frecuencia": 1.19,
               "link_clicks": 109,
               "tasa_aterrizaje": 94.5
+            },
+            {
+              "date": "2026-07-09",
+              "spend": 69.61,
+              "resultado": 108,
+              "costo_resultado": 0.64,
+              "impressions": 3149,
+              "clicks": 125,
+              "ctr": 3.97,
+              "frecuencia": 1.19,
+              "link_clicks": 119,
+              "tasa_aterrizaje": 90.8
             }
           ]
         },
@@ -479,6 +503,17 @@
               "ctr": 3.71,
               "frecuencia": 1.27,
               "tasa_conversacion": 14.7
+            },
+            {
+              "date": "2026-07-09",
+              "spend": 88.16,
+              "resultado": 8,
+              "costo_resultado": 11.02,
+              "impressions": 1059,
+              "clicks": 34,
+              "ctr": 3.21,
+              "frecuencia": 1.25,
+              "tasa_conversacion": 23.5
             }
           ]
         }
@@ -718,6 +753,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-09",
+          "spend": 17.64,
+          "impressions": 592,
+          "reach": 439,
+          "clicks": 19,
+          "cpm": 29.8,
+          "ctr": 3.21,
+          "cpc": 0.93,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -818,6 +865,24 @@
               "clicks": 52,
               "ctr": 1.71,
               "frecuencia": 1.68,
+              "tasa_conversacion": 0.0
+            }
+          ]
+        },
+        {
+          "id": "120247633786080733",
+          "name": "WhatsApp Mensajes | Dr Andrei | Tuxtla",
+          "tipo": "mensajes",
+          "history": [
+            {
+              "date": "2026-07-09",
+              "spend": 17.64,
+              "resultado": 0,
+              "costo_resultado": 0,
+              "impressions": 592,
+              "clicks": 19,
+              "ctr": 3.21,
+              "frecuencia": 1.35,
               "tasa_conversacion": 0.0
             }
           ]
