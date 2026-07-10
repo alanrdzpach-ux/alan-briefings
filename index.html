@@ -340,6 +340,18 @@ let charts = {};
 let activeTab = 'overview';
 let range = { mode: '7', from: null, to: null }; // fechas en 'YYYY-MM-DD'
 
+/* ── Modo cliente (?doctor=nombre) ───────────────────── */
+const CLIENT_SLUG = new URLSearchParams(location.search).get('doctor')?.toLowerCase().trim() || null;
+let CLIENT_MODE = false;
+function slugMatch(doc, slug) {
+  const norm = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  return norm(doc.name).includes(norm(slug)) || norm(doc.full_name||'').includes(norm(slug));
+}
+function clientDoctorIndex() {
+  if (!CLIENT_SLUG || !allData) return -1;
+  return allData.doctors.findIndex(d => slugMatch(d, CLIENT_SLUG));
+}
+
 async function loadData() {
   try {
     const res = await fetch(DATA_URL + '?t=' + Date.now());
@@ -514,6 +526,31 @@ function render() {
   if (!allData) return;
   const updated = new Date(allData.updated_at);
   document.getElementById('last-update-text').textContent = 'Actualizado: ' + updated.toLocaleDateString('es-MX', {day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'});
+
+  // Modo cliente: solo el doctor del link, sin briefing interno ni otros doctores
+  const clientIdx = clientDoctorIndex();
+  CLIENT_MODE = clientIdx >= 0;
+
+  if (CLIENT_MODE) {
+    const doc = allData.doctors[clientIdx];
+    document.getElementById('briefing-container').innerHTML = '';
+    document.querySelector('.page-header h1').textContent = doc.full_name || doc.name;
+    document.querySelector('.page-header p').textContent = (doc.specialty ? doc.specialty + ' — ' : '') + 'Reporte de campañas · Preparado por Alan Pacheco';
+
+    Object.values(charts).forEach(c => c.destroy());
+    charts = {};
+    const tabs = document.getElementById('tabs-container');
+    const panels = document.getElementById('panels-container');
+    tabs.innerHTML = '';
+    tabs.style.display = 'none';
+    panels.innerHTML = '';
+    const panel = buildDoctorPanel(doc, clientIdx);
+    panels.appendChild(panel);
+    panel.classList.add('active');
+    setTimeout(() => renderCharts(doc, clientIdx), 50);
+    return;
+  }
+
   renderBriefing();
 
   Object.values(charts).forEach(c => c.destroy());
@@ -716,7 +753,7 @@ function buildDoctorPanel(doc, idx) {
   const tag = cpaInfo.real ? '<span class="tag">datos reales</span>' : (cpaInfo.cpa>0 ? '<span class="tag">estimación</span>' : '');
 
   let html = `
-    <div class="cpa-banner ${estadoClass}">${icons[estadoClass]} ${estadoText} ${tag}</div>
+    ${CLIENT_MODE ? '' : `<div class="cpa-banner ${estadoClass}">${icons[estadoClass]} ${estadoText} ${tag}</div>`}
     ${buildCampaignCards(doc)}
     <p class="section-title">Totales de la cuenta en el periodo</p>
     <div class="kpi-grid">
@@ -728,8 +765,9 @@ function buildDoctorPanel(doc, idx) {
       <div class="kpi"><div class="kpi-label">Clics</div><div class="kpi-value">${NUM(clicks)}</div><div class="kpi-delta flat">—</div></div>
       <div class="kpi"><div class="kpi-label">CTR promedio</div><div class="kpi-value">${PCT(avgCtr)}</div><div class="kpi-delta ${avgCtr >= 2.5 ? 'up':'down'}">${avgCtr >= 2.5 ? '▲ Bueno':'▼ Bajo'}</div></div>
       <div class="kpi"><div class="kpi-label">CPM promedio</div><div class="kpi-value">${MXN(avgCpm)}</div><div class="kpi-delta flat">MXN por mil</div></div>
-      ${mainCpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA máx. ${mainProcedure}</div><div class="kpi-value">${MXN(mainCpa)}</div><div class="kpi-delta flat">objetivo</div></div>` : ''}
-      ${cpaInfo.cpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA ${cpaInfo.real?'real':'est.'}</div><div class="kpi-value" style="color:${mainCpa>0 ? (cpaInfo.cpa<=mainCpa?'var(--green)':cpaInfo.cpa<=mainCpa*2?'var(--yellow)':'var(--red)') : 'var(--text)'}">${MXN(cpaInfo.cpa)}</div><div class="kpi-delta flat">${cpaInfo.real ? cpaInfo.convs + ' conversaciones' : 'estimado'}</div></div>` : ''}
+      ${!CLIENT_MODE && mainCpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA máx. ${mainProcedure}</div><div class="kpi-value">${MXN(mainCpa)}</div><div class="kpi-delta flat">objetivo</div></div>` : ''}
+      ${!CLIENT_MODE && cpaInfo.cpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA ${cpaInfo.real?'real':'est.'}</div><div class="kpi-value" style="color:${mainCpa>0 ? (cpaInfo.cpa<=mainCpa?'var(--green)':cpaInfo.cpa<=mainCpa*2?'var(--yellow)':'var(--red)') : 'var(--text)'}">${MXN(cpaInfo.cpa)}</div><div class="kpi-delta flat">${cpaInfo.real ? cpaInfo.convs + ' conversaciones' : 'estimado'}</div></div>` : ''}
+      ${CLIENT_MODE && cpaInfo.real ? `<div class="kpi"><div class="kpi-label">Conversaciones WhatsApp</div><div class="kpi-value" style="color:var(--green)">${NUM(cpaInfo.convs)}</div><div class="kpi-delta flat">a ${MXN2(cpaInfo.costoConv)} c/u</div></div>` : ''}
     </div>
     <div class="charts-grid">
       ${convSeriesForDoctor(doc) ? `<div class="chart-card full"><div class="chart-title">Conversaciones de WhatsApp vs costo por conversación — la métrica de dinero</div><div class="chart-wrap" style="height:200px"><canvas id="chart-conv-${idx}" role="img" aria-label="Conversaciones y costo por conversación de ${doc.name}">Conversaciones diarias y su costo.</canvas></div></div>` : ''}
