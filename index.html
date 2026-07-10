@@ -83,6 +83,29 @@
   .page-header h1 { font-family: 'DM Serif Display', serif; font-size: 28px; font-weight: 400; color: var(--text); margin-bottom: 4px; }
   .page-header p { color: var(--muted); font-size: 13px; }
 
+  /* ── Briefing del día ───────────────────────────────── */
+  .briefing-card {
+    background: var(--surface);
+    border: 1px solid var(--gold-dim);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 18px;
+    margin-bottom: 1.5rem;
+  }
+  .briefing-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+  .briefing-title { font-family: 'DM Serif Display', serif; font-size: 17px; color: var(--gold); }
+  .briefing-date { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+  .briefing-alert { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; font-size: 13px; }
+  .briefing-alert .sev { flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; }
+  .sev-rojo { background: var(--red); }
+  .sev-amarillo { background: var(--yellow); }
+  .briefing-alert .who { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; margin-top: 2px; }
+  .briefing-recs { border-top: 1px solid var(--border); margin-top: 8px; padding-top: 12px; }
+  .briefing-recs-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+  .briefing-rec { display: flex; gap: 10px; padding: 6px 0; font-size: 13px; align-items: flex-start; }
+  .briefing-rec .check { color: var(--gold); flex-shrink: 0; }
+  .briefing-rec .who { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; margin-top: 2px; }
+
   /* ── Selector de fechas ─────────────────────────────── */
   .range-bar {
     display: flex;
@@ -273,6 +296,8 @@
     <p>Métricas diarias de Meta Ads — actualizadas automáticamente cada mañana a las 5am</p>
   </div>
 
+  <div id="briefing-container"></div>
+
   <div class="range-bar" id="range-bar">
     <span class="range-label">Periodo</span>
     <button class="range-chip" data-range="7">7 días</button>
@@ -429,11 +454,48 @@ function cpaForDoctor(doc) {
   return { cpa: 0, real: false, convs: 0, costoConv: 0 };
 }
 
+/* ── Briefing del día ────────────────────────────────── */
+function renderBriefing() {
+  const el = document.getElementById('briefing-container');
+  const b = allData.briefing;
+  if (!b || (!b.alertas?.length && !b.recomendaciones?.length)) { el.innerHTML = ''; return; }
+
+  let html = `<div class="briefing-card">
+    <div class="briefing-head">
+      <span class="briefing-title">Hoy</span>
+      <span class="briefing-date">Briefing del ${fmtDate(b.date)}</span>
+    </div>`;
+
+  (b.alertas || []).forEach(a => {
+    html += `<div class="briefing-alert">
+      <span class="sev sev-${a.nivel}"></span>
+      <span class="who">${a.doctor}</span>
+      <span>${a.texto}</span>
+    </div>`;
+  });
+
+  if (b.recomendaciones?.length) {
+    html += '<div class="briefing-recs"><div class="briefing-recs-title">Acciones del día</div>';
+    b.recomendaciones.forEach(r => {
+      html += `<div class="briefing-rec">
+        <span class="check">→</span>
+        <span class="who">${r.doctor}</span>
+        <span>${r.texto}</span>
+      </div>`;
+    });
+    html += '</div>';
+  }
+
+  html += '</div>';
+  el.innerHTML = html;
+}
+
 /* ── Render ──────────────────────────────────────────── */
 function render() {
   if (!allData) return;
   const updated = new Date(allData.updated_at);
   document.getElementById('last-update-text').textContent = 'Actualizado: ' + updated.toLocaleDateString('es-MX', {day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit'});
+  renderBriefing();
 
   Object.values(charts).forEach(c => c.destroy());
   charts = {};
