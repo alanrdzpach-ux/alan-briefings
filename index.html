@@ -434,6 +434,25 @@ function prevPeriod(list) {
   return (list||[]).filter(e => set.has(e.date));
 }
 
+/* ── Serie diaria de conversaciones (campañas de mensajes) ── */
+function convSeriesForDoctor(doc) {
+  const camps = (doc.campaigns||[]).filter(c => c.tipo === 'mensajes');
+  if (!camps.length) return null;
+  const byDate = {};
+  camps.forEach(c => inRange(c.history).forEach(e => {
+    if (!byDate[e.date]) byDate[e.date] = { convs: 0, spend: 0 };
+    byDate[e.date].convs += (e.resultado || 0);
+    byDate[e.date].spend += (e.spend || 0);
+  }));
+  const dates = Object.keys(byDate).sort();
+  if (!dates.length) return null;
+  return {
+    labels: dates.map(d => d.slice(5)),
+    convs: dates.map(d => byDate[d].convs),
+    costo: dates.map(d => byDate[d].convs > 0 ? +(byDate[d].spend / byDate[d].convs).toFixed(2) : null)
+  };
+}
+
 /* ── CPA con datos reales ────────────────────────────── */
 // Devuelve {cpa, real:bool, convs, costoConv} para el rango actual
 function cpaForDoctor(doc) {
@@ -713,6 +732,7 @@ function buildDoctorPanel(doc, idx) {
       ${cpaInfo.cpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA ${cpaInfo.real?'real':'est.'}</div><div class="kpi-value" style="color:${mainCpa>0 ? (cpaInfo.cpa<=mainCpa?'var(--green)':cpaInfo.cpa<=mainCpa*2?'var(--yellow)':'var(--red)') : 'var(--text)'}">${MXN(cpaInfo.cpa)}</div><div class="kpi-delta flat">${cpaInfo.real ? cpaInfo.convs + ' conversaciones' : 'estimado'}</div></div>` : ''}
     </div>
     <div class="charts-grid">
+      ${convSeriesForDoctor(doc) ? `<div class="chart-card full"><div class="chart-title">Conversaciones de WhatsApp vs costo por conversación — la métrica de dinero</div><div class="chart-wrap" style="height:200px"><canvas id="chart-conv-${idx}" role="img" aria-label="Conversaciones y costo por conversación de ${doc.name}">Conversaciones diarias y su costo.</canvas></div></div>` : ''}
       <div class="chart-card"><div class="chart-title">Gasto diario (MXN)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-spend-${idx}" role="img" aria-label="Gasto diario de ${doc.name}">Gasto diario en MXN.</canvas></div></div>
       <div class="chart-card"><div class="chart-title">CTR diario (%)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-ctr-${idx}" role="img" aria-label="CTR diario de ${doc.name}">CTR diario en porcentaje.</canvas></div></div>
       <div class="chart-card full"><div class="chart-title">Gasto vs clics por día</div><div class="chart-wrap" style="height:180px"><canvas id="chart-combo-${idx}" role="img" aria-label="Gasto y clics por día">Gasto y clics por día.</canvas></div></div>
@@ -763,6 +783,24 @@ function renderCharts(doc, idx) {
     if (!canvas) return;
     charts[id] = new Chart(canvas, { type, data, options: { ...defaults, ...opts } });
   };
+
+  const convSeries = convSeriesForDoctor(doc);
+  if (convSeries) {
+    makeChart(`chart-conv-${idx}`, 'bar', {
+      labels: convSeries.labels,
+      datasets: [
+        { type: 'bar', label: 'Conversaciones', data: convSeries.convs, backgroundColor: 'rgba(74,222,128,0.55)', borderRadius: 4, yAxisID: 'y' },
+        { type: 'line', label: 'Costo por conversación', data: convSeries.costo, borderColor: '#F6D269', borderWidth: 2, tension: 0.3, pointRadius: 4, pointBackgroundColor: '#F6D269', spanGaps: true, yAxisID: 'y1' }
+      ]
+    }, {
+      plugins: { legend: { display: true, labels: { color: '#888580', font: { size: 11 }, boxWidth: 10 } }, tooltip: { mode: 'index', intersect: false } },
+      scales: {
+        x: defaults.scales.x,
+        y: { ...defaults.scales.y, position: 'left', ticks: { ...defaults.scales.y.ticks, precision: 0 } },
+        y1: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: '#F6D269', font: { size: 11 }, callback: v => '$'+v } }
+      }
+    });
+  }
 
   makeChart(`chart-spend-${idx}`, 'bar', {
     labels,
