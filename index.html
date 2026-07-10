@@ -335,6 +335,12 @@ const TIPO_LABELS = { landing: 'Vistas de landing', video: 'ThruPlays', mensajes
 const TIPO_NAMES  = { landing: 'Landing', video: 'Video', mensajes: 'Mensajes', leads: 'Leads' };
 const COSTO_UNIT  = { landing: 'por vista', video: 'por ThruPlay', mensajes: 'por conversación', leads: 'por lead' };
 
+// Etiquetas en español de a pie para la vista de cliente (?doctor=)
+const TIPO_LABELS_CLIENT = { landing: 'Visitas a tu página', video: 'Videos vistos completos', mensajes: 'Personas que escribieron por WhatsApp', leads: 'Personas interesadas' };
+const COSTO_UNIT_CLIENT  = { landing: 'por visita', video: 'por video completo', mensajes: 'por conversación', leads: 'por interesado' };
+const lblTipo  = t => (CLIENT_MODE ? TIPO_LABELS_CLIENT[t] : TIPO_LABELS[t]) || 'Resultados';
+const lblCosto = t => (CLIENT_MODE ? COSTO_UNIT_CLIENT[t] : COSTO_UNIT[t]) || 'por resultado';
+
 let allData = null;
 let charts = {};
 let activeTab = 'overview';
@@ -656,12 +662,44 @@ function buildOverview() {
   return div;
 }
 
+/* ── Resumen narrativo del periodo ───────────────────── */
+function buildNarrative(doc) {
+  const hist = inRange(doc.history);
+  const spend = hist.reduce((a,b)=>a+b.spend,0);
+  if (spend <= 0) return '';
+
+  const tu = CLIENT_MODE;
+  let partes = [`Del ${fmtDate(range.from)} al ${fmtDate(range.to)} ${tu ? 'invertiste' : 'se invirtieron'} <b>${MXN(spend)}</b>`];
+
+  // Conversaciones (la métrica de dinero)
+  let convs = 0, spendMsj = 0;
+  (doc.campaigns||[]).filter(c=>c.tipo==='mensajes').forEach(c => inRange(c.history).forEach(e => { convs += (e.resultado||0); spendMsj += e.spend; }));
+  if (convs > 0) partes.push(`<b>${NUM(convs)} persona${convs===1?'':'s'}</b> ${tu ? 'te escribieron' : 'escribieron'} por WhatsApp, cada una costó <b>${MXN2(spendMsj/convs)}</b>`);
+
+  // Visitas a la página
+  let visitas = 0, spendLp = 0;
+  (doc.campaigns||[]).filter(c=>c.tipo==='landing').forEach(c => inRange(c.history).forEach(e => { visitas += (e.resultado||0); spendLp += e.spend; }));
+  if (visitas > 0) partes.push(`${tu ? 'tu página recibió' : 'la página recibió'} <b>${NUM(visitas)} visitas</b> (${MXN2(spendLp/visitas)} cada una)`);
+
+  // Videos completos
+  let videos = 0;
+  (doc.campaigns||[]).filter(c=>c.tipo==='video').forEach(c => inRange(c.history).forEach(e => { videos += (e.resultado||0); }));
+  if (videos > 0) partes.push(`<b>${NUM(videos)} personas</b> vieron ${tu ? 'tus' : 'los'} videos completos`);
+
+  let texto;
+  if (partes.length === 1) texto = partes[0] + '.';
+  else if (partes.length === 2) texto = partes[0] + ' y ' + partes[1] + '.';
+  else texto = partes[0] + ', ' + partes.slice(1,-1).join(', ') + ' y ' + partes[partes.length-1] + '.';
+
+  return `<div class="chart-card" style="margin-bottom:1.5rem; border-left:3px solid ${doc.color}"><div style="font-size:15px; line-height:1.7">${texto}</div></div>`;
+}
+
 /* ── Tarjetas de campañas activas ────────────────────── */
 function buildCampaignCards(doc) {
   const camps = (doc.campaigns||[]).filter(c => inRange(c.history).some(e => e.spend > 0));
   if (!camps.length) return '';
 
-  let html = '<p class="section-title">Campañas activas — cada una medida por su objetivo</p><div class="campaign-grid">';
+  let html = `<p class="section-title">${CLIENT_MODE ? 'Tus campañas — qué está logrando cada una' : 'Campañas activas — cada una medida por su objetivo'}</p><div class="campaign-grid">`;
 
   camps.forEach(c => {
     const hist = inRange(c.history);
@@ -671,32 +709,35 @@ function buildCampaignCards(doc) {
     const activeDays = hist.filter(e=>e.spend>0);
     const avgCtr = activeDays.length ? activeDays.reduce((a,b)=>a+b.ctr,0)/activeDays.length : 0;
     const lastFreq = activeDays.length ? activeDays[activeDays.length-1].frecuencia : 0;
-    const label = TIPO_LABELS[c.tipo] || 'Resultados';
-    const unit = COSTO_UNIT[c.tipo] || 'por resultado';
+    const label = lblTipo(c.tipo);
+    const unit = lblCosto(c.tipo);
     const costoFmt = costo >= 1 ? MXN2(costo) : '$' + costo.toFixed(2);
 
     let extras = '';
     if (c.tipo === 'video') {
       const last = activeDays[activeDays.length-1] || {};
-      if (last.hook_rate != null) extras += `<div class="extra-pill">Hook rate <b>${last.hook_rate.toFixed(1)}%</b></div>`;
-      if (last.retencion_completa != null) extras += `<div class="extra-pill">Retención 100% <b>${last.retencion_completa.toFixed(1)}%</b></div>`;
+      if (last.hook_rate != null) {
+        const ok = last.hook_rate >= 30;
+        extras += `<div class="${ok?'extra-pill':'alert-pill'}">${CLIENT_MODE?'Enganche en 3 seg':'Hook rate'} <b>${last.hook_rate.toFixed(1)}%</b> ${ok?'· bueno (>30%)':'· bajo — cambiar inicio del video'}</div>`;
+      }
+      if (last.retencion_completa != null) extras += `<div class="extra-pill">${CLIENT_MODE?'Lo vieron completo':'Retención 100%'} <b>${last.retencion_completa.toFixed(1)}%</b></div>`;
     }
     if (c.tipo === 'landing') {
       const last = activeDays[activeDays.length-1] || {};
       if (last.tasa_aterrizaje != null) {
         const ok = last.tasa_aterrizaje >= 80;
-        extras += `<div class="${ok?'extra-pill':'alert-pill'}">Aterrizaje <b>${last.tasa_aterrizaje.toFixed(0)}%</b>${ok?'':' — revisar landing'}</div>`;
+        extras += `<div class="${ok?'extra-pill':'alert-pill'}">${CLIENT_MODE?'Clics que sí llegaron a la página':'Aterrizaje'} <b>${last.tasa_aterrizaje.toFixed(0)}%</b> ${ok?'· bueno (>80%)':'— revisar velocidad de la página'}</div>`;
       }
     }
     if (c.tipo === 'mensajes') {
       const clicksTot = hist.reduce((a,b)=>a+(b.clicks||0),0);
       if (clicksTot > 0 && resultado > 0) {
-        extras += `<div class="extra-pill">Clic→Conv <b>${(resultado/clicksTot*100).toFixed(1)}%</b></div>`;
+        extras += `<div class="extra-pill">${CLIENT_MODE?'De los que dan clic, escriben':'Clic→Conv'} <b>${(resultado/clicksTot*100).toFixed(1)}%</b></div>`;
       }
     }
-    extras += `<div class="extra-pill">CTR <b>${PCT(avgCtr)}</b></div>`;
-    if (lastFreq > 2.5) extras += `<div class="alert-pill">Frecuencia ${lastFreq.toFixed(1)} — saturación, rotar creativo</div>`;
-    else if (lastFreq > 0) extras += `<div class="ok-pill">Frecuencia ${lastFreq.toFixed(1)}</div>`;
+    extras += `<div class="extra-pill">${CLIENT_MODE?'De 100 que lo ven, dan clic':'CTR'} <b>${avgCtr.toFixed(1)}${CLIENT_MODE?'':'%'}</b>${CLIENT_MODE?'':' · sano >2.5%'}</div>`;
+    if (lastFreq > 2.5) extras += `<div class="alert-pill">${CLIENT_MODE?'Cada persona lo vio':'Frecuencia'} ${lastFreq.toFixed(1)} veces — hora de renovar el anuncio</div>`;
+    else if (lastFreq > 0) extras += `<div class="ok-pill">${CLIENT_MODE?'Cada persona lo vio':'Frecuencia'} ${lastFreq.toFixed(1)}${CLIENT_MODE?' veces':''} · sano (ideal <2.5)</div>`;
 
     html += `<div class="campaign-card">
       <div class="campaign-head">
@@ -752,39 +793,43 @@ function buildDoctorPanel(doc, idx) {
   const icons = { rentable:'✓', ajustar:'⚠', fuera:'✕', 'sin-datos':'—' };
   const tag = cpaInfo.real ? '<span class="tag">datos reales</span>' : (cpaInfo.cpa>0 ? '<span class="tag">estimación</span>' : '');
 
+  const impressionsTot = hist.reduce((a,b)=>a+(b.impressions||0),0);
+
   let html = `
+    ${buildNarrative(doc)}
     ${CLIENT_MODE ? '' : `<div class="cpa-banner ${estadoClass}">${icons[estadoClass]} ${estadoText} ${tag}</div>`}
     ${buildCampaignCards(doc)}
-    <p class="section-title">Totales de la cuenta en el periodo</p>
+    <p class="section-title">${CLIENT_MODE ? 'Totales del periodo' : 'Totales de la cuenta en el periodo'}</p>
     <div class="kpi-grid">
       <div class="kpi">
-        <div class="kpi-label">Gasto</div>
+        <div class="kpi-label">${CLIENT_MODE ? 'Inversión' : 'Gasto'}</div>
         <div class="kpi-value" style="color:${doc.color}">${MXN(spend)}</div>
         <div class="kpi-delta ${deltaClass(spendDelta)}">${prevSpend>0 ? deltaArrow(spendDelta)+' '+Math.abs(spendDelta).toFixed(1)+'% vs periodo anterior' : '—'}</div>
       </div>
-      <div class="kpi"><div class="kpi-label">Clics</div><div class="kpi-value">${NUM(clicks)}</div><div class="kpi-delta flat">—</div></div>
-      <div class="kpi"><div class="kpi-label">CTR promedio</div><div class="kpi-value">${PCT(avgCtr)}</div><div class="kpi-delta ${avgCtr >= 2.5 ? 'up':'down'}">${avgCtr >= 2.5 ? '▲ Bueno':'▼ Bajo'}</div></div>
-      <div class="kpi"><div class="kpi-label">CPM promedio</div><div class="kpi-value">${MXN(avgCpm)}</div><div class="kpi-delta flat">MXN por mil</div></div>
+      ${CLIENT_MODE ? `<div class="kpi"><div class="kpi-label">Veces que se mostró tu anuncio</div><div class="kpi-value">${NUM(impressionsTot)}</div><div class="kpi-delta flat">impresiones</div></div>` : ''}
+      <div class="kpi"><div class="kpi-label">${CLIENT_MODE ? 'Clics en tus anuncios' : 'Clics'}</div><div class="kpi-value">${NUM(clicks)}</div><div class="kpi-delta flat">—</div></div>
+      <div class="kpi"><div class="kpi-label">${CLIENT_MODE ? 'De cada 100 que lo ven, dan clic' : 'CTR promedio'}</div><div class="kpi-value">${CLIENT_MODE ? avgCtr.toFixed(1) : PCT(avgCtr)}</div><div class="kpi-delta ${avgCtr >= 2.5 ? 'up':'down'}">${avgCtr >= 2.5 ? '▲ Bueno':'▼ Bajo'} · sano: más de 2.5</div></div>
+      ${CLIENT_MODE ? '' : `<div class="kpi"><div class="kpi-label">CPM promedio</div><div class="kpi-value">${MXN(avgCpm)}</div><div class="kpi-delta flat">MXN por mil impresiones</div></div>`}
       ${!CLIENT_MODE && mainCpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA máx. ${mainProcedure}</div><div class="kpi-value">${MXN(mainCpa)}</div><div class="kpi-delta flat">objetivo</div></div>` : ''}
       ${!CLIENT_MODE && cpaInfo.cpa > 0 ? `<div class="kpi"><div class="kpi-label">CPA ${cpaInfo.real?'real':'est.'}</div><div class="kpi-value" style="color:${mainCpa>0 ? (cpaInfo.cpa<=mainCpa?'var(--green)':cpaInfo.cpa<=mainCpa*2?'var(--yellow)':'var(--red)') : 'var(--text)'}">${MXN(cpaInfo.cpa)}</div><div class="kpi-delta flat">${cpaInfo.real ? cpaInfo.convs + ' conversaciones' : 'estimado'}</div></div>` : ''}
       ${CLIENT_MODE && cpaInfo.real ? `<div class="kpi"><div class="kpi-label">Conversaciones WhatsApp</div><div class="kpi-value" style="color:var(--green)">${NUM(cpaInfo.convs)}</div><div class="kpi-delta flat">a ${MXN2(cpaInfo.costoConv)} c/u</div></div>` : ''}
     </div>
     <div class="charts-grid">
-      ${convSeriesForDoctor(doc) ? `<div class="chart-card full"><div class="chart-title">Conversaciones de WhatsApp vs costo por conversación — la métrica de dinero</div><div class="chart-wrap" style="height:200px"><canvas id="chart-conv-${idx}" role="img" aria-label="Conversaciones y costo por conversación de ${doc.name}">Conversaciones diarias y su costo.</canvas></div></div>` : ''}
-      <div class="chart-card"><div class="chart-title">Gasto diario (MXN)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-spend-${idx}" role="img" aria-label="Gasto diario de ${doc.name}">Gasto diario en MXN.</canvas></div></div>
-      <div class="chart-card"><div class="chart-title">CTR diario (%)</div><div class="chart-wrap" style="height:180px"><canvas id="chart-ctr-${idx}" role="img" aria-label="CTR diario de ${doc.name}">CTR diario en porcentaje.</canvas></div></div>
-      <div class="chart-card full"><div class="chart-title">Gasto vs clics por día</div><div class="chart-wrap" style="height:180px"><canvas id="chart-combo-${idx}" role="img" aria-label="Gasto y clics por día">Gasto y clics por día.</canvas></div></div>
+      ${convSeriesForDoctor(doc) ? `<div class="chart-card full"><div class="chart-title">${CLIENT_MODE ? 'Personas que escribieron por WhatsApp y costo por cada una' : 'Conversaciones de WhatsApp vs costo por conversación — la métrica de dinero'}</div><div class="chart-wrap" style="height:200px"><canvas id="chart-conv-${idx}" role="img" aria-label="Conversaciones y costo por conversación de ${doc.name}">Conversaciones diarias y su costo.</canvas></div></div>` : ''}
+      <div class="chart-card"><div class="chart-title">${CLIENT_MODE ? 'Inversión por día (MXN)' : 'Gasto diario (MXN)'}</div><div class="chart-wrap" style="height:180px"><canvas id="chart-spend-${idx}" role="img" aria-label="Gasto diario de ${doc.name}">Gasto diario en MXN.</canvas></div></div>
+      <div class="chart-card"><div class="chart-title">${CLIENT_MODE ? '% de personas que dan clic, por día' : 'CTR diario (%)'}</div><div class="chart-wrap" style="height:180px"><canvas id="chart-ctr-${idx}" role="img" aria-label="CTR diario de ${doc.name}">CTR diario en porcentaje.</canvas></div></div>
+      <div class="chart-card full"><div class="chart-title">${CLIENT_MODE ? 'Inversión vs clics por día' : 'Gasto vs clics por día'}</div><div class="chart-wrap" style="height:180px"><canvas id="chart-combo-${idx}" role="img" aria-label="Gasto y clics por día">Gasto y clics por día.</canvas></div></div>
     </div>
     <div class="table-card">
       <div class="table-header">Desglose día a día — ${fmtDate(range.from)} a ${fmtDate(range.to)}</div>
       <div style="overflow-x:auto">
       <table>
-        <thead><tr><th>Fecha</th><th>Gasto</th><th>Clics</th><th>CTR</th><th>CPM</th><th>CPC</th><th>Estado</th></tr></thead>
+        <thead><tr><th>Fecha</th><th>${CLIENT_MODE?'Inversión':'Gasto'}</th><th>Clics</th><th>${CLIENT_MODE?'% clic':'CTR'}</th><th>${CLIENT_MODE?'Costo × mil vistas':'CPM'}</th><th>${CLIENT_MODE?'Costo por clic':'CPC'}</th><th>Estado</th></tr></thead>
         <tbody>`;
 
   hist.slice().reverse().forEach(d => {
     const noData = d.spend === 0;
-    let badge = noData ? '<span class="badge badge-gray">Sin actividad</span>' : (d.ctr >= 2.5 ? '<span class="badge badge-green">CTR sano</span>' : '<span class="badge badge-yellow">CTR bajo</span>');
+    let badge = noData ? '<span class="badge badge-gray">Sin actividad</span>' : (d.ctr >= 2.5 ? `<span class="badge badge-green">${CLIENT_MODE?'Buen día':'CTR sano'}</span>` : `<span class="badge badge-yellow">${CLIENT_MODE?'Día flojo':'CTR bajo'}</span>`);
     html += `<tr>
       <td>${d.date}</td>
       <td>${noData ? '—' : MXN(d.spend)}</td>
