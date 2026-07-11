@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-10T03:06:32-06:00",
+  "updated_at": "2026-07-11T03:05:52-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -256,6 +256,18 @@
           "cpc": 0.99,
           "messages": 8,
           "cpa_est": 19721
+        },
+        {
+          "date": "2026-07-10",
+          "spend": 147.64,
+          "impressions": 4005,
+          "reach": 3324,
+          "clicks": 167,
+          "cpm": 36.86,
+          "ctr": 4.17,
+          "cpc": 0.88,
+          "messages": 4,
+          "cpa_est": 36910
         }
       ],
       "campaigns": [
@@ -371,6 +383,18 @@
               "frecuencia": 1.19,
               "link_clicks": 119,
               "tasa_aterrizaje": 90.8
+            },
+            {
+              "date": "2026-07-10",
+              "spend": 76.19,
+              "resultado": 113,
+              "costo_resultado": 0.67,
+              "impressions": 2985,
+              "clicks": 137,
+              "ctr": 4.59,
+              "frecuencia": 1.19,
+              "link_clicks": 124,
+              "tasa_aterrizaje": 91.1
             }
           ]
         },
@@ -514,6 +538,17 @@
               "ctr": 3.21,
               "frecuencia": 1.25,
               "tasa_conversacion": 23.5
+            },
+            {
+              "date": "2026-07-10",
+              "spend": 71.45,
+              "resultado": 4,
+              "costo_resultado": 17.86,
+              "impressions": 1020,
+              "clicks": 30,
+              "ctr": 2.94,
+              "frecuencia": 1.2,
+              "tasa_conversacion": 13.3
             }
           ]
         }
@@ -765,6 +800,18 @@
           "cpc": 0.93,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-10",
+          "spend": 56.48,
+          "impressions": 1674,
+          "reach": 1178,
+          "clicks": 47,
+          "cpm": 33.74,
+          "ctr": 2.81,
+          "cpc": 1.2,
+          "messages": 6,
+          "cpa_est": 9413
         }
       ],
       "campaigns": [
@@ -884,6 +931,17 @@
               "ctr": 3.21,
               "frecuencia": 1.35,
               "tasa_conversacion": 0.0
+            },
+            {
+              "date": "2026-07-10",
+              "spend": 56.48,
+              "resultado": 6,
+              "costo_resultado": 9.41,
+              "impressions": 1674,
+              "clicks": 47,
+              "ctr": 2.81,
+              "frecuencia": 1.42,
+              "tasa_conversacion": 12.8
             }
           ]
         }
@@ -897,27 +955,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-09",
+    "date": "2026-07-10",
     "alertas": [
       {
         "nivel": "amarillo",
-        "doctor": "Dr. Andrei",
-        "texto": "Cuenta casi detenida: gasto cayó a $17.64 (−76% vs promedio 7d) y la campaña nueva \"WhatsApp Mensajes\" generó 0 conversaciones con 19 clics. Las campañas de Carrusel dejaron de gastar."
+        "doctor": "Dr. Moreno",
+        "texto": "Conversaciones cayeron a 4 (vs 8 el 9-jul y 26–31 a inicios de julio). En \"Videos a WPP Lipoescultura\" el costo por conversación subió a $17.86 (+30% vs promedio 7d $13.69). Aun así el CPA estimado (~$238) sigue muy por debajo del objetivo $6,450."
       },
       {
         "nivel": "amarillo",
-        "doctor": "Dr. Moreno",
-        "texto": "Conversaciones bajaron a 8 (vs 13 el 8-jul y 26–31 a inicios de julio), aunque el costo por conversación mejoró a $11.02."
+        "doctor": "Dr. Andrei",
+        "texto": "Gasto sigue bajo: $56.48 (−6% vs promedio 7d). Lado positivo: \"WhatsApp Mensajes\" se recuperó con 6 conversaciones a $9.41 c/u tras 0 el día anterior."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Reforzar presupuesto en \"Videos a WPP Lipoescultura\": mejor costo por conversación ($11.02) y CPA ~$147 vs objetivo $6,450 — muy rentable. Recuperar el volumen de mensajes perdido."
+        "texto": "Subir presupuesto en \"Videos a WPP Lipoescultura\" para recuperar volumen de mensajes: solo 4 conversaciones ayer vs 8–9 la semana pasada. El CPA sigue muy rentable (~$238 vs objetivo $6,450). \"Campaña ICP MANGA G.\" va sólida: 113 vistas de landing a $0.67 y tasa de aterrizaje 91%."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Revisar activación/presupuesto de la nueva \"WhatsApp Mensajes\" (0 conversaciones en $17.64) o reactivar \"Carrusel - Copia\" que traía resultados baratos. La cuenta está prácticamente parada."
+        "texto": "Mantener y escalar gradualmente \"WhatsApp Mensajes | Dr Andrei | Tuxtla\": es la única campaña activa y ya produce 6 conversaciones a $9.41 (CPA estimado ~$125). Subir presupuesto para aprovechar la recuperación."
       }
     ]
   }
