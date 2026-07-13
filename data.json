@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T05:19:24-06:00",
+  "updated_at": "2026-07-13T03:06:23-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -280,6 +280,18 @@
           "cpc": 0.76,
           "messages": 6,
           "cpa_est": 22808
+        },
+        {
+          "date": "2026-07-12",
+          "spend": 45.43,
+          "impressions": 1355,
+          "reach": 1189,
+          "clicks": 51,
+          "cpm": 33.53,
+          "ctr": 3.76,
+          "cpc": 0.89,
+          "messages": 2,
+          "cpa_est": 22715
         }
       ],
       "campaigns": [
@@ -419,6 +431,18 @@
               "frecuencia": 1.22,
               "link_clicks": 125,
               "tasa_aterrizaje": 91.2
+            },
+            {
+              "date": "2026-07-12",
+              "spend": 24.86,
+              "resultado": 38,
+              "costo_resultado": 0.65,
+              "impressions": 1049,
+              "clicks": 41,
+              "ctr": 3.91,
+              "frecuencia": 1.14,
+              "link_clicks": 39,
+              "tasa_aterrizaje": 97.4
             }
           ]
         },
@@ -584,6 +608,17 @@
               "ctr": 3.31,
               "frecuencia": 1.19,
               "tasa_conversacion": 15.8
+            },
+            {
+              "date": "2026-07-12",
+              "spend": 20.57,
+              "resultado": 2,
+              "costo_resultado": 10.29,
+              "impressions": 306,
+              "clicks": 10,
+              "ctr": 3.27,
+              "frecuencia": 1.11,
+              "tasa_conversacion": 20.0
             }
           ]
         }
@@ -859,6 +894,18 @@
           "cpc": 1.63,
           "messages": 9,
           "cpa_est": 18456
+        },
+        {
+          "date": "2026-07-12",
+          "spend": 132.47,
+          "impressions": 1986,
+          "reach": 1131,
+          "clicks": 51,
+          "cpm": 66.7,
+          "ctr": 2.57,
+          "cpc": 2.6,
+          "messages": 5,
+          "cpa_est": 26494
         }
       ],
       "campaigns": [
@@ -1000,6 +1047,17 @@
               "ctr": 2.59,
               "frecuencia": 1.48,
               "tasa_conversacion": 8.8
+            },
+            {
+              "date": "2026-07-12",
+              "spend": 132.47,
+              "resultado": 5,
+              "costo_resultado": 26.49,
+              "impressions": 1986,
+              "clicks": 51,
+              "ctr": 2.57,
+              "frecuencia": 1.76,
+              "tasa_conversacion": 9.8
             }
           ]
         }
@@ -1013,27 +1071,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-11",
+    "date": "2026-07-12",
     "alertas": [
       {
-        "nivel": "amarillo",
-        "doctor": "Dr. Andrei",
-        "texto": "Costo por conversación subió a $18.46 (+96% vs $9.41 del 10-jul) al triplicar el gasto a $166.10. El volumen respondió bien (9 conversaciones, máximo reciente), pero el CPC subió a $1.63 y el CTR bajó a 2.59%. Vigilar eficiencia si se mantiene el gasto alto."
+        "nivel": "rojo",
+        "doctor": "Dr. Moreno",
+        "texto": "Las 2 campañas que gastaron ayer (\"Campaña ICP MANGA G.\" y \"Videos a WPP Lipoescultura\") aparecen ahora PAUSADAS. La cuenta solo gastó $45.43 (-73% vs promedio 7d $166) y el alcance cayó a 1,189 personas. Reactivar si la pausa no fue intencional: ambas venían rindiendo bien."
       },
       {
         "nivel": "amarillo",
-        "doctor": "Dr. Moreno",
-        "texto": "Alcance de cuenta sigue bajo: 3,166 personas (frente a 8,000–12,000 a inicios de julio). El CPM está elevado en $35.20. Lado positivo: el CTR subió a 4.60% (+16% vs 7d) y las conversaciones se recuperaron a 6 (vs 4 el 10-jul)."
+        "doctor": "Dr. Andrei",
+        "texto": "Costo por conversación subió a $26.49 (+90% vs promedio reciente ~$14), tercer día al alza ($9.41→$18.46→$26.49). Frecuencia en 1.76 y CPM alto en $66.70. El volumen bajó a 5 conversaciones (vs 9 el 11-jul). Revisar creativo/segmentación antes de sostener el gasto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Ampliar audiencia o subir presupuesto para recuperar alcance (3,166 personas, CPM $35.20 alto por audiencia estrecha). \"Videos a WPP Lipoescultura\" mejoró: 6 conversaciones a $11.23 c/u (CPA real ~$150 vs objetivo $6,450, muy RENTABLE). \"Campaña ICP MANGA G.\" sólida: 114 vistas de landing a $0.61 y aterrizaje 91%."
+        "texto": "Reactivar las campañas pausadas si el corte no fue deliberado; el gasto y alcance se desplomaron por la pausa. Rendimiento previo sólido: \"Campaña ICP MANGA G.\" 38 vistas de landing a $0.65 y aterrizaje 97%; \"Videos a WPP Lipoescultura\" mejoró a $10.29 por conversación (CPA real ~$137 vs objetivo $6,450, muy RENTABLE)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "El escalado funcionó en volumen (9 conversaciones ayer vs 6), pero el costo por conversación casi se duplicó a $18.46. Sostener el gasto 2–3 días para ver si el algoritmo estabiliza el costo; si sigue subiendo el CPC ($1.63), revisar creativo y segmentación antes de escalar más."
+        "texto": "Frenar el escalado: el costo por conversación se disparó a $26.49 (CPA real ~$353) con frecuencia subiendo a 1.76 y CPM en $66.70 — señales de saturación de audiencia. Refrescar creativo y ampliar segmentación antes de volver a subir presupuesto."
       }
     ]
   }
