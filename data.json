@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13T03:06:23-06:00",
+  "updated_at": "2026-07-14T03:05:48-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -292,6 +292,18 @@
           "cpc": 0.89,
           "messages": 2,
           "cpa_est": 22715
+        },
+        {
+          "date": "2026-07-13",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -906,6 +918,18 @@
           "cpc": 2.6,
           "messages": 5,
           "cpa_est": 26494
+        },
+        {
+          "date": "2026-07-13",
+          "spend": 107.28,
+          "impressions": 1396,
+          "reach": 669,
+          "clicks": 26,
+          "cpm": 76.85,
+          "ctr": 1.86,
+          "cpc": 4.13,
+          "messages": 1,
+          "cpa_est": 107280
         }
       ],
       "campaigns": [
@@ -1058,6 +1082,17 @@
               "ctr": 2.57,
               "frecuencia": 1.76,
               "tasa_conversacion": 9.8
+            },
+            {
+              "date": "2026-07-13",
+              "spend": 107.28,
+              "resultado": 1,
+              "costo_resultado": 107.28,
+              "impressions": 1396,
+              "clicks": 26,
+              "ctr": 1.86,
+              "frecuencia": 2.09,
+              "tasa_conversacion": 3.8
             }
           ]
         }
@@ -1071,27 +1106,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-12",
+    "date": "2026-07-13",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "Las 2 campañas que gastaron ayer (\"Campaña ICP MANGA G.\" y \"Videos a WPP Lipoescultura\") aparecen ahora PAUSADAS. La cuenta solo gastó $45.43 (-73% vs promedio 7d $166) y el alcance cayó a 1,189 personas. Reactivar si la pausa no fue intencional: ambas venían rindiendo bien."
+        "texto": "SIN ACTIVIDAD: la cuenta no gastó nada ayer (0 impresiones, 0 clics), segundo día a la baja tras el corte del 12-jul. Las campañas rentables siguen PAUSADAS: \"Campaña ICP MANGA G.\" (landing a ~$0.65/vista) y \"Videos a WPP Lipoescultura\" ($10-17 por conversación). Reactivar hoy si la pausa no fue intencional."
       },
       {
-        "nivel": "amarillo",
+        "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "Costo por conversación subió a $26.49 (+90% vs promedio reciente ~$14), tercer día al alza ($9.41→$18.46→$26.49). Frecuencia en 1.76 y CPM alto en $66.70. El volumen bajó a 5 conversaciones (vs 9 el 11-jul). Revisar creativo/segmentación antes de sostener el gasto."
+        "texto": "Costo por conversación se disparó a $107.28 (1 sola conversación con $107.28 de gasto), cuarto día consecutivo al alza ($9.41→$18.46→$26.49→$107.28, +305% vs promedio 7d ~$18). CPM récord en $76.85 y frecuencia 2.09. Señal clara de fatiga de creativo. Pausar o refrescar creativo y ampliar audiencia."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Reactivar las campañas pausadas si el corte no fue deliberado; el gasto y alcance se desplomaron por la pausa. Rendimiento previo sólido: \"Campaña ICP MANGA G.\" 38 vistas de landing a $0.65 y aterrizaje 97%; \"Videos a WPP Lipoescultura\" mejoró a $10.29 por conversación (CPA real ~$137 vs objetivo $6,450, muy RENTABLE)."
+        "texto": "Reactivar hoy las campañas pausadas si el corte no fue deliberado: la cuenta lleva 0 gasto y 0 impresiones. Rendimiento previo sólido — landing a ~$0.65/vista con aterrizaje ~95% y WPP a $10-17 por conversación (CPA real muy por debajo del objetivo $6,450 de Lipoescultura, RENTABLE)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Frenar el escalado: el costo por conversación se disparó a $26.49 (CPA real ~$353) con frecuencia subiendo a 1.76 y CPM en $66.70 — señales de saturación de audiencia. Refrescar creativo y ampliar segmentación antes de volver a subir presupuesto."
+        "texto": "Pausar temporalmente \"WhatsApp Mensajes | Tuxtla\": 1 conversación por $107.28 (CPA real estimado ~$1,430) es insostenible. CPM $76.85 y frecuencia 2.09 indican saturación. Refrescar creativo y ampliar segmentación antes de reanudar el gasto."
       }
     ]
   }
