@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T03:05:48-06:00",
+  "updated_at": "2026-07-20T03:05:56-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -304,9 +304,40 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-19",
+          "spend": 126.8,
+          "impressions": 1271,
+          "reach": 1066,
+          "clicks": 65,
+          "cpm": 99.76,
+          "ctr": 5.11,
+          "cpc": 1.95,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
+        {
+          "id": "120252968553840427",
+          "name": "Campaña de tráfico",
+          "tipo": "landing",
+          "history": [
+            {
+              "date": "2026-07-19",
+              "spend": 126.8,
+              "resultado": 70,
+              "costo_resultado": 1.81,
+              "impressions": 1271,
+              "clicks": 65,
+              "ctr": 5.11,
+              "frecuencia": 1.19,
+              "link_clicks": 67,
+              "tasa_aterrizaje": null
+            }
+          ]
+        },
         {
           "id": "120252353136110427",
           "name": "Campaña ICP MANGA G.",
@@ -930,6 +961,18 @@
           "cpc": 4.13,
           "messages": 1,
           "cpa_est": 107280
+        },
+        {
+          "date": "2026-07-19",
+          "spend": 86.64,
+          "impressions": 2705,
+          "reach": 1830,
+          "clicks": 62,
+          "cpm": 32.03,
+          "ctr": 2.29,
+          "cpc": 1.4,
+          "messages": 4,
+          "cpa_est": 21660
         }
       ],
       "campaigns": [
@@ -1093,6 +1136,17 @@
               "ctr": 1.86,
               "frecuencia": 2.09,
               "tasa_conversacion": 3.8
+            },
+            {
+              "date": "2026-07-19",
+              "spend": 86.66,
+              "resultado": 4,
+              "costo_resultado": 21.67,
+              "impressions": 2706,
+              "clicks": 62,
+              "ctr": 2.29,
+              "frecuencia": 1.48,
+              "tasa_conversacion": 6.5
             }
           ]
         }
@@ -1106,27 +1160,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-13",
+    "date": "2026-07-19",
     "alertas": [
       {
-        "nivel": "rojo",
+        "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "SIN ACTIVIDAD: la cuenta no gastó nada ayer (0 impresiones, 0 clics), segundo día a la baja tras el corte del 12-jul. Las campañas rentables siguen PAUSADAS: \"Campaña ICP MANGA G.\" (landing a ~$0.65/vista) y \"Videos a WPP Lipoescultura\" ($10-17 por conversación). Reactivar hoy si la pausa no fue intencional."
+        "texto": "La cuenta reactivó gasto ($126.80) pero SOLO con una campaña de tráfico a perfil de Instagram: 70 visitas de perfil a $1.81 c/u, CTR fuerte 5.11%. El problema: 0 conversaciones de WhatsApp y 0 vistas de landing = 0 leads directos. Las campañas que sí generaban pacientes (WhatsApp Lipoescultura a $10-17/conv, landing ICP a ~$0.65/vista) siguen sin correr. Además el CPM se disparó a $99.76 (vs ~$35 histórico) por volumen muy bajo (1,271 impresiones)."
       },
       {
-        "nivel": "rojo",
+        "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "Costo por conversación se disparó a $107.28 (1 sola conversación con $107.28 de gasto), cuarto día consecutivo al alza ($9.41→$18.46→$26.49→$107.28, +305% vs promedio 7d ~$18). CPM récord en $76.85 y frecuencia 2.09. Señal clara de fatiga de creativo. Pausar o refrescar creativo y ampliar audiencia."
+        "texto": "\"WhatsApp Mensajes | Tuxtla\" se estabilizó: 4 conversaciones a $21.67 c/u tras el pico de $107.28 del 13-jul. CPM bajó a $32.03 y frecuencia sana en 1.48. Tasa de conversación 6.5% (4 conv / 62 clics). CPA real estimado ~$289. Tendencia de recuperación; vigilar que se sostenga por debajo de $25/conversación."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Reactivar hoy las campañas pausadas si el corte no fue deliberado: la cuenta lleva 0 gasto y 0 impresiones. Rendimiento previo sólido — landing a ~$0.65/vista con aterrizaje ~95% y WPP a $10-17 por conversación (CPA real muy por debajo del objetivo $6,450 de Lipoescultura, RENTABLE)."
+        "texto": "Reactivar las campañas de conversión que están detenidas (WhatsApp Lipoescultura y landing ICP MANGA): la campaña de tráfico a perfil genera visitas baratas ($1.81) pero cero conversaciones ni leads. Con solo tráfico a perfil no entra ningún paciente. Revisar por qué el CPM subió a ~$100 (audiencia muy chica / campaña recién reactivada) y ampliar presupuesto/audiencia si el CTR 5.11% se mantiene."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Pausar temporalmente \"WhatsApp Mensajes | Tuxtla\": 1 conversación por $107.28 (CPA real estimado ~$1,430) es insostenible. CPM $76.85 y frecuencia 2.09 indican saturación. Refrescar creativo y ampliar segmentación antes de reanudar el gasto."
+        "texto": "Mantener \"WhatsApp Mensajes | Tuxtla\" activa: se recuperó a $21.67 por conversación (4 ayer) desde el $107 del 13-jul, con CPM y frecuencia ya en rango sano. Escalar presupuesto de forma gradual solo si sostiene <$25/conversación durante 2-3 días; si vuelve a subir el costo, refrescar creativo antes de aumentar gasto."
       }
     ]
   }
