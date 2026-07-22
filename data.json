@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-21T03:05:04-06:00",
+  "updated_at": "2026-07-22T03:05:01-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -328,6 +328,18 @@
           "cpc": 1.45,
           "messages": 2,
           "cpa_est": 76040
+        },
+        {
+          "date": "2026-07-21",
+          "spend": 219.97,
+          "impressions": 2570,
+          "reach": 1936,
+          "clicks": 124,
+          "cpm": 85.59,
+          "ctr": 4.82,
+          "cpc": 1.77,
+          "messages": 4,
+          "cpa_est": 54992
         }
       ],
       "campaigns": [
@@ -359,6 +371,18 @@
               "frecuencia": 1.15,
               "link_clicks": 82,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-21",
+              "spend": 102.85,
+              "resultado": 65,
+              "costo_resultado": 1.58,
+              "impressions": 1308,
+              "clicks": 62,
+              "ctr": 4.74,
+              "frecuencia": 1.11,
+              "link_clicks": 63,
+              "tasa_aterrizaje": null
             }
           ]
         },
@@ -377,6 +401,17 @@
               "ctr": 7.08,
               "frecuencia": 1.32,
               "tasa_conversacion": 8.3
+            },
+            {
+              "date": "2026-07-21",
+              "spend": 117.12,
+              "resultado": 4,
+              "costo_resultado": 29.28,
+              "impressions": 1262,
+              "clicks": 62,
+              "ctr": 4.91,
+              "frecuencia": 1.68,
+              "tasa_conversacion": 6.5
             }
           ]
         },
@@ -1027,6 +1062,18 @@
           "cpc": 1.02,
           "messages": 3,
           "cpa_est": 7153
+        },
+        {
+          "date": "2026-07-21",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1225,27 +1272,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-20",
+    "date": "2026-07-21",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "Buena noticia: reactivó una campaña de conversión (\"Campaña Imagenes Lipoescultura\") que generó 2 conversaciones de WhatsApp a $13.64 c/u con CTR fuerte de 7.08% — muy rentable (CPA estimado ~$182 vs objetivo $6,450). El problema: solo recibió $27.27 de los $152.08 gastados; el 82% del presupuesto ($124.81) siguió yendo a tráfico a perfil de Instagram (84 visitas a $1.49, sin conversaciones directas). Por eso el CPA de cuenta se ve inflado. Además el CPM sigue alto en $82.12 (vs ~$35 histórico) por bajo volumen (1,852 impresiones)."
+        "texto": "Se siguió la recomendación de ayer: el presupuesto se rebalanceó hacia la campaña de conversión \"Imagenes Lipoescultura\" ($117.12 de los $219.97, vs solo $27 el 20-jul) y generó 4 conversaciones de WhatsApp (vs 2 ayer) con CTR fuerte de 4.91%. PERO el costo por conversación subió a $29.28 (de $13.64 el 20-jul, +115%) por el mayor gasto — 🟡 TENDENCIA NEGATIVA en costo por resultado. Aun así sigue MUY rentable: CPA real estimado ~$390 MXN vs objetivo $6,450. El CPM sigue muy alto en $85.59 (audiencia chica: solo 2,570 impresiones, frecuencia 1.33)."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "\"WhatsApp Mensajes | Tuxtla\" tuvo su MEJOR costo en semanas: 3 conversaciones a $7.15 c/u (vs $21.67 el 19-jul y $107 el 13-jul), con frecuencia sana 1.20 y tasa de conversación 14.3%. PERO la campaña quedó EN PAUSA hoy y solo gastó $21.46 — se está frenando justo el mejor día de rendimiento. CPA real estimado ~$95 por cirugía."
+        "texto": "SIN ACTIVIDAD ayer (21-jul): gasto $0, 0 impresiones, ninguna campaña activa entregó. La cuenta lleva frenada justo después de que \"WhatsApp Mensajes | Tuxtla\" lograra su mejor costo ($7.15/conversación el 20-jul). Se está perdiendo momentum en el mejor punto de rendimiento."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Rebalancear presupuesto hacia la campaña de conversión: \"Imagenes Lipoescultura\" convierte a $13.64/conversación (rentable) pero solo recibe $27 mientras $125 van a tráfico a perfil sin conversaciones directas. Subir gradualmente el presupuesto de la campaña de mensajes y reducir el de tráfico. Vigilar el CPM alto ($82) — audiencia muy chica; ampliar audiencia si el CTR 7% se sostiene."
+        "texto": "Mantener el presupuesto en la campaña de conversión \"Imagenes Lipoescultura\" (rentable a $29.28/conversación) pero vigilar que el costo por conversación no siga subiendo — si pasa de $40 revisar creativo/audiencia. Atacar el CPM alto ($85.59): la audiencia es muy chica (2,570 impresiones, frecuencia 1.33 pero CPM inflado por bajo volumen). Ampliar audiencia manteniendo el CTR de ~4.9%."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar \"WhatsApp Mensajes | Tuxtla\": quedó en pausa justo tras lograr su mejor costo ($7.15/conversación, 3 ayer) con frecuencia sana 1.20. Reanudarla y sostener presupuesto estable 2-3 días; si mantiene el costo por debajo de $15/conversación, escalar de forma gradual."
+        "texto": "Reactivar la cuenta HOY: \"WhatsApp Mensajes | Tuxtla\" quedó frenada tras su mejor costo ($7.15/conversación, frecuencia sana 1.20 el 20-jul). Reanudar con presupuesto estable y sostenerlo 2-3 días; si mantiene el costo bajo $15/conversación, escalar gradualmente."
       }
     ]
   }
