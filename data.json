@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T03:05:05-06:00",
+  "updated_at": "2026-07-25T03:05:14-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -364,6 +364,18 @@
           "cpc": 1.72,
           "messages": 3,
           "cpa_est": 61223
+        },
+        {
+          "date": "2026-07-24",
+          "spend": 182.06,
+          "impressions": 2573,
+          "reach": 2078,
+          "clicks": 127,
+          "cpm": 70.76,
+          "ctr": 4.94,
+          "cpc": 1.43,
+          "messages": 6,
+          "cpa_est": 30343
         }
       ],
       "campaigns": [
@@ -431,6 +443,18 @@
               "frecuencia": 1.11,
               "link_clicks": 40,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-24",
+              "spend": 88.17,
+              "resultado": 44,
+              "costo_resultado": 2.00,
+              "impressions": 969,
+              "clicks": 43,
+              "ctr": 4.44,
+              "frecuencia": 1.07,
+              "link_clicks": 44,
+              "tasa_aterrizaje": null
             }
           ]
         },
@@ -482,6 +506,17 @@
               "ctr": 5.08,
               "frecuencia": 1.52,
               "tasa_conversacion": 4.4
+            },
+            {
+              "date": "2026-07-24",
+              "spend": 93.89,
+              "resultado": 6,
+              "costo_resultado": 15.65,
+              "impressions": 1604,
+              "clicks": 84,
+              "ctr": 5.24,
+              "frecuencia": 1.40,
+              "tasa_conversacion": 7.1
             }
           ]
         },
@@ -1168,6 +1203,18 @@
           "cpc": 1.90,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-24",
+          "spend": 56.86,
+          "impressions": 1817,
+          "reach": 1628,
+          "clicks": 57,
+          "cpm": 31.29,
+          "ctr": 3.14,
+          "cpc": 1.00,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1384,6 +1431,18 @@
               "frecuencia": 1.20,
               "link_clicks": 39,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-24",
+              "spend": 56.86,
+              "resultado": 56,
+              "costo_resultado": 1.02,
+              "impressions": 1817,
+              "clicks": 57,
+              "ctr": 3.14,
+              "frecuencia": 1.12,
+              "link_clicks": 59,
+              "tasa_aterrizaje": null
             }
           ]
         }
@@ -1397,27 +1456,22 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-23",
+    "date": "2026-07-24",
     "alertas": [
       {
         "nivel": "amarillo",
-        "doctor": "Dr. Moreno",
-        "texto": "🟡 TENDENCIA NEGATIVA en \"Campaña Imagenes Lipoescultura\": el costo por conversación se disparó a $31.39 (vs ~$19.71 promedio de los 3 días previos, +59%) y las conversaciones cayeron de 6 a 3, con frecuencia 1.52 y CTR aún fuerte 5.08%. AÚN RENTABLE: CPA real estimado ~$419 MXN, muy por debajo del objetivo Lipoescultura ($6,450). El CPM de la cuenta sigue muy alto ($78.96) con audiencia chica (2,326 impresiones). \"Campaña de tráfico\" (ahora visitas al perfil de IG): 41 visitas a $2.18 c/u (+25% vs promedio ~$1.75), gancho de video sano (hook 36%)."
-      },
-      {
-        "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 Tercer día sin generar conversaciones de WhatsApp. La única campaña activa es \"Follow me ADS\" (visitas al perfil de IG: 42 a $1.77 c/u), NO conversión a mensajes. El gancho del video es débil: hook rate 27.4% (<30%). CTR bajo 1.34%→1.79% y CPC $1.90. La cuenta crece perfil pero sin pipeline de valoraciones ni leads de cirugía."
+        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 28.8% (<30%), cambiar los primeros 3 segundos del creativo. Además, 4º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (56 visitas a $1.02 c/u), NO a mensajes. La cuenta crece perfil pero sin pipeline de valoraciones ni leads de cirugía. Positivo: el CTR subió a 3.14% (vs ~2.18% promedio 7d) y el CPC bajó a $1.00."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Revisar HOY \"Imagenes Lipoescultura\": el costo por conversación se duplicó ($16.22→$31.39) y las conversaciones bajaron a la mitad (6→3). Rotar el creativo o ampliar audiencia — el CPM está en $78.96 con solo 2,326 impresiones, señal de audiencia saturada/chica. La campaña sigue siendo la rentable (CPA real ~$419 MXN vs $6,450), así que sostener presupuesto pero refrescar oferta/creativo para recuperar volumen de conversaciones."
+        "texto": "Sostener presupuesto: \"Imagenes Lipoescultura\" se recuperó fuerte — las conversaciones subieron de 3 a 6 y el costo por conversación cayó de $31.39 a $15.65 (-50%), con frecuencia sana 1.40 y CTR 5.24%. CPA real estimado ~$209 MXN, muy por debajo del objetivo Lipoescultura ($6,450): RENTABLE. Único punto a vigilar: el CPM de la cuenta sigue alto ($70.76) con audiencia chica (2,573 impresiones); si el costo por conversación vuelve a subir, ampliar audiencia o refrescar creativo."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar una campaña de mensajes/WhatsApp cuanto antes: llevan 3 días solo creciendo perfil de IG con \"Follow me ADS\" y cero conversaciones de cirugía. Además el video de esa campaña tiene gancho débil (hook 27%): cambiar los primeros 3 segundos del creativo. Sin conversaciones no hay valoraciones ni cirugías en el pipeline."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: llevan 4 días solo creciendo perfil de IG con \"Follow me ADS\" y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video (hook rate 28.8%, debajo del umbral de 30%) para mejorar el gancho. Sin conversaciones no hay valoraciones ni cirugías en el pipeline, aunque el tráfico esté barato ($1.02 por visita al perfil)."
       }
     ]
   }
