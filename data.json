@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26T09:25:00-06:00",
+  "updated_at": "2026-07-27T09:10:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -388,6 +388,18 @@
           "cpc": 1.50,
           "messages": 4,
           "cpa_est": 43143
+        },
+        {
+          "date": "2026-07-26",
+          "spend": 228.95,
+          "impressions": 2982,
+          "reach": 2439,
+          "clicks": 111,
+          "cpm": 76.78,
+          "ctr": 3.72,
+          "cpc": 2.06,
+          "messages": 5,
+          "cpa_est": 45790
         }
       ],
       "campaigns": [
@@ -479,6 +491,18 @@
               "frecuencia": 1.10,
               "link_clicks": 54,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-26",
+              "spend": 107.03,
+              "resultado": 54,
+              "costo_resultado": 1.98,
+              "impressions": 1195,
+              "clicks": 53,
+              "ctr": 4.44,
+              "frecuencia": 1.12,
+              "link_clicks": 54,
+              "tasa_aterrizaje": null
             }
           ]
         },
@@ -552,6 +576,17 @@
               "ctr": 4.35,
               "frecuencia": 1.37,
               "tasa_conversacion": 6.3
+            },
+            {
+              "date": "2026-07-26",
+              "spend": 121.92,
+              "resultado": 5,
+              "costo_resultado": 24.38,
+              "impressions": 1787,
+              "clicks": 58,
+              "ctr": 3.25,
+              "frecuencia": 1.33,
+              "tasa_conversacion": 8.6
             }
           ]
         },
@@ -1262,6 +1297,18 @@
           "cpc": 1.05,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-26",
+          "spend": 74.44,
+          "impressions": 2818,
+          "reach": 2512,
+          "clicks": 51,
+          "cpm": 26.42,
+          "ctr": 1.81,
+          "cpc": 1.46,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1504,6 +1551,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 526,
               "hook_rate": 25.8
+            },
+            {
+              "date": "2026-07-26",
+              "spend": 74.44,
+              "resultado": 57,
+              "costo_resultado": 1.31,
+              "impressions": 2818,
+              "clicks": 51,
+              "ctr": 1.81,
+              "frecuencia": 1.12,
+              "link_clicks": 54,
+              "tasa_aterrizaje": null,
+              "plays_3s": 756,
+              "hook_rate": 26.8
             }
           ]
         }
@@ -1517,22 +1578,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-25",
+    "date": "2026-07-26",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 25.8% (<30% y bajando desde 28.8%), cambiar los primeros 3 segundos del video. Además, 5º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (52 visitas a $1.05 c/u), NO a mensajes. La cuenta sigue creciendo perfil pero sin pipeline de valoraciones ni cirugías. Positivo: costo por visita barato ($1.05) y frecuencia sana (1.09)."
+        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 26.8% (sigue <30%, aunque recuperó desde 25.8%), cambiar los primeros 3 segundos del video. 6º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (57 visitas a $1.31 c/u), NO a mensajes. Positivo: costo por visita barato ($1.31) y frecuencia sana (1.12), pero CTR bajó a 1.81% y no hay pipeline de valoraciones ni cirugías."
+      },
+      {
+        "nivel": "amarillo",
+        "doctor": "Dr. Moreno",
+        "texto": "🟡 CTR de la cuenta cayó a 3.72% (-24% vs promedio 7d de 4.89%) mientras el gasto subió a $228.95 (+32% vs 7d) y el CPM sigue caro ($76.78) sobre audiencia chica (2,982 impresiones, frecuencia 1.33). Vigilar: si el CTR sigue bajando con este CPM, el costo por conversación se encarece rápido."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Sostener y vigilar: \"Imagenes Lipoescultura\" generó 4 conversaciones a $21.83 c/u (tasa de conversación 6.3%), con frecuencia sana 1.37 y CTR 4.35%. CPA real estimado ~$291 MXN, muy por debajo del objetivo Lipoescultura ($6,450): RENTABLE. Bajó de 6 a 4 conversaciones vs ayer y el CPM de la cuenta sigue alto ($70.87) con audiencia chica (2,435 impresiones): si el costo por conversación pasa de $25, ampliar audiencia o refrescar creativo. La \"Campaña de tráfico\" hoy entregó 54 visitas al perfil de IG a $1.58, sin pipeline directo de mensajes."
+        "texto": "Sostener \"Imagenes Lipoescultura\": generó 5 conversaciones a $24.38 c/u (tasa de conversación 8.6%, mejor que el 6.3% de ayer), frecuencia sana 1.33. CPA real ≈ $325 MXN (24.38 ÷ 7.5%), muy por debajo del objetivo Lipoescultura ($6,450): RENTABLE. El gasto de cuenta subió a $228.95 con CPM alto ($76.78) y CTR a la baja (3.72%): ampliar audiencia o refrescar creativo para bajar el CPM antes de que suba el costo por conversación. La \"Campaña de tráfico\" entregó 54 visitas al perfil de IG a $1.98 (más caro que ayer $1.58), sin pipeline directo de mensajes."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: llevan 5 días solo creciendo perfil de IG con \"Follow me ADS\" y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video: el hook rate cayó a 25.8% (debajo del umbral de 30%). Sin conversaciones no hay valoraciones ni cirugías en el pipeline, aunque el tráfico al perfil siga barato ($1.05 por visita)."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 6º día solo creciendo perfil de IG con \"Follow me ADS\" y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video: el hook rate sigue en 26.8% (<30%). El tráfico al perfil es barato ($1.31 por visita, 57 visitas) pero sin mensajes no hay valoraciones ni cirugías en el pipeline. CTR cayó a 1.81%."
       }
     ]
   }
