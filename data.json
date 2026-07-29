@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T03:06:42-06:00",
+  "updated_at": "2026-07-29T03:06:02-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -412,6 +412,18 @@
           "cpc": 1.94,
           "messages": 4,
           "cpa_est": 58125
+        },
+        {
+          "date": "2026-07-28",
+          "spend": 187.68,
+          "impressions": 2291,
+          "reach": 1828,
+          "clicks": 88,
+          "cpm": 81.92,
+          "ctr": 3.84,
+          "cpc": 2.13,
+          "messages": 3,
+          "cpa_est": 62560
         }
       ],
       "campaigns": [
@@ -527,6 +539,18 @@
               "frecuencia": 1.13,
               "link_clicks": 45,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-28",
+              "spend": 95.22,
+              "resultado": 43,
+              "costo_resultado": 2.21,
+              "impressions": 956,
+              "clicks": 38,
+              "ctr": 3.97,
+              "frecuencia": 1.07,
+              "link_clicks": 40,
+              "tasa_aterrizaje": null
             }
           ]
         },
@@ -622,6 +646,17 @@
               "ctr": 4.39,
               "frecuencia": 1.45,
               "tasa_conversacion": 5.2
+            },
+            {
+              "date": "2026-07-28",
+              "spend": 92.46,
+              "resultado": 3,
+              "costo_resultado": 30.82,
+              "impressions": 1335,
+              "clicks": 50,
+              "ctr": 3.75,
+              "frecuencia": 1.41,
+              "tasa_conversacion": 6.0
             }
           ]
         },
@@ -1356,6 +1391,18 @@
           "cpc": 1.28,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-28",
+          "spend": 53.3,
+          "impressions": 1819,
+          "reach": 1657,
+          "clicks": 48,
+          "cpm": 29.3,
+          "ctr": 2.64,
+          "cpc": 1.11,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1626,6 +1673,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 819,
               "hook_rate": 27.9
+            },
+            {
+              "date": "2026-07-28",
+              "spend": 53.3,
+              "resultado": 53,
+              "costo_resultado": 1.01,
+              "impressions": 1819,
+              "clicks": 48,
+              "ctr": 2.64,
+              "frecuencia": 1.1,
+              "link_clicks": 49,
+              "tasa_aterrizaje": null,
+              "plays_3s": 481,
+              "hook_rate": 26.4
             }
           ]
         }
@@ -1639,27 +1700,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-27",
+    "date": "2026-07-28",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "🟡 TENDENCIA NEGATIVA en \"Imagenes Lipoescultura\": costo por conversación subió a $33.17 (+52% vs promedio 7d de $21.77) con solo 4 conversaciones y la tasa de conversación cayó a 5.2% (desde 8.6%). También \"Campaña de tráfico\": costo por visita al perfil $2.38 (+29% vs 7d $1.84). El CPM de la cuenta sigue caro ($81.04) sobre audiencia chica (2,869 impresiones), el CTR bajó a 4.18% (-11% vs 7d) y el gasto subió a $232.50 (+23% vs 7d)."
+        "texto": "🟡 TENDENCIA NEGATIVA en \"Imagenes Lipoescultura\": costo por conversación subió a $30.82 (+25% vs promedio 7d de $24.56), con solo 3 conversaciones y tasa de conversación en 6.0%. El CPM de la cuenta sigue caro ($81.92) sobre audiencia chica (2,291 impresiones) y el CTR bajó a 3.84% (-14% vs 7d). CPA real ≈ $411 MXN (30.82 ÷ 7.5%): RENTABLE vs objetivo Lipoescultura $6,450."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 27.9% (<30%), cambiar los primeros 3 segundos del video. 7º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (61 visitas a $1.26 c/u), no a mensajes. Positivo: costo por visita barato ($1.26, mejoró vs $1.31 de ayer) y frecuencia sana (1.10), pero sin pipeline de valoraciones ni cirugías."
+        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 26.4% (<30%), cambiar los primeros 3 segundos del video. 8º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (53 visitas a $1.01 c/u), no a mensajes. Frecuencia sana (1.10) y costo por visita barato, pero sin pipeline de valoraciones ni cirugías."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Refrescar creativo o ampliar audiencia en \"Imagenes Lipoescultura\": el costo por conversación subió a $33.17 (CPA real ≈ $442 MXN = 33.17 ÷ 7.5%, aún muy por debajo del objetivo Lipoescultura $6,450: RENTABLE) pero la tasa de conversación cayó a 5.2% y el CPM está en $81.04 sobre 2,869 impresiones. Bajar el CPM con más audiencia debería recuperar volumen de conversaciones. La \"Campaña de tráfico\" dio 42 visitas al perfil a $2.38 (más caro que ayer)."
+        "texto": "Refrescar creativo o ampliar audiencia en \"Imagenes Lipoescultura\": costo por conversación $30.82 (+25% vs 7d) con solo 3 conversaciones y CPM $81.92 sobre 2,291 impresiones. El CPA real (~$411 MXN) sigue muy por debajo del objetivo Lipoescultura ($6,450): RENTABLE, pero hay que recuperar volumen bajando el CPM. La \"Campaña de tráfico\" dio 43 visitas al perfil a $2.21."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 7º día solo creciendo perfil de IG con \"Follow me ADS\" (61 visitas a $1.26) y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video: el hook rate sigue en 27.9% (<30%). El tráfico al perfil es barato pero sin mensajes no hay valoraciones ni cirugías en el pipeline."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 8º día solo creciendo perfil de IG con \"Follow me ADS\" (53 visitas a $1.01) y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video: hook rate 26.4% (<30%). El tráfico al perfil es barato pero sin mensajes no hay valoraciones ni cirugías en el pipeline."
       }
     ]
   }
