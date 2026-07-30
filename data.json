@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T03:06:02-06:00",
+  "updated_at": "2026-07-30T03:15:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -424,6 +424,18 @@
           "cpc": 2.13,
           "messages": 3,
           "cpa_est": 62560
+        },
+        {
+          "date": "2026-07-29",
+          "spend": 181.81,
+          "impressions": 2307,
+          "reach": 1825,
+          "clicks": 106,
+          "cpm": 78.81,
+          "ctr": 4.59,
+          "cpc": 1.72,
+          "messages": 5,
+          "cpa_est": 36362
         }
       ],
       "campaigns": [
@@ -551,6 +563,18 @@
               "frecuencia": 1.07,
               "link_clicks": 40,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-07-29",
+              "spend": 92.26,
+              "resultado": 45,
+              "costo_resultado": 2.05,
+              "impressions": 960,
+              "clicks": 42,
+              "ctr": 4.38,
+              "frecuencia": 1.09,
+              "link_clicks": 44,
+              "tasa_aterrizaje": null
             }
           ]
         },
@@ -657,6 +681,17 @@
               "ctr": 3.75,
               "frecuencia": 1.41,
               "tasa_conversacion": 6.0
+            },
+            {
+              "date": "2026-07-29",
+              "spend": 89.55,
+              "resultado": 5,
+              "costo_resultado": 17.91,
+              "impressions": 1347,
+              "clicks": 64,
+              "ctr": 4.75,
+              "frecuencia": 1.38,
+              "tasa_conversacion": 7.8
             }
           ]
         },
@@ -1403,6 +1438,18 @@
           "cpc": 1.11,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-07-29",
+          "spend": 75.75,
+          "impressions": 2444,
+          "reach": 2255,
+          "clicks": 62,
+          "cpm": 30.99,
+          "ctr": 2.54,
+          "cpc": 1.22,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1687,6 +1734,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 481,
               "hook_rate": 26.4
+            },
+            {
+              "date": "2026-07-29",
+              "spend": 75.75,
+              "resultado": 59,
+              "costo_resultado": 1.28,
+              "impressions": 2444,
+              "clicks": 62,
+              "ctr": 2.54,
+              "frecuencia": 1.08,
+              "link_clicks": 56,
+              "tasa_aterrizaje": null,
+              "plays_3s": 699,
+              "hook_rate": 28.6
             }
           ]
         }
@@ -1700,27 +1761,22 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "alertas": [
       {
         "nivel": "amarillo",
-        "doctor": "Dr. Moreno",
-        "texto": "🟡 TENDENCIA NEGATIVA en \"Imagenes Lipoescultura\": costo por conversación subió a $30.82 (+25% vs promedio 7d de $24.56), con solo 3 conversaciones y tasa de conversación en 6.0%. El CPM de la cuenta sigue caro ($81.92) sobre audiencia chica (2,291 impresiones) y el CTR bajó a 3.84% (-14% vs 7d). CPA real ≈ $411 MXN (30.82 ÷ 7.5%): RENTABLE vs objetivo Lipoescultura $6,450."
-      },
-      {
-        "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 26.4% (<30%), cambiar los primeros 3 segundos del video. 8º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (53 visitas a $1.01 c/u), no a mensajes. Frecuencia sana (1.10) y costo por visita barato, pero sin pipeline de valoraciones ni cirugías."
+        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 28.6% (<30%), cambiar los primeros 3 segundos del video. 9º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (59 visitas a $1.28 c/u), no a mensajes. Frecuencia sana (1.08) y costo por visita barato, pero sin pipeline de valoraciones ni cirugías."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Refrescar creativo o ampliar audiencia en \"Imagenes Lipoescultura\": costo por conversación $30.82 (+25% vs 7d) con solo 3 conversaciones y CPM $81.92 sobre 2,291 impresiones. El CPA real (~$411 MXN) sigue muy por debajo del objetivo Lipoescultura ($6,450): RENTABLE, pero hay que recuperar volumen bajando el CPM. La \"Campaña de tráfico\" dio 43 visitas al perfil a $2.21."
+        "texto": "Escalar \"Imagenes Lipoescultura\" mientras el costo está bajo: 5 conversaciones a $17.91 c/u (mejor costo del mes, -28% vs promedio 7d de $24.78) y CPA real ≈ $239 MXN (17.91 ÷ 7.5%), muy por debajo del objetivo Lipoescultura ($6,450): RENTABLE. El CTR subió a 4.59% (+6% vs 7d) y el CPM mejoró a $78.81. Buen día: subir presupuesto de esta campaña para capturar más volumen. La \"Campaña de tráfico\" dio 45 visitas al perfil a $2.05."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 8º día solo creciendo perfil de IG con \"Follow me ADS\" (53 visitas a $1.01) y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video: hook rate 26.4% (<30%). El tráfico al perfil es barato pero sin mensajes no hay valoraciones ni cirugías en el pipeline."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 9º día solo creciendo perfil de IG con \"Follow me ADS\" (59 visitas a $1.28) y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video: hook rate 28.6% (<30%). El gasto subió +14% y el CTR +16% vs 7d, pero sin mensajes no hay valoraciones ni cirugías en el pipeline (CPA solo estimado ≈ $203 MXN desde CPC)."
       }
     ]
   }
