@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T03:06:04-06:00",
+  "updated_at": "2026-08-02T03:05:41-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -460,6 +460,18 @@
           "cpc": 2.21,
           "messages": 2,
           "cpa_est": 101540
+        },
+        {
+          "date": "2026-08-01",
+          "spend": 225.05,
+          "impressions": 2637,
+          "reach": 2175,
+          "clicks": 88,
+          "cpm": 85.34,
+          "ctr": 3.34,
+          "cpc": 2.56,
+          "messages": 5,
+          "cpa_est": 45010
         }
       ],
       "campaigns": [
@@ -622,6 +634,18 @@
               "ctr": 4.80,
               "frecuencia": 1.08,
               "link_clicks": 56,
+              "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-08-01",
+              "spend": 96.59,
+              "resultado": 47,
+              "costo_resultado": 2.06,
+              "impressions": 1180,
+              "clicks": 47,
+              "ctr": 3.98,
+              "frecuencia": 1.09,
+              "link_clicks": 47,
               "tasa_aterrizaje": null
             }
           ]
@@ -1096,6 +1120,17 @@
               "ctr": 4.20,
               "frecuencia": 1.44,
               "tasa_conversacion": 10.5
+            },
+            {
+              "date": "2026-08-01",
+              "spend": 128.46,
+              "resultado": 5,
+              "costo_resultado": 25.69,
+              "impressions": 1457,
+              "clicks": 41,
+              "ctr": 2.81,
+              "frecuencia": 1.36,
+              "tasa_conversacion": 12.2
             }
           ]
         }
@@ -1551,6 +1586,18 @@
           "cpc": 1.75,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-08-01",
+          "spend": 92.34,
+          "impressions": 3119,
+          "reach": 2847,
+          "clicks": 80,
+          "cpm": 29.61,
+          "ctr": 2.56,
+          "cpc": 1.15,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1877,6 +1924,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 635,
               "hook_rate": 27.7
+            },
+            {
+              "date": "2026-08-01",
+              "spend": 92.34,
+              "resultado": 82,
+              "costo_resultado": 1.13,
+              "impressions": 3119,
+              "clicks": 80,
+              "ctr": 2.56,
+              "frecuencia": 1.1,
+              "link_clicks": 79,
+              "tasa_aterrizaje": null,
+              "plays_3s": 794,
+              "hook_rate": 25.5
             }
           ]
         }
@@ -1890,27 +1951,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-07-31",
+    "date": "2026-08-01",
     "alertas": [
       {
-        "nivel": "rojo",
+        "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "🔴 GASTO SIN PIPELINE: \"Campaña Imagenes Lipoescultura\" (mensajes) quemó $56.89 con 0 conversaciones antes de pausarse. En todo el día solo 2 conversaciones de WhatsApp (de \"Avatares Valoración WhatsApp\", $21.54 c/u) sobre un gasto total de $203.08. El 76% del presupuesto fue a tráfico de perfil IG ($103.12) e imágenes sin resultado, no a generar valoraciones."
+        "texto": "🟡 43% del presupuesto sigue en tráfico de perfil IG: \"Campaña de tráfico\" gastó $96.59 (47 visitas a $2.06 c/u), sin generar valoraciones. El CPM sigue muy alto ($85.34) y el CTR bajó a 3.34% (-17% vs 7d). Lo bueno: \"Avatares Valoración WhatsApp\" repuntó a 5 conversaciones ($25.69 c/u) — concentrar ahí el presupuesto."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 27.7% (<30%), cambiar los primeros 3 segundos del video. 12º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (56 visitas a $1.37 c/u), no a mensajes. Gasto +15% vs 7d pero CTR 1.92% (-18%). Cero pipeline de valoraciones/cirugías."
+        "texto": "🟡 GANCHO DÉBIL en \"Follow me ADS\": hook rate 25.5% (<30%), cambiar los primeros 3 segundos del video. 13º día consecutivo sin conversaciones de WhatsApp: la única campaña activa lleva tráfico al perfil de IG (82 visitas a $1.13 c/u), no a mensajes. Gasto +33% vs 7d y CTR 2.56% (+17%), pero cero pipeline de valoraciones/cirugías."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Escalar \"Avatares Valoración WhatsApp | CBO\": es la única campaña que genera conversaciones (2 a $21.54 → CPA cirugía ≈ $287 MXN con embudo 7.5%, muy por debajo del objetivo Lipoescultura de $6,450: RENTABLE). Recortar la \"Campaña de tráfico\" (IG profile visits a $1.66, sin pipeline) y revisar por qué \"Imagenes Lipoescultura\" gastó $56.89 con 0 conversaciones. CTR -5% vs 7d y CPC alto ($2.21): refrescar creativo de mensajes."
+        "texto": "Escalar \"Avatares Valoración WhatsApp | CBO\": es la única campaña que genera conversaciones (5 a $25.69 → CPA cirugía ≈ $343 MXN con embudo 7.5%, muy por debajo del objetivo Lipoescultura de $6,450: RENTABLE). Recortar la \"Campaña de tráfico\" (IG profile visits a $2.06, sin pipeline directo) y trasladar ese presupuesto a mensajes. Vigilar el CPM elevado ($85.34) y el CTR a la baja (-17% vs 7d)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 12º día solo creciendo perfil de IG con \"Follow me ADS\" (56 visitas a $1.37) y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video (hook rate 27.7% <30%). El gasto subió +15% vs 7d mientras el CTR cayó a 1.92% (-18%); sin mensajes no hay valoraciones ni cirugías en el pipeline."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 13º día solo creciendo perfil de IG con \"Follow me ADS\" (82 visitas a $1.13) y cero conversaciones de cirugía. Cambiar los primeros 3 segundos del video (hook rate 25.5% <30%). El gasto subió +33% vs 7d y el CTR mejoró a 2.56%, pero sin mensajes no hay valoraciones ni cirugías en el pipeline."
       }
     ]
   }
