@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T03:09:58-06:00",
+  "updated_at": "2026-08-04T03:06:54-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -484,6 +484,18 @@
           "cpc": 2.01,
           "messages": 9,
           "cpa_est": 27200
+        },
+        {
+          "date": "2026-08-03",
+          "spend": 232.01,
+          "impressions": 2769,
+          "reach": 2350,
+          "clicks": 97,
+          "cpm": 83.79,
+          "ctr": 3.5,
+          "cpc": 2.39,
+          "messages": 2,
+          "cpa_est": 116005
         }
       ],
       "campaigns": [
@@ -668,6 +680,18 @@
               "impressions": 1196,
               "clicks": 48,
               "ctr": 4.01,
+              "frecuencia": 1.07,
+              "link_clicks": 50,
+              "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-08-03",
+              "spend": 110.28,
+              "resultado": 53,
+              "costo_resultado": 2.08,
+              "impressions": 1414,
+              "clicks": 50,
+              "ctr": 3.54,
               "frecuencia": 1.07,
               "link_clicks": 50,
               "tasa_aterrizaje": null
@@ -1168,6 +1192,24 @@
               "tasa_conversacion": 12.2
             }
           ]
+        },
+        {
+          "id": "120253328310930427",
+          "name": "Ventas · Avatares · Mensajes WhatsApp · GDL+Zapopan",
+          "tipo": "mensajes",
+          "history": [
+            {
+              "date": "2026-08-03",
+              "spend": 121.73,
+              "resultado": 2,
+              "costo_resultado": 60.87,
+              "impressions": 1355,
+              "clicks": 47,
+              "ctr": 3.47,
+              "frecuencia": 1.33,
+              "tasa_conversacion": 4.3
+            }
+          ]
         }
       ]
     },
@@ -1645,6 +1687,18 @@
           "cpc": 1.55,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-08-03",
+          "spend": 54.82,
+          "impressions": 1858,
+          "reach": 1746,
+          "clicks": 32,
+          "cpm": 29.5,
+          "ctr": 1.72,
+          "cpc": 1.71,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1999,6 +2053,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 622,
               "hook_rate": 25.6
+            },
+            {
+              "date": "2026-08-03",
+              "spend": 54.82,
+              "resultado": 43,
+              "costo_resultado": 1.27,
+              "impressions": 1858,
+              "clicks": 32,
+              "ctr": 1.72,
+              "frecuencia": 1.06,
+              "link_clicks": 33,
+              "tasa_aterrizaje": null,
+              "plays_3s": 467,
+              "hook_rate": 25.1
             }
           ]
         }
@@ -2012,27 +2080,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-08-02",
+    "date": "2026-08-03",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "🟡 \"Campaña de tráfico\" gastó $96.80 (40% del gasto: 50 visitas de perfil IG a $1.94 c/u) sin generar valoraciones directas. Lo bueno: \"Avatares · Valoración WhatsApp\" repuntó a 9 conversaciones a $16.44 c/u (CPA cirugía ≈ $219 MXN, muy por debajo del objetivo Lipoescultura de $6,450 → RENTABLE). El CPM sigue alto ($79.66) y el gasto subió +18% vs 7d."
+        "texto": "🟡 La nueva campaña de WhatsApp \"Ventas · Avatares · Mensajes\" solo generó 2 conversaciones a $60.87 c/u (vs 9 el día anterior): el volumen se desplomó. CPA cirugía ≈ $812 MXN (60.87÷7.5%), aún RENTABLE frente al objetivo Lipoescultura de $6,450. El 47% del gasto ($110.28) sigue yendo a \"Campaña de tráfico\" (53 visitas de perfil IG a $2.08) sin pipeline directo. CPM alto: $83.79 y gasto +10% vs 7d."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 14º día consecutivo sin campaña de mensajes: la única activa (\"Follow me ADS\") lleva tráfico al perfil de IG (44 visitas a $1.73), no a WhatsApp. TENDENCIA NEGATIVA: el costo por resultado subió +40% vs 7d ($1.24→$1.73) y GANCHO DÉBIL: hook rate 25.6% (<30%). CTR 2.02% (-7% vs 7d). Cero pipeline de valoraciones/cirugías."
+        "texto": "🟡 Sin campaña de mensajes de nuevo: la única activa (\"Follow me ADS\") lleva tráfico al perfil de IG (43 visitas a $1.27), no a WhatsApp — cero conversaciones y cero pipeline de cirugía. GANCHO DÉBIL: hook rate 25.1% (<30%), cambiar los primeros 3 segundos del video. Gasto -27% y CTR -22% vs 7d (1.72%)."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Escalar \"Avatares · Valoración WhatsApp | CBO\": 9 conversaciones a $16.44 c/u → CPA cirugía ≈ $219 MXN con embudo 7.5%, muy por debajo del objetivo Lipoescultura de $6,450 (RENTABLE). Recortar la \"Campaña de tráfico\" ($1.94 por visita de perfil, sin pipeline directo) y trasladar ese presupuesto a mensajes. Vigilar el CPM elevado ($79.66)."
+        "texto": "Dar tiempo/presupuesto a la nueva campaña de WhatsApp \"Ventas · Avatares · Mensajes\" y vigilar su volumen: ayer cayó a 2 conversaciones ($60.87 c/u, CPA cirugía ≈ $812 MXN, RENTABLE vs objetivo $6,450). Recortar la \"Campaña de tráfico\" ($2.08 por visita de perfil IG, sin conversaciones) y trasladar ese gasto a mensajes. Atender el CPM elevado ($83.79)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: 14º día solo creciendo perfil de IG con \"Follow me ADS\" (44 visitas a $1.73) y cero conversaciones de cirugía. El costo por resultado subió +40% vs 7d y el hook rate cayó a 25.6% (<30%): cambiar los primeros 3 segundos del video. Sin mensajes no hay valoraciones ni cirugías en el pipeline."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: hoy solo corre \"Follow me ADS\" (43 visitas de perfil IG a $1.27) sin conversaciones ni pipeline de cirugía. CPA estimado desde CPC ≈ $286 MXN (estimado, 8% clic→mensaje). Cambiar los primeros 3 segundos del video (hook rate 25.1% <30%). Gasto y CTR cayeron ~25% vs 7d."
       }
     ]
   }
