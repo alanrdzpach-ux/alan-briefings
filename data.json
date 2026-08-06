@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T03:05:34-06:00",
+  "updated_at": "2026-08-06T03:06:52-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -508,6 +508,18 @@
           "cpc": 2.14,
           "messages": 4,
           "cpa_est": 96463
+        },
+        {
+          "date": "2026-08-05",
+          "spend": 328.02,
+          "impressions": 5568,
+          "reach": 4813,
+          "clicks": 165,
+          "cpm": 58.91,
+          "ctr": 2.96,
+          "cpc": 1.99,
+          "messages": 4,
+          "cpa_est": 82005
         }
       ],
       "campaigns": [
@@ -719,6 +731,20 @@
               "frecuencia": 1.13,
               "link_clicks": 83,
               "tasa_aterrizaje": null
+            },
+            {
+              "date": "2026-08-05",
+              "spend": 107.96,
+              "resultado": 76,
+              "costo_resultado": 1.42,
+              "impressions": 1620,
+              "clicks": 69,
+              "ctr": 4.26,
+              "frecuencia": 1.08,
+              "link_clicks": 75,
+              "tasa_aterrizaje": null,
+              "plays_3s": 545,
+              "hook_rate": 33.6
             }
           ]
         },
@@ -1243,6 +1269,17 @@
               "ctr": 2.40,
               "frecuencia": 1.33,
               "tasa_conversacion": 4.08
+            },
+            {
+              "date": "2026-08-05",
+              "spend": 220.06,
+              "resultado": 4,
+              "costo_resultado": 55.02,
+              "impressions": 3948,
+              "clicks": 96,
+              "ctr": 2.43,
+              "frecuencia": 1.23,
+              "tasa_conversacion": 4.17
             }
           ]
         }
@@ -1746,6 +1783,18 @@
           "cpc": 1.17,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-08-05",
+          "spend": 77.87,
+          "impressions": 3007,
+          "reach": 2727,
+          "clicks": 65,
+          "cpm": 25.90,
+          "ctr": 2.16,
+          "cpc": 1.20,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2128,6 +2177,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 870,
               "hook_rate": 27.33
+            },
+            {
+              "date": "2026-08-05",
+              "spend": 77.87,
+              "resultado": 77,
+              "costo_resultado": 1.01,
+              "impressions": 3007,
+              "clicks": 65,
+              "ctr": 2.16,
+              "frecuencia": 1.10,
+              "link_clicks": 62,
+              "tasa_aterrizaje": null,
+              "plays_3s": 783,
+              "hook_rate": 26.04
             }
           ]
         }
@@ -2141,27 +2204,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-08-04",
+    "date": "2026-08-05",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "🟡 GANCHO DÉBIL en \"Campaña de tráfico\": hook rate 28.9% (<30%), cambiar los primeros 3 segundos del video. En positivo, la campaña de WhatsApp \"Ventas · Avatares · Mensajes\" recuperó volumen: 4 conversaciones a $65.69 c/u (vs 2 el día previo). CPA cirugía ≈ $876 MXN (65.69÷7.5%), RENTABLE frente al objetivo Lipoescultura de $6,450. Gasto total se disparó a $385.85 (+84% vs 7d) por mayor presupuesto; CPM bajó a $66.72 y CTR 3.11% (-18% vs 7d)."
+        "texto": "🟡 CTR a la baja: 2.96% (-19.7% vs 7d). En positivo, el gancho del video de tráfico se recuperó (hook rate 33.6%, ya >30%) y la campaña de WhatsApp \"Ventas · Avatares · Mensajes\" sostiene 4 conversaciones a $55.02 c/u (mejor que $65.69 el día previo). CPA cirugía ≈ $734 MXN (55.02÷7.5%), RENTABLE frente al objetivo Lipoescultura de $6,450. Gasto $328.02 (+37.6% vs 7d), CPM $58.91."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 Sin campaña de mensajes de nuevo: la única activa (\"Follow me ADS\") lleva tráfico al perfil de IG (86 visitas a $1.03), no a WhatsApp — cero conversaciones y cero pipeline de cirugía. GANCHO DÉBIL: hook rate 27.3% (<30%), cambiar los primeros 3 segundos del video. Gasto $88.79 (+23% vs 7d) y CTR 2.39% (+10% vs 7d)."
+        "texto": "🟡 Sin campaña de mensajes otra vez: la única activa (\"Follow me ADS\") lleva tráfico al perfil de IG (77 visitas a $1.01), no a WhatsApp — cero conversaciones y cero pipeline de cirugía. GANCHO DÉBIL: hook rate 26.0% (<30%), cambiar los primeros 3 segundos del video. Gasto $77.87 (+1.0% vs 7d) y CTR 2.16% (+1.4% vs 7d)."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "El presupuesto subió fuerte ayer ($385.85, +84% vs 7d): confirmar que el aumento está yendo a la campaña de WhatsApp \"Ventas · Avatares · Mensajes\" (4 conversaciones a $65.69, CPA cirugía ≈ $876 MXN, RENTABLE vs $6,450) y no a la \"Campaña de tráfico\" ($1.47 por visita de perfil IG, sin pipeline directo). Refrescar el gancho del video de tráfico (hook rate 28.9% <30%)."
+        "texto": "Mantener el presupuesto en la campaña de WhatsApp \"Ventas · Avatares · Mensajes\" (4 conversaciones a $55.02, CPA cirugía ≈ $734 MXN, RENTABLE vs $6,450): es el único activo que genera pipeline directo. Vigilar el CTR de cuenta (2.96%, -19.7% vs 7d): refrescar creativos de mensajes si sigue cayendo. El gancho del video de tráfico ya está sano (33.6%)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: hoy solo corre \"Follow me ADS\" (86 visitas de perfil IG a $1.03) sin conversaciones ni pipeline de cirugía. CPA estimado desde CPC ≈ $195 MXN (estimado, 8% clic→mensaje). Cambiar los primeros 3 segundos del video (hook rate 27.3% <30%). Buen día de tráfico: CTR 2.39% (+10% vs 7d)."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: hoy solo corre \"Follow me ADS\" (77 visitas de perfil IG a $1.01) sin conversaciones ni pipeline de cirugía. CPA estimado desde CPC ≈ $200 MXN (estimado, 8% clic→mensaje). Cambiar los primeros 3 segundos del video (hook rate 26.0% <30%). Tráfico estable: CTR 2.16% (+1.4% vs 7d)."
       }
     ]
   }
