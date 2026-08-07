@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T03:06:52-06:00",
+  "updated_at": "2026-08-07T03:06:25-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -520,6 +520,18 @@
           "cpc": 1.99,
           "messages": 4,
           "cpa_est": 82005
+        },
+        {
+          "date": "2026-08-06",
+          "spend": 264.91,
+          "impressions": 3285,
+          "reach": 2769,
+          "clicks": 109,
+          "cpm": 80.64,
+          "ctr": 3.32,
+          "cpc": 2.43,
+          "messages": 7,
+          "cpa_est": 37844
         }
       ],
       "campaigns": [
@@ -744,6 +756,20 @@
               "link_clicks": 75,
               "tasa_aterrizaje": null,
               "plays_3s": 545,
+              "hook_rate": 33.6
+            },
+            {
+              "date": "2026-08-06",
+              "spend": 83.63,
+              "resultado": 49,
+              "costo_resultado": 1.71,
+              "impressions": 1255,
+              "clicks": 44,
+              "ctr": 3.51,
+              "frecuencia": 1.08,
+              "link_clicks": 45,
+              "tasa_aterrizaje": null,
+              "plays_3s": 422,
               "hook_rate": 33.6
             }
           ]
@@ -1280,6 +1306,17 @@
               "ctr": 2.43,
               "frecuencia": 1.23,
               "tasa_conversacion": 4.17
+            },
+            {
+              "date": "2026-08-06",
+              "spend": 181.28,
+              "resultado": 7,
+              "costo_resultado": 25.90,
+              "impressions": 2030,
+              "clicks": 65,
+              "ctr": 3.20,
+              "frecuencia": 1.27,
+              "tasa_conversacion": 10.77
             }
           ]
         }
@@ -1795,6 +1832,18 @@
           "cpc": 1.20,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-08-06",
+          "spend": 76.10,
+          "impressions": 2830,
+          "reach": 2563,
+          "clicks": 57,
+          "cpm": 26.89,
+          "ctr": 2.01,
+          "cpc": 1.34,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2191,6 +2240,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 783,
               "hook_rate": 26.04
+            },
+            {
+              "date": "2026-08-06",
+              "spend": 76.10,
+              "resultado": 65,
+              "costo_resultado": 1.17,
+              "impressions": 2830,
+              "clicks": 57,
+              "ctr": 2.01,
+              "frecuencia": 1.10,
+              "link_clicks": 59,
+              "tasa_aterrizaje": null,
+              "plays_3s": 693,
+              "hook_rate": 24.49
             }
           ]
         }
@@ -2204,27 +2267,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-08-05",
+    "date": "2026-08-06",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "🟡 CTR a la baja: 2.96% (-19.7% vs 7d). En positivo, el gancho del video de tráfico se recuperó (hook rate 33.6%, ya >30%) y la campaña de WhatsApp \"Ventas · Avatares · Mensajes\" sostiene 4 conversaciones a $55.02 c/u (mejor que $65.69 el día previo). CPA cirugía ≈ $734 MXN (55.02÷7.5%), RENTABLE frente al objetivo Lipoescultura de $6,450. Gasto $328.02 (+37.6% vs 7d), CPM $58.91."
+        "texto": "🟢 Mensajes muy eficientes: la campaña WhatsApp \"Ventas · Avatares · Mensajes\" generó 7 conversaciones a solo $25.90 c/u (vs $55.02 el día previo, -53%). CPA cirugía ≈ $345 MXN (25.90÷7.5%), RENTABLE frente al objetivo Lipoescultura de $6,450. Gancho del video de tráfico sano (hook rate 33.6%, >30%). 🟡 Vigilar CTR de cuenta: 3.32% (-3.9% vs 7d). Gasto $264.91 (+2.2% vs 7d), CPM $80.64, frecuencias sanas (<1.3)."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 Sin campaña de mensajes otra vez: la única activa (\"Follow me ADS\") lleva tráfico al perfil de IG (77 visitas a $1.01), no a WhatsApp — cero conversaciones y cero pipeline de cirugía. GANCHO DÉBIL: hook rate 26.0% (<30%), cambiar los primeros 3 segundos del video. Gasto $77.87 (+1.0% vs 7d) y CTR 2.16% (+1.4% vs 7d)."
+        "texto": "🟡 GANCHO DÉBIL \"Follow me ADS\": hook rate 24.5% (<30%), cambiar los primeros 3 segundos del video. Sigue sin campaña de mensajes/WhatsApp: la única activa lleva tráfico al perfil de IG (65 visitas a $1.17), cero conversaciones y cero pipeline de cirugía. Gasto $76.10 (-1.7% vs 7d), CTR 2.01% (-3.2% vs 7d)."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Mantener el presupuesto en la campaña de WhatsApp \"Ventas · Avatares · Mensajes\" (4 conversaciones a $55.02, CPA cirugía ≈ $734 MXN, RENTABLE vs $6,450): es el único activo que genera pipeline directo. Vigilar el CTR de cuenta (2.96%, -19.7% vs 7d): refrescar creativos de mensajes si sigue cayendo. El gancho del video de tráfico ya está sano (33.6%)."
+        "texto": "Escalar con cuidado la campaña de WhatsApp \"Ventas · Avatares · Mensajes\": ayer 7 conversaciones a $25.90 (CPA cirugía ≈ $345 MXN, RENTABLE vs $6,450) — subir presupuesto 20-30% manteniendo el creativo ganador y vigilar que el costo por conversación no rebase ~$40. Refrescar creativos de mensajes solo si el CTR de cuenta (3.32%, -3.9% vs 7d) sigue cayendo."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: hoy solo corre \"Follow me ADS\" (77 visitas de perfil IG a $1.01) sin conversaciones ni pipeline de cirugía. CPA estimado desde CPC ≈ $200 MXN (estimado, 8% clic→mensaje). Cambiar los primeros 3 segundos del video (hook rate 26.0% <30%). Tráfico estable: CTR 2.16% (+1.4% vs 7d)."
+        "texto": "Reactivar YA una campaña de mensajes/WhatsApp: hoy solo corre \"Follow me ADS\" (65 visitas de perfil IG a $1.17) sin conversaciones ni pipeline de cirugía. CPA cirugía estimado desde CPC ≈ $223 MXN (estimado, 8% clic→mensaje). Cambiar los primeros 3 segundos del video (hook rate 24.5% <30%)."
       }
     ]
   }
