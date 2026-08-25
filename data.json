@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T03:11:48-06:00",
+  "updated_at": "2026-08-25T03:08:14-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -571,7 +571,7 @@
         },
         {
           "date": "2026-08-11",
-          "spend": 273.30,
+          "spend": 273.3,
           "impressions": 5178,
           "reach": 4444,
           "clicks": 309,
@@ -602,6 +602,18 @@
           "cpm": 29.19,
           "ctr": 8.11,
           "cpc": 0.36,
+          "messages": 0,
+          "cpa_est": 0
+        },
+        {
+          "date": "2026-08-24",
+          "spend": 99.1,
+          "impressions": 3151,
+          "reach": 3000,
+          "clicks": 240,
+          "cpm": 31.45,
+          "ctr": 7.62,
+          "cpc": 0.41,
           "messages": 0,
           "cpa_est": 0
         }
@@ -806,12 +818,12 @@
             },
             {
               "date": "2026-08-04",
-              "spend": 123.10,
+              "spend": 123.1,
               "resultado": 84,
               "costo_resultado": 1.47,
               "impressions": 1707,
               "clicks": 82,
-              "ctr": 4.80,
+              "ctr": 4.8,
               "frecuencia": 1.13,
               "link_clicks": 83,
               "tasa_aterrizaje": null
@@ -894,7 +906,7 @@
               "impressions": 3737,
               "clicks": 276,
               "ctr": 7.39,
-              "frecuencia": 1.10,
+              "frecuencia": 1.1,
               "link_clicks": 170,
               "tasa_aterrizaje": null,
               "plays_3s": 1360,
@@ -927,6 +939,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 1221,
               "hook_rate": 37.52
+            },
+            {
+              "date": "2026-08-24",
+              "spend": 99.1,
+              "resultado": 147,
+              "costo_resultado": 0.67,
+              "impressions": 3151,
+              "clicks": 240,
+              "ctr": 7.62,
+              "frecuencia": 1.05,
+              "link_clicks": 164,
+              "tasa_aterrizaje": null,
+              "plays_3s": 1130,
+              "hook_rate": 35.86
             }
           ]
         },
@@ -1448,7 +1474,7 @@
               "costo_resultado": 65.69,
               "impressions": 4076,
               "clicks": 98,
-              "ctr": 2.40,
+              "ctr": 2.4,
               "frecuencia": 1.33,
               "tasa_conversacion": 4.08
             },
@@ -1467,10 +1493,10 @@
               "date": "2026-08-06",
               "spend": 181.28,
               "resultado": 7,
-              "costo_resultado": 25.90,
+              "costo_resultado": 25.9,
               "impressions": 2030,
               "clicks": 65,
-              "ctr": 3.20,
+              "ctr": 3.2,
               "frecuencia": 1.27,
               "tasa_conversacion": 10.77
             },
@@ -1487,12 +1513,12 @@
             },
             {
               "date": "2026-08-09",
-              "spend": 183.50,
+              "spend": 183.5,
               "resultado": 1,
-              "costo_resultado": 183.50,
+              "costo_resultado": 183.5,
               "impressions": 1784,
               "clicks": 50,
-              "ctr": 2.80,
+              "ctr": 2.8,
               "frecuencia": 1.21,
               "tasa_conversacion": 2.0
             },
@@ -1520,7 +1546,7 @@
             },
             {
               "date": "2026-08-12",
-              "spend": 105.50,
+              "spend": 105.5,
               "resultado": 0,
               "costo_resultado": 0,
               "impressions": 1043,
@@ -2038,15 +2064,15 @@
           "impressions": 3007,
           "reach": 2727,
           "clicks": 65,
-          "cpm": 25.90,
+          "cpm": 25.9,
           "ctr": 2.16,
-          "cpc": 1.20,
+          "cpc": 1.2,
           "messages": 0,
           "cpa_est": 0
         },
         {
           "date": "2026-08-06",
-          "spend": 76.10,
+          "spend": 76.1,
           "impressions": 2830,
           "reach": 2563,
           "clicks": 57,
@@ -2127,6 +2153,18 @@
           "cpc": 0.83,
           "messages": 14,
           "cpa_est": 20337
+        },
+        {
+          "date": "2026-08-24",
+          "spend": 254.41,
+          "impressions": 11297,
+          "reach": 9577,
+          "clicks": 280,
+          "cpm": 22.52,
+          "ctr": 2.48,
+          "cpc": 0.91,
+          "messages": 7,
+          "cpa_est": 36344
         }
       ],
       "campaigns": [
@@ -2518,7 +2556,7 @@
               "impressions": 3007,
               "clicks": 65,
               "ctr": 2.16,
-              "frecuencia": 1.10,
+              "frecuencia": 1.1,
               "link_clicks": 62,
               "tasa_aterrizaje": null,
               "plays_3s": 783,
@@ -2526,13 +2564,13 @@
             },
             {
               "date": "2026-08-06",
-              "spend": 76.10,
+              "spend": 76.1,
               "resultado": 65,
               "costo_resultado": 1.17,
               "impressions": 2830,
               "clicks": 57,
               "ctr": 2.01,
-              "frecuencia": 1.10,
+              "frecuencia": 1.1,
               "link_clicks": 59,
               "tasa_aterrizaje": null,
               "plays_3s": 693,
@@ -2546,7 +2584,7 @@
               "impressions": 1865,
               "clicks": 43,
               "ctr": 2.31,
-              "frecuencia": 1.10,
+              "frecuencia": 1.1,
               "link_clicks": 41,
               "tasa_aterrizaje": null,
               "plays_3s": 488,
@@ -2568,7 +2606,7 @@
             },
             {
               "date": "2026-08-10",
-              "spend": 106.30,
+              "spend": 106.3,
               "resultado": 329,
               "costo_resultado": 0.32,
               "impressions": 11644,
@@ -2578,7 +2616,7 @@
               "link_clicks": 240,
               "tasa_aterrizaje": null,
               "plays_3s": 3773,
-              "hook_rate": 32.40
+              "hook_rate": 32.4
             },
             {
               "date": "2026-08-11",
@@ -2592,7 +2630,7 @@
               "link_clicks": 178,
               "tasa_aterrizaje": null,
               "plays_3s": 2646,
-              "hook_rate": 33.70
+              "hook_rate": 33.7
             },
             {
               "date": "2026-08-12",
@@ -2610,7 +2648,7 @@
             },
             {
               "date": "2026-08-13",
-              "spend": 81.00,
+              "spend": 81.0,
               "resultado": 220,
               "costo_resultado": 0.37,
               "impressions": 8502,
@@ -2621,6 +2659,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 2786,
               "hook_rate": 32.77
+            },
+            {
+              "date": "2026-08-24",
+              "spend": 67.28,
+              "resultado": 177,
+              "costo_resultado": 0.38,
+              "impressions": 6274,
+              "clicks": 166,
+              "ctr": 2.65,
+              "frecuencia": 1.06,
+              "link_clicks": 131,
+              "tasa_aterrizaje": null,
+              "plays_3s": 1628,
+              "hook_rate": 25.95
             }
           ]
         },
@@ -2647,8 +2699,8 @@
               "costo_resultado": 13.72,
               "impressions": 1600,
               "clicks": 88,
-              "ctr": 5.50,
-              "frecuencia": 2.10,
+              "ctr": 5.5,
+              "frecuencia": 2.1,
               "tasa_conversacion": 7.95
             },
             {
@@ -2659,7 +2711,7 @@
               "impressions": 2596,
               "clicks": 105,
               "ctr": 4.04,
-              "frecuencia": 2.00,
+              "frecuencia": 2.0,
               "tasa_conversacion": 5.71
             },
             {
@@ -2672,6 +2724,17 @@
               "ctr": 3.65,
               "frecuencia": 1.54,
               "tasa_conversacion": 11.86
+            },
+            {
+              "date": "2026-08-24",
+              "spend": 187.13,
+              "resultado": 7,
+              "costo_resultado": 26.73,
+              "impressions": 5023,
+              "clicks": 114,
+              "ctr": 2.27,
+              "frecuencia": 1.23,
+              "tasa_conversacion": 6.14
             }
           ]
         }
@@ -2685,27 +2748,32 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-08-13",
+    "date": "2026-08-24",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "🔴 SIN CAMPAÑA DE CONVERSIÓN ACTIVA (2° día): ayer solo corrió la \"Campaña de tráfico\" — 0 conversaciones de WhatsApp por segunda jornada seguida. La cuenta gastó $94.99 (-66% vs 7d) porque todas las campañas de mensajes/ventas siguen apagadas (\"Ventas · Avatares\" continúa pausada). El tráfico va sano y barato: 123 visitas de perfil IG a $0.77, CTR 8.11% (+62% vs 7d), hook rate 37.5%, frecuencia 1.08. Pero sin campaña de mensajes no se generan leads: la CPA cirugía queda SOLO estimada (≈ $60 MXN desde CPC $0.36, muy por debajo del objetivo $6,450) — el dato duro es 0 conversaciones reales. Prioridad: reactivar conversión."
+        "texto": "🔴 SIN CAMPAÑA DE CONVERSIÓN ACTIVA: ayer solo corrió la \"Campaña de tráfico\" — 0 conversaciones de WhatsApp. La cuenta gastó $99.10 (-59% vs 7d) porque las campañas de mensajes/ventas siguen apagadas. El tráfico va sano y barato: 147 visitas de perfil IG a $0.67, CTR 7.62% (+33% vs 7d), hook rate 35.9%, frecuencia 1.05. Sin campaña de mensajes no entran leads: la CPA cirugía queda SOLO estimada (≈ $68 MXN desde CPC $0.41, muy por debajo del objetivo $6,450) — el dato duro es 0 conversaciones reales. Prioridad: reactivar conversión."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 GASTO DE CUENTA DISPARADO (+143% vs 7d): la cuenta gastó $284.72. Lo positivo: \"Rinoplastia | Avatares | WhatsApp\" mejoró fuerte — 14 conversaciones a $14.55 c/u (gasto $203.72, tasa 11.86%), más del doble que las 6 del 08-12, y su frecuencia bajó de 2.00 a 1.54 (saturación cediendo). CPA cirugía real ≈ $194 MXN (14.55÷7.5%), RENTABLE. \"Follow me ADS\" sigue escalando barato: 220 visitas de perfil IG a $0.37, hook 32.8%, CTR 2.65%, frecuencia 1.03. CTR de cuenta 2.92% (+8% vs 7d). Vigilar que el gasto elevado se sostenga con este rendimiento."
+        "texto": "🟡 COSTO POR CONVERSACIÓN AL ALZA + GASTO ELEVADO (+74% vs 7d, $254.41): \"Rinoplastia | Avatares | WhatsApp\" trajo 7 conversaciones a $26.73 c/u (gasto $187.13, tasa 6.14%), un costo por conversación ~+38% arriba de su promedio reciente (≈$19) — tendencia negativa a vigilar. Sigue RENTABLE (CPA cirugía real ≈ $356 MXN, 26.73÷7.5%) y la frecuencia está sana en 1.23. CTR de cuenta 2.48% (-12% vs 7d)."
+      },
+      {
+        "nivel": "amarillo",
+        "doctor": "Dr. Andrei",
+        "texto": "🟡 GANCHO DÉBIL \"Follow me ADS\": el hook rate cayó a 25.95% (< 30%), su nivel más bajo del mes frente a ~33% la semana pasada — conviene cambiar los primeros 3 segundos del creativo. Aun así el tráfico sigue muy barato: 177 visitas de perfil IG a $0.38, CTR 2.65%, frecuencia 1.06."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Reactivar YA una campaña de conversión (WhatsApp/mensajes): llevan 2 días corriendo solo tráfico y 0 conversaciones, así no entran leads ni valoraciones. Relanzar \"Ventas · Avatares\" con creativo/audiencia ajustados o crear una nueva de mensajes, y usar como combustible las 123 visitas de perfil diarias a $0.77 (CTR 8.11%, hook 37.5%) armando retargeting de esas visitas hacia WhatsApp para arrancar conversaciones con tráfico barato."
+        "texto": "Reactivar YA una campaña de conversión (WhatsApp/mensajes): sin ella no entran leads ni valoraciones pese al tráfico barato. Usar como combustible las 147 visitas de perfil diarias a $0.67 (CTR 7.62%, hook 35.9%) armando retargeting de esas visitas hacia WhatsApp para arrancar conversaciones con tráfico económico."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Sostener y escalar con cuidado \"Rinoplastia | Avatares | WhatsApp\": ayer rindió excelente (14 conversaciones a $14.55, CPA cirugía real ≈ $194 MXN) y la frecuencia ya bajó a 1.54, así que hay margen para subir presupuesto gradualmente sin saturar. Mantener \"Follow me ADS\" (220 visitas de perfil a $0.37, hook 32.8%) como fuente de tráfico barato y armar retargeting hacia WhatsApp. Vigilar el gasto de cuenta (+143% vs 7d): confirmar que el CPA por conversación se mantenga bajo mientras escala."
+        "texto": "Mantener \"Rinoplastia | Avatares | WhatsApp\" pero vigilar de cerca el costo por conversación: subió a $26.73 (+38% vs promedio reciente). Sigue rentable (CPA cirugía ≈ $356 MXN), así que no pausar, pero refrescar creativo/audiencia si el costo continúa subiendo 2 días más. En paralelo, renovar los primeros 3 segundos de \"Follow me ADS\" (hook cayó a 26%) para recuperar eficiencia de gancho."
       }
     ]
   }
