@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T03:06:09-06:00",
+  "updated_at": "2026-08-28T09:20:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -640,6 +640,18 @@
           "cpc": 0.44,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-08-27",
+          "spend": 85.53,
+          "impressions": 3040,
+          "reach": 2905,
+          "clicks": 201,
+          "cpm": 28.13,
+          "ctr": 6.61,
+          "cpc": 0.43,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1005,6 +1017,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 1021,
               "hook_rate": 33.11
+            },
+            {
+              "date": "2026-08-27",
+              "spend": 85.53,
+              "resultado": 115,
+              "costo_resultado": 0.74,
+              "impressions": 3040,
+              "clicks": 201,
+              "ctr": 6.61,
+              "frecuencia": 1.05,
+              "link_clicks": 143,
+              "tasa_aterrizaje": null,
+              "plays_3s": 1007,
+              "hook_rate": 33.13
             }
           ]
         },
@@ -2241,6 +2267,18 @@
           "cpc": 0.59,
           "messages": 9,
           "cpa_est": 25131
+        },
+        {
+          "date": "2026-08-27",
+          "spend": 176.88,
+          "impressions": 10326,
+          "reach": 9418,
+          "clicks": 294,
+          "cpm": 17.13,
+          "ctr": 2.85,
+          "cpc": 0.6,
+          "messages": 7,
+          "cpa_est": 25269
         }
       ],
       "campaigns": [
@@ -2777,6 +2815,20 @@
               "tasa_aterrizaje": null,
               "plays_3s": 2055,
               "hook_rate": 28.6
+            },
+            {
+              "date": "2026-08-27",
+              "spend": 73.93,
+              "resultado": 148,
+              "costo_resultado": 0.5,
+              "impressions": 7117,
+              "clicks": 214,
+              "ctr": 3.01,
+              "frecuencia": 1.04,
+              "link_clicks": 150,
+              "tasa_aterrizaje": null,
+              "plays_3s": 2056,
+              "hook_rate": 28.89
             }
           ]
         },
@@ -2861,6 +2913,17 @@
               "ctr": 2.76,
               "frecuencia": 1.26,
               "tasa_conversacion": 6.72
+            },
+            {
+              "date": "2026-08-27",
+              "spend": 102.95,
+              "resultado": 7,
+              "costo_resultado": 14.71,
+              "impressions": 3209,
+              "clicks": 80,
+              "ctr": 2.49,
+              "frecuencia": 1.23,
+              "tasa_conversacion": 8.75
             }
           ]
         }
@@ -2874,27 +2937,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-08-26",
+    "date": "2026-08-27",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "🔴 SIGUE SIN CAMPAÑA DE CONVERSIÓN ACTIVA: por tercer día de datos solo corre la \"Campaña de tráfico\" — 0 conversaciones de WhatsApp reales. La cuenta gastó $94.46 con tráfico sano y barato (151 visitas de perfil IG a $0.63, CTR 7.00%, hook rate 33.1%, frecuencia 1.06). Sin campaña de mensajes no entran leads: la CPA cirugía queda SOLO estimada (≈$73 MXN desde CPC $0.44, muy por debajo del objetivo $6,450 de Lipoescultura) — el dato duro es 0 conversaciones. Prioridad: reactivar YA una campaña de mensajes/valoración."
+        "texto": "🔴 SIGUE SIN CAMPAÑA DE CONVERSIÓN ACTIVA: solo corre la \"Campaña de tráfico\" — 0 conversaciones de WhatsApp reales otra vez. La cuenta gastó $85.53 con tráfico sano y barato (115 visitas de perfil IG a $0.74, CTR 6.61%, hook rate 33.1%, frecuencia 1.05). Sin campaña de mensajes no entran leads: la CPA cirugía queda SOLO estimada (≈$72 MXN desde CPC $0.43, muy por debajo del objetivo $6,450 de Lipoescultura) — el dato duro es 0 conversaciones. Prioridad: reactivar YA una campaña de mensajes/valoración."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "🟡 HOOK RATE A LA BAJA EN \"Follow me ADS\": el gancho de video cayó a 28.6% (<30%), segundo día por debajo del umbral, aunque el tráfico sigue barato (150 visitas de perfil a $0.49). Buena noticia en \"Rinoplastia | Avatares | WhatsApp\": 9 conversaciones a $16.90 c/u (−47% vs $32.10 de ayer) con gasto $152.07 y frecuencia 1.26. La cuenta gastó $226.18, CTR 3.20%. CPA cirugía real ≈ $225 MXN (costo conversación ÷ 7.5%). Refrescar los primeros 3s del creativo de \"Follow me ADS\"."
+        "texto": "🟡 GANCHO DÉBIL + TENDENCIA NEGATIVA EN \"Follow me ADS\": el hook rate cayó a 28.9% (<30%) y el costo por visita de perfil subió a $0.50 (+31% vs prom. 7d ≈$0.38). Sigue barato en absoluto (148 visitas), pero conviene refrescar los primeros 3s del creativo. Buena noticia en \"Rinoplastia | Avatares | WhatsApp\": 7 conversaciones a $14.71 c/u, el mejor costo por conversación de la semana (−13% vs $16.90 de ayer), gasto $102.95, frecuencia 1.23. La cuenta gastó $176.88, CTR 2.85%. CPA cirugía real ≈ $196 MXN (costo conversación ÷ 7.5%)."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Reactivar HOY una campaña de mensajes/valoración a WhatsApp (avatares). El CTR de 7.00% y las 151 visitas de perfil confirman demanda, pero sin campaña de conversión el tráfico barato no se transforma en conversaciones ni leads. Van 3 días de datos con 0 conversaciones."
+        "texto": "Reactivar HOY una campaña de mensajes/valoración a WhatsApp (avatares). El CTR de 6.61% y las 115 visitas de perfil a $0.74 confirman demanda, pero sin campaña de conversión el tráfico barato no se transforma en conversaciones ni leads: otro día con 0 conversaciones reales."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Escalar \"Rinoplastia | Avatares | WhatsApp\": el costo por conversación bajó a $16.90 (−47% vs ayer) con 9 conversaciones. Cambiar los primeros 3 segundos del creativo de \"Follow me ADS\" para levantar el hook rate (28.6% < 30%) sin perder las visitas de perfil a $0.49."
+        "texto": "Mantener/escalar \"Rinoplastia | Avatares | WhatsApp\": costo por conversación en su mejor nivel semanal ($14.71 con 7 conversaciones). Cambiar los primeros 3 segundos del creativo de \"Follow me ADS\" para levantar el hook rate (28.9% < 30%) y contener el costo por visita ($0.50, +31% vs 7d)."
       }
     ]
   }
