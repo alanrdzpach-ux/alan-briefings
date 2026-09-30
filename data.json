@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T03:09:51-06:00",
+  "updated_at": "2026-09-30T03:09:02-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -928,6 +928,18 @@
           "cpc": 0.5,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-09-29",
+          "spend": 92.33,
+          "impressions": 2656,
+          "reach": 2463,
+          "clicks": 172,
+          "cpm": 34.76,
+          "ctr": 6.48,
+          "cpc": 0.54,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1629,6 +1641,23 @@
               "tasa_aterrizaje": null,
               "plays_3s": 971,
               "hook_rate": 32.72
+            },
+            {
+              "date": "2026-09-29",
+              "spend": 92.33,
+              "resultado": 70,
+              "costo_resultado": 1.32,
+              "impressions": 2656,
+              "clicks": 172,
+              "ctr": 6.48,
+              "frecuencia": 1.08,
+              "link_clicks": 104,
+              "tasa_aterrizaje": null,
+              "plays_3s": 916,
+              "hook_rate": 34.49,
+              "p25": 327,
+              "p100": 47,
+              "retencion_completa": 14.37
             }
           ]
         },
@@ -3153,6 +3182,18 @@
           "cpc": 0.91,
           "messages": 4,
           "cpa_est": 49263
+        },
+        {
+          "date": "2026-09-29",
+          "spend": 232.73,
+          "impressions": 18279,
+          "reach": 12574,
+          "clicks": 242,
+          "cpm": 12.73,
+          "ctr": 1.32,
+          "cpc": 0.96,
+          "messages": 10,
+          "cpa_est": 23273
         }
       ],
       "campaigns": [
@@ -4025,6 +4066,18 @@
               "tasa_aterrizaje": null,
               "plays_3s": 1017,
               "hook_rate": 27.11
+            },
+            {
+              "date": "2026-09-29",
+              "spend": 74.78,
+              "resultado": 101,
+              "costo_resultado": 0.74,
+              "impressions": 5766,
+              "clicks": 142,
+              "ctr": 2.46,
+              "frecuencia": 1.01,
+              "link_clicks": 116,
+              "tasa_aterrizaje": null
             }
           ]
         },
@@ -4373,6 +4426,17 @@
               "ctr": 1.58,
               "frecuencia": 1.34,
               "tasa_conversacion": 3.74
+            },
+            {
+              "date": "2026-09-29",
+              "spend": 157.95,
+              "resultado": 10,
+              "costo_resultado": 15.8,
+              "impressions": 12513,
+              "clicks": 100,
+              "ctr": 0.8,
+              "frecuencia": 1.67,
+              "tasa_conversacion": 10.0
             }
           ]
         }
@@ -4386,27 +4450,16 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-09-28",
-    "alertas": [
-      {
-        "nivel": "amarillo",
-        "doctor": "Dr. Andrei",
-        "texto": "TENDENCIA NEGATIVA en 'Rinoplastia | Avatares | WhatsApp': el costo por conversación subió a $36.89 (+33% vs prom. 7d ~$27.68), con solo 4 conversaciones. Revisar segmentación/creativo antes de sostener presupuesto."
-      },
-      {
-        "nivel": "amarillo",
-        "doctor": "Dr. Andrei",
-        "texto": "GANCHO DÉBIL en 'Follow me ADS': hook rate 27.11% (<30%), 1017 reproducciones de 3s sobre 3752 impresiones. Cambiar los primeros 3 segundos del video."
-      }
-    ],
+    "date": "2026-09-29",
+    "alertas": [],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "El tráfico a perfil rinde muy bien (93 visitas de IG a $1.01, hook 32.72%, CTR 6.33%) pero sigue SIN campaña de mensajes activa: 0 conversaciones directas. Acción del día: activar una campaña de mensajes a WhatsApp para convertir ese tráfico en valoraciones."
+        "texto": "El tráfico a perfil rinde muy bien (70 visitas de IG a $1.32, hook 34.49%, CTR 6.48%, frecuencia 1.08) pero SIGUE sin campaña de mensajes activa: 0 conversaciones directas. Acción del día: activar una campaña de mensajes a WhatsApp para convertir ese tráfico caliente en valoraciones."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "'Follow me ADS' rinde excelente ($0.69/visita, 72 visitas) pero la campaña de mensajes 'Rinoplastia' se encareció a $36.89/conversación (+33%). Acción del día: revisar segmentación/creativo de la campaña de mensajes o mover parte del presupuesto hacia lo que sí convierte."
+        "texto": "La campaña 'Rinoplastia | Avatares | WhatsApp' mejoró fuerte: 10 conversaciones a $15.80 c/u (−49% vs prom. 7d ~$31.10). Acción del día: sostener/subir presupuesto en esa campaña de mensajes mientras el costo por conversación está bajo, y bajar prioridad al tráfico de perfil que no genera conversación directa."
       }
     ]
   }
