@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T03:17:14-06:00",
+  "updated_at": "2026-10-24T03:17:37-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1000,6 +1000,18 @@
           "cpc": 0.72,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-23",
+          "spend": 98.06,
+          "impressions": 2637,
+          "reach": 2531,
+          "clicks": 105,
+          "cpm": 37.19,
+          "ctr": 3.98,
+          "cpc": 0.93,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1803,6 +1815,23 @@
               "p25": 240,
               "p100": 32,
               "retencion_completa": 13.33
+            },
+            {
+              "date": "2026-10-23",
+              "spend": 98.06,
+              "resultado": 109,
+              "costo_resultado": 0.9,
+              "impressions": 2637,
+              "clicks": 105,
+              "ctr": 3.98,
+              "frecuencia": 1.04,
+              "link_clicks": 108,
+              "tasa_aterrizaje": null,
+              "plays_3s": 865,
+              "hook_rate": 32.8,
+              "p25": 297,
+              "p100": 43,
+              "retencion_completa": 14.48
             }
           ]
         },
@@ -3399,6 +3428,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-23",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -4734,22 +4775,22 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-22",
+    "date": "2026-10-23",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD 2º día seguido: $0 de gasto y 0 impresiones el 22-oct (también el 21-oct), tras venir de ~$180–244/día. Revisar en Ads Manager si las campañas están pausadas, sin presupuesto o fuera de programación y reactivar de inmediato."
+        "texto": "CUENTA SIN ACTIVIDAD 3er día seguido: $0 de gasto y 0 impresiones el 23-oct (también 21 y 22-oct). Ninguna campaña activa entregó. Entrar a Ads Manager y reactivar de inmediato: revisar presupuesto agotado, campañas en pausa o fin de programación."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Tráfico a perfil sigue eficiente (69 visitas a $1.06, CTR 5.06%, hook 32.5%, frecuencia 1.02), pero continúa SIN campaña de mensajes activa: 0 conversaciones. Acción: lanzar ya una campaña de mensajes/WhatsApp para capitalizar el tráfico de perfil."
+        "texto": "Tráfico a perfil sigue eficiente: 109 visitas a $0.90, frecuencia 1.04, hook rate 32.8%. Pero la cuenta SIGUE sin campaña de mensajes activa con gasto (0 conversaciones) y el CTR cayó a 3.98% (vs ~6.4% prom. 7d). Acción: lanzar ya una campaña de mensajes/WhatsApp para convertir ese tráfico en conversaciones."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "La cuenta no gastó ni entregó por 2º día (0 impresiones el 21 y 22-oct). Acción: entrar a Ads Manager y reactivar 'Follow me ADS' y 'Rinoplastia WhatsApp' (revisar presupuesto agotado, pausa o fin de programación)."
+        "texto": "Cuenta apagada por 3er día (0 gasto / 0 impresiones el 21, 22 y 23-oct). Acción urgente hoy: entrar a Ads Manager y reactivar 'Follow me ADS' y 'Rinoplastia WhatsApp' revisando presupuesto, pausa o fin de programación."
       }
     ]
   }
