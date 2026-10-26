@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T09:20:00-06:00",
+  "updated_at": "2026-10-26T09:20:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1024,6 +1024,18 @@
           "cpc": 0.8,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-25",
+          "spend": 107.6,
+          "impressions": 2730,
+          "reach": 2614,
+          "clicks": 124,
+          "cpm": 39.41,
+          "ctr": 4.54,
+          "cpc": 0.87,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1861,6 +1873,23 @@
               "p25": 311,
               "p100": 46,
               "retencion_completa": 14.79
+            },
+            {
+              "date": "2026-10-25",
+              "spend": 107.6,
+              "resultado": 120,
+              "costo_resultado": 0.9,
+              "impressions": 2730,
+              "clicks": 124,
+              "ctr": 4.54,
+              "frecuencia": 1.04,
+              "link_clicks": 125,
+              "tasa_aterrizaje": null,
+              "plays_3s": 967,
+              "hook_rate": 35.42,
+              "p25": 334,
+              "p100": 35,
+              "retencion_completa": 10.48
             }
           ]
         },
@@ -3481,6 +3510,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-25",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -4816,22 +4857,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD 4º día seguido: $0 de gasto y 0 impresiones el 24-oct (también 21, 22 y 23-oct). Ninguna campaña activa entregó. Entrar a Ads Manager HOY y reactivar: revisar presupuesto agotado, campañas en pausa o fin de programación de 'Follow me ADS' y 'Rinoplastia WhatsApp'."
+        "texto": "CUENTA SIN ACTIVIDAD 5º día seguido: $0 de gasto y 0 impresiones el 25-oct (igual que 21, 22, 23 y 24-oct). Ninguna campaña entregó. Entrar a Ads Manager HOY: revisar presupuesto agotado, campañas en pausa o fin de programación de 'Follow me ADS' y 'Rinoplastia WhatsApp' y reactivar."
+      },
+      {
+        "nivel": "amarillo",
+        "doctor": "Dr. Moreno",
+        "texto": "CTR bajó a 4.54% (-22% vs prom. 7d ~5.85%) aunque el costo por visita mejoró a $0.90 (prom 7d $1.09). Revisar fatiga de creativo del tráfico a perfil."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Tráfico a perfil sigue muy eficiente: 130 visitas a $0.81 c/u, frecuencia 1.03, hook rate 34.62%. Pero la cuenta SIGUE sin campaña de mensajes activa (0 conversaciones) y el CTR bajó a 5.19% (-14% vs prom. 7d ~6.0%). Acción: lanzar ya una campaña de mensajes/WhatsApp para convertir ese tráfico en conversaciones."
+        "texto": "Tráfico a perfil sigue muy eficiente: 120 visitas a $0.90 c/u, frecuencia 1.04, hook rate 35.42%. Pero la cuenta SIGUE sin campaña de mensajes activa (0 conversaciones) y el CTR cayó a 4.54%. Acción: lanzar HOY una campaña de mensajes/WhatsApp para convertir ese tráfico en conversaciones y empezar a medir CPA real."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta apagada por 4º día (0 gasto / 0 impresiones el 21, 22, 23 y 24-oct). Acción urgente hoy: entrar a Ads Manager y reactivar 'Follow me ADS' y 'Rinoplastia WhatsApp' revisando presupuesto, pausa o fin de programación."
+        "texto": "Cuenta apagada 5 días seguidos ($0 gasto). Acción: entrar a Ads Manager hoy, verificar método de pago/presupuesto y reactivar al menos la campaña de WhatsApp de Rinoplastia (histórico de ~11-15 conversaciones/día) para no seguir perdiendo demanda."
       }
     ]
   }
