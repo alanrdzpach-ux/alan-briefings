@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T09:20:00-06:00",
+  "updated_at": "2026-10-27T09:20:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1036,6 +1036,18 @@
           "cpc": 0.87,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-26",
+          "spend": 110.55,
+          "impressions": 3013,
+          "reach": 2960,
+          "clicks": 146,
+          "cpm": 36.69,
+          "ctr": 4.85,
+          "cpc": 0.76,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1890,6 +1902,23 @@
               "p25": 334,
               "p100": 35,
               "retencion_completa": 10.48
+            },
+            {
+              "date": "2026-10-26",
+              "spend": 110.55,
+              "resultado": 148,
+              "costo_resultado": 0.75,
+              "impressions": 3013,
+              "clicks": 146,
+              "ctr": 4.85,
+              "frecuencia": 1.02,
+              "link_clicks": 150,
+              "tasa_aterrizaje": null,
+              "plays_3s": 973,
+              "hook_rate": 32.29,
+              "p25": 330,
+              "p100": 39,
+              "retencion_completa": 11.82
             }
           ]
         },
@@ -3522,6 +3551,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-26",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -4857,27 +4898,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-25",
+    "date": "2026-10-26",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD 5º día seguido: $0 de gasto y 0 impresiones el 25-oct (igual que 21, 22, 23 y 24-oct). Ninguna campaña entregó. Entrar a Ads Manager HOY: revisar presupuesto agotado, campañas en pausa o fin de programación de 'Follow me ADS' y 'Rinoplastia WhatsApp' y reactivar."
+        "texto": "CUENTA SIN ACTIVIDAD 6º día seguido: $0 de gasto y 0 impresiones el 26-oct (igual que 21-25 oct). Ninguna campaña entregó. Entrar a Ads Manager HOY: revisar método de pago/presupuesto agotado y campañas en pausa o fin de programación ('Follow me ADS', 'Rinoplastia WhatsApp') y reactivar."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "CTR bajó a 4.54% (-22% vs prom. 7d ~5.85%) aunque el costo por visita mejoró a $0.90 (prom 7d $1.09). Revisar fatiga de creativo del tráfico a perfil."
+        "texto": "Sigue SIN campaña de mensajes/WhatsApp activa: 0 conversaciones y 0 CPA real medible por 6º día. El tráfico a perfil funciona (148 visitas a $0.75, mejor costo en días) pero no se convierte en valoraciones. Lanzar hoy campaña de mensajes para capturar ese tráfico."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Tráfico a perfil sigue muy eficiente: 120 visitas a $0.90 c/u, frecuencia 1.04, hook rate 35.42%. Pero la cuenta SIGUE sin campaña de mensajes activa (0 conversaciones) y el CTR cayó a 4.54%. Acción: lanzar HOY una campaña de mensajes/WhatsApp para convertir ese tráfico en conversaciones y empezar a medir CPA real."
+        "texto": "Tráfico a perfil muy eficiente: 148 visitas a $0.75 c/u (vs $0.90 el 25-oct), CTR recuperó a 4.85%, frecuencia sana 1.02, hook rate 32.3%. Acción #1: lanzar HOY una campaña de mensajes/WhatsApp para convertir ese tráfico en conversaciones y empezar a medir CPA real (hoy solo tenemos estimado por embudo)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta apagada 5 días seguidos ($0 gasto). Acción: entrar a Ads Manager hoy, verificar método de pago/presupuesto y reactivar al menos la campaña de WhatsApp de Rinoplastia (histórico de ~11-15 conversaciones/día) para no seguir perdiendo demanda."
+        "texto": "Cuenta apagada 6 días seguidos ($0 gasto). Acción: entrar a Ads Manager hoy, verificar método de pago/presupuesto y reactivar al menos la campaña de WhatsApp de Rinoplastia (histórico de ~11-15 conversaciones/día) para frenar la pérdida de demanda."
       }
     ]
   }
