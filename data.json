@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T09:20:00-06:00",
+  "updated_at": "2026-10-28T03:17:41-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1048,6 +1048,18 @@
           "cpc": 0.76,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-27",
+          "spend": 104.57,
+          "impressions": 2861,
+          "reach": 2721,
+          "clicks": 146,
+          "cpm": 36.55,
+          "ctr": 5.1,
+          "cpc": 0.72,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1919,6 +1931,23 @@
               "p25": 330,
               "p100": 39,
               "retencion_completa": 11.82
+            },
+            {
+              "date": "2026-10-27",
+              "spend": 104.57,
+              "resultado": 144,
+              "costo_resultado": 0.73,
+              "impressions": 2861,
+              "clicks": 146,
+              "ctr": 5.1,
+              "frecuencia": 1.05,
+              "link_clicks": 148,
+              "tasa_aterrizaje": null,
+              "plays_3s": 919,
+              "hook_rate": 32.12,
+              "p25": 317,
+              "p100": 27,
+              "retencion_completa": 8.52
             }
           ]
         },
@@ -3563,6 +3592,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-27",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -4898,27 +4939,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-26",
+    "date": "2026-10-27",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD 6º día seguido: $0 de gasto y 0 impresiones el 26-oct (igual que 21-25 oct). Ninguna campaña entregó. Entrar a Ads Manager HOY: revisar método de pago/presupuesto agotado y campañas en pausa o fin de programación ('Follow me ADS', 'Rinoplastia WhatsApp') y reactivar."
+        "texto": "CUENTA SIN ACTIVIDAD 7º día seguido: $0 de gasto y 0 impresiones el 27-oct (igual que 21-26 oct). Ninguna campaña activa entregó. Entrar a Ads Manager HOY: revisar método de pago/presupuesto agotado y reactivar campañas en pausa o fin de programación."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "Sigue SIN campaña de mensajes/WhatsApp activa: 0 conversaciones y 0 CPA real medible por 6º día. El tráfico a perfil funciona (148 visitas a $0.75, mejor costo en días) pero no se convierte en valoraciones. Lanzar hoy campaña de mensajes para capturar ese tráfico."
+        "texto": "Sigue SIN campaña de mensajes/WhatsApp con gasto: 0 conversaciones y 0 CPA real medible. El tráfico a perfil es muy eficiente (144 visitas a $0.73, CTR 5.10%) pero no se convierte en valoraciones. Lanzar hoy una campaña de mensajes para capturar ese tráfico."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Tráfico a perfil muy eficiente: 148 visitas a $0.75 c/u (vs $0.90 el 25-oct), CTR recuperó a 4.85%, frecuencia sana 1.02, hook rate 32.3%. Acción #1: lanzar HOY una campaña de mensajes/WhatsApp para convertir ese tráfico en conversaciones y empezar a medir CPA real (hoy solo tenemos estimado por embudo)."
+        "texto": "Tráfico a perfil eficiente ($0.73/visita, CTR 5.10%, frecuencia 1.05 sin saturación). Duplicar el creativo ganador en una campaña de mensajes a WhatsApp para convertir esas 144 visitas/día en valoraciones."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta apagada 6 días seguidos ($0 gasto). Acción: entrar a Ads Manager hoy, verificar método de pago/presupuesto y reactivar al menos la campaña de WhatsApp de Rinoplastia (histórico de ~11-15 conversaciones/día) para frenar la pérdida de demanda."
+        "texto": "Cuenta inactiva 7 días. Entrar a Ads Manager HOY, verificar método de pago y presupuesto, y reactivar al menos una campaña de mensajes."
       }
     ]
   }
