@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T03:17:41-06:00",
+  "updated_at": "2026-10-30T03:18:03-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1060,6 +1060,18 @@
           "cpc": 0.72,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-29",
+          "spend": 115.24,
+          "impressions": 2517,
+          "reach": 2381,
+          "clicks": 148,
+          "cpm": 45.78,
+          "ctr": 5.88,
+          "cpc": 0.78,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1948,6 +1960,23 @@
               "p25": 317,
               "p100": 27,
               "retencion_completa": 8.52
+            },
+            {
+              "date": "2026-10-29",
+              "spend": 115.24,
+              "resultado": 88,
+              "costo_resultado": 1.31,
+              "impressions": 2517,
+              "clicks": 148,
+              "ctr": 5.88,
+              "frecuencia": 1.06,
+              "link_clicks": 101,
+              "tasa_aterrizaje": null,
+              "plays_3s": 881,
+              "hook_rate": 35.0,
+              "p25": 326,
+              "p100": 48,
+              "retencion_completa": 14.72
             }
           ]
         },
@@ -3604,6 +3633,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-29",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -4939,27 +4980,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-27",
+    "date": "2026-10-29",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD 7º día seguido: $0 de gasto y 0 impresiones el 27-oct (igual que 21-26 oct). Ninguna campaña activa entregó. Entrar a Ads Manager HOY: revisar método de pago/presupuesto agotado y reactivar campañas en pausa o fin de programación."
+        "texto": "CUENTA SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 29-oct, igual que todos los días desde el 21-oct. Ninguna campaña activa entregó. Entrar a Ads Manager HOY: revisar método de pago/presupuesto agotado y reactivar al menos una campaña de mensajes."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "Sigue SIN campaña de mensajes/WhatsApp con gasto: 0 conversaciones y 0 CPA real medible. El tráfico a perfil es muy eficiente (144 visitas a $0.73, CTR 5.10%) pero no se convierte en valoraciones. Lanzar hoy una campaña de mensajes para capturar ese tráfico."
+        "texto": "TENDENCIA NEGATIVA en Campaña de tráfico: el costo por visita al perfil subió a $1.31 (+47% vs promedio 7d de $0.89) y las visitas cayeron a 88 (vs ~144 habituales) pese a gastar $115.24. El hook rate sigue sano (35%). Revisar/rotar el creativo de video antes de que se encarezca más."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Tráfico a perfil eficiente ($0.73/visita, CTR 5.10%, frecuencia 1.05 sin saturación). Duplicar el creativo ganador en una campaña de mensajes a WhatsApp para convertir esas 144 visitas/día en valoraciones."
+        "texto": "Refrescar el creativo de video de la Campaña de tráfico: el costo por visita saltó 47% ($0.89→$1.31) y las visitas bajaron a 88. En paralelo, lanzar una campaña de mensajes a WhatsApp — sigue sin campaña de mensajes activa, así que las visitas al perfil no se convierten en valoraciones (0 conversaciones; CPA real no medible)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta inactiva 7 días. Entrar a Ads Manager HOY, verificar método de pago y presupuesto, y reactivar al menos una campaña de mensajes."
+        "texto": "Cuenta inactiva desde el 21-oct. Entrar a Ads Manager HOY, verificar método de pago y presupuesto, y reactivar al menos una campaña de mensajes a WhatsApp."
       }
     ]
   }
