@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T03:18:03-06:00",
+  "updated_at": "2026-10-31T03:17:16-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1072,6 +1072,18 @@
           "cpc": 0.78,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-30",
+          "spend": 88.75,
+          "impressions": 2001,
+          "reach": 1862,
+          "clicks": 100,
+          "cpm": 44.35,
+          "ctr": 5.0,
+          "cpc": 0.89,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -1977,6 +1989,23 @@
               "p25": 326,
               "p100": 48,
               "retencion_completa": 14.72
+            },
+            {
+              "date": "2026-10-30",
+              "spend": 88.75,
+              "resultado": 65,
+              "costo_resultado": 1.37,
+              "impressions": 2001,
+              "clicks": 100,
+              "ctr": 5.0,
+              "frecuencia": 1.07,
+              "link_clicks": 68,
+              "tasa_aterrizaje": null,
+              "plays_3s": 647,
+              "hook_rate": 32.33,
+              "p25": 232,
+              "p100": 30,
+              "retencion_completa": 12.93
             }
           ]
         },
@@ -3645,6 +3674,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-30",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -4980,27 +5021,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-29",
+    "date": "2026-10-30",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 29-oct, igual que todos los días desde el 21-oct. Ninguna campaña activa entregó. Entrar a Ads Manager HOY: revisar método de pago/presupuesto agotado y reactivar al menos una campaña de mensajes."
+        "texto": "CUENTA SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 30-oct, igual que todos los dias desde el 21-oct. Ninguna campana activa entrego. Entrar a Ads Manager HOY: revisar metodo de pago/presupuesto y reactivar al menos una campana de mensajes."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "TENDENCIA NEGATIVA en Campaña de tráfico: el costo por visita al perfil subió a $1.31 (+47% vs promedio 7d de $0.89) y las visitas cayeron a 88 (vs ~144 habituales) pese a gastar $115.24. El hook rate sigue sano (35%). Revisar/rotar el creativo de video antes de que se encarezca más."
+        "texto": "TENDENCIA NEGATIVA en Campana de trafico: el costo por visita al perfil subio a $1.37 (+48% vs promedio 7d de $0.92) y las visitas cayeron a 65 (vs ~110 habituales) pese a gastar $88.75. El hook rate sigue aceptable (32%). Revisar/rotar el creativo de video antes de que se encarezca mas."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Refrescar el creativo de video de la Campaña de tráfico: el costo por visita saltó 47% ($0.89→$1.31) y las visitas bajaron a 88. En paralelo, lanzar una campaña de mensajes a WhatsApp — sigue sin campaña de mensajes activa, así que las visitas al perfil no se convierten en valoraciones (0 conversaciones; CPA real no medible)."
+        "texto": "Refrescar el creativo de video de la Campana de trafico: 2 dias seguidos con el costo por visita al alza (de $0.73 el 27-oct a $1.37 ayer). Subir 1-2 variantes nuevas de gancho hoy para frenar el encarecimiento."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta inactiva desde el 21-oct. Entrar a Ads Manager HOY, verificar método de pago y presupuesto, y reactivar al menos una campaña de mensajes a WhatsApp."
+        "texto": "Reactivar la cuenta hoy: entrar a Ads Manager, verificar metodo de pago y presupuesto, y encender al menos una campana de mensajes/WhatsApp. Lleva 10 dias sin entregar (desde 21-oct)."
       }
     ]
   }
