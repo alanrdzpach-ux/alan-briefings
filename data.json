@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T03:17:16-06:00",
+  "updated_at": "2026-11-01T03:16:50-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1084,6 +1084,18 @@
           "cpc": 0.89,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-31",
+          "spend": 85.14,
+          "impressions": 1887,
+          "reach": 1758,
+          "clicks": 111,
+          "cpm": 45.12,
+          "ctr": 5.88,
+          "cpc": 0.77,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2006,6 +2018,23 @@
               "p25": 232,
               "p100": 30,
               "retencion_completa": 12.93
+            },
+            {
+              "date": "2026-10-31",
+              "spend": 85.14,
+              "resultado": 61,
+              "costo_resultado": 1.4,
+              "impressions": 1887,
+              "clicks": 111,
+              "ctr": 5.88,
+              "frecuencia": 1.07,
+              "link_clicks": 72,
+              "tasa_aterrizaje": null,
+              "plays_3s": 616,
+              "hook_rate": 32.64,
+              "p25": 210,
+              "p100": 32,
+              "retencion_completa": 15.24
             }
           ]
         },
@@ -3686,6 +3715,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-10-31",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5021,27 +5062,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "alertas": [
-      {
-        "nivel": "rojo",
-        "doctor": "Dr. Andrei",
-        "texto": "CUENTA SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 30-oct, igual que todos los dias desde el 21-oct. Ninguna campana activa entrego. Entrar a Ads Manager HOY: revisar metodo de pago/presupuesto y reactivar al menos una campana de mensajes."
-      },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "TENDENCIA NEGATIVA en Campana de trafico: el costo por visita al perfil subio a $1.37 (+48% vs promedio 7d de $0.92) y las visitas cayeron a 65 (vs ~110 habituales) pese a gastar $88.75. El hook rate sigue aceptable (32%). Revisar/rotar el creativo de video antes de que se encarezca mas."
+        "texto": "TENDENCIA NEGATIVA Campaña de tráfico: costo por resultado $1.40 vs promedio 7d $0.97 (+45%)"
+      },
+      {
+        "nivel": "amarillo",
+        "doctor": "Dr. Andrei",
+        "texto": "SIN ACTIVIDAD: la cuenta no registró gasto ni impresiones ayer. Revisar si las campañas deben reactivarse."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Refrescar el creativo de video de la Campana de trafico: 2 dias seguidos con el costo por visita al alza (de $0.73 el 27-oct a $1.37 ayer). Subir 1-2 variantes nuevas de gancho hoy para frenar el encarecimiento."
+        "texto": "La única campaña activa (tráfico/visitas a perfil IG) rinde 61 visitas a $1.40 con CTR 5.88%. Reactivar una campaña de WhatsApp/mensajes para generar conversaciones hacia valoración de Lipoescultura (CPA objetivo $6,450)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Reactivar la cuenta hoy: entrar a Ads Manager, verificar metodo de pago y presupuesto, y encender al menos una campana de mensajes/WhatsApp. Lleva 10 dias sin entregar (desde 21-oct)."
+        "texto": "Cuenta sin actividad ayer. Encender al menos una campaña (mensajes a WhatsApp o tráfico) para no perder ritmo de generación de prospectos."
       }
     ]
   }
