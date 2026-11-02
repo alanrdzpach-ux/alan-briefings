@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T03:16:50-06:00",
+  "updated_at": "2026-11-02T03:16:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1096,6 +1096,18 @@
           "cpc": 0.77,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-01",
+          "spend": 120.72,
+          "impressions": 2871,
+          "reach": 2829,
+          "clicks": 118,
+          "cpm": 42.05,
+          "ctr": 4.11,
+          "cpc": 1.02,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2035,6 +2047,23 @@
               "p25": 210,
               "p100": 32,
               "retencion_completa": 15.24
+            },
+            {
+              "date": "2026-11-01",
+              "spend": 120.72,
+              "resultado": 59,
+              "costo_resultado": 2.05,
+              "impressions": 2871,
+              "clicks": 118,
+              "ctr": 4.11,
+              "frecuencia": 1.01,
+              "link_clicks": 82,
+              "tasa_aterrizaje": null,
+              "plays_3s": 965,
+              "hook_rate": 33.61,
+              "p25": 350,
+              "p100": 50,
+              "retencion_completa": 14.29
             }
           ]
         },
@@ -3727,6 +3756,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-01",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5062,12 +5103,12 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-10-31",
+    "date": "2026-11-01",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "TENDENCIA NEGATIVA Campaña de tráfico: costo por resultado $1.40 vs promedio 7d $0.97 (+45%)"
+        "texto": "TENDENCIA NEGATIVA Campaña de tráfico: costo por resultado $2.05 vs promedio 7d $1.04 (+97%). Las visitas al perfil se encarecieron y bajó el volumen (59 vs ~65 habitual)."
       },
       {
         "nivel": "amarillo",
@@ -5078,11 +5119,11 @@
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "La única campaña activa (tráfico/visitas a perfil IG) rinde 61 visitas a $1.40 con CTR 5.88%. Reactivar una campaña de WhatsApp/mensajes para generar conversaciones hacia valoración de Lipoescultura (CPA objetivo $6,450)."
+        "texto": "La única campaña con gasto es tráfico/visitas a perfil IG (59 visitas a $2.05, CTR 4.11%, frecuencia 1.01). El costo por resultado casi se duplicó vs la semana: refrescar el creativo (el hook está al límite en 33.6%) y reactivar una campaña de WhatsApp/mensajes para convertir ese tráfico en valoraciones de Lipoescultura (CPA objetivo $6,450 MXN)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin actividad ayer. Encender al menos una campaña (mensajes a WhatsApp o tráfico) para no perder ritmo de generación de prospectos."
+        "texto": "Cuenta sin actividad por 2ª jornada. Encender al menos una campaña (mensajes a WhatsApp o tráfico) para no perder ritmo de generación de prospectos."
       }
     ]
   }
