@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T07:30:00-06:00",
+  "updated_at": "2026-11-05T07:30:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1132,6 +1132,18 @@
           "cpc": 0.61,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-04",
+          "spend": 93.5,
+          "impressions": 2810,
+          "reach": 2566,
+          "clicks": 137,
+          "cpm": 33.27,
+          "ctr": 4.88,
+          "cpc": 0.68,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2122,6 +2134,23 @@
               "p25": 288,
               "p100": 39,
               "retencion_completa": 13.54
+            },
+            {
+              "date": "2026-11-04",
+              "spend": 93.5,
+              "resultado": 61,
+              "costo_resultado": 1.53,
+              "impressions": 2810,
+              "clicks": 137,
+              "ctr": 4.88,
+              "frecuencia": 1.1,
+              "link_clicks": 77,
+              "tasa_aterrizaje": null,
+              "plays_3s": 906,
+              "hook_rate": 32.24,
+              "p25": 282,
+              "p100": 46,
+              "retencion_completa": 16.31
             }
           ]
         },
@@ -3850,6 +3879,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-04",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5185,22 +5226,22 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD (4ª jornada): la cuenta no registró gasto ni impresiones ayer; no hay campañas activas con entrega. Reactivar campañas para no detener la generación de prospectos."
+        "texto": "SIN ACTIVIDAD (5ª jornada): la cuenta no registró gasto ni impresiones ayer; no hay campañas activas con entrega. Reactivar al menos una campaña para no frenar la generación de prospectos."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "La campaña de tráfico sigue rindiendo: 83 visitas al perfil IG a $1.18 c/u, CTR 5.59% y hook rate 31.1%, frecuencia sana (1.05). Gasto -5.8% y CTR +6.0% vs promedio 7d. Falta convertir ese tráfico: reactivar una campaña de WhatsApp/mensajes para transformar visitas en valoraciones de Lipoescultura (CPA objetivo $6,450 MXN). Sin campañas de mensajes activas no hay conversaciones medibles."
+        "texto": "La campaña de tráfico sigue entregando: 61 visitas al perfil de Instagram a $1.53 c/u, CTR 4.88% y hook rate 32.2%, frecuencia sana (1.1). Ayer bajó el ritmo: gasto -8.8% y CTR -9.3% vs promedio 7d, y el costo por resultado subió de ~$1.31 a $1.53. Sigue sin haber campañas de mensajes activas, así que ese tráfico no se está convirtiendo en conversaciones medibles: reactivar una campaña de WhatsApp/mensajes para transformar las visitas al perfil en valoraciones de Lipoescultura (CPA objetivo $6,450 MXN)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin entrega por 4º día (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos; sin entrega no hay datos ni pipeline."
+        "texto": "Cuenta sin entrega por 5º día (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar el pipeline; sin entrega no hay datos ni prospectos."
       }
     ]
   }
