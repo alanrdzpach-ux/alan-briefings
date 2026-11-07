@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T03:16:46-06:00",
+  "updated_at": "2026-11-07T03:17:02-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1156,6 +1156,18 @@
           "cpc": 0.56,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-06",
+          "spend": 15.8,
+          "impressions": 399,
+          "reach": 390,
+          "clicks": 17,
+          "cpm": 39.6,
+          "ctr": 4.26,
+          "cpc": 0.93,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2180,6 +2192,23 @@
               "p25": 293,
               "p100": 47,
               "retencion_completa": 16.04
+            },
+            {
+              "date": "2026-11-06",
+              "spend": 15.8,
+              "resultado": 5,
+              "costo_resultado": 3.16,
+              "impressions": 399,
+              "clicks": 17,
+              "ctr": 4.26,
+              "frecuencia": 1.02,
+              "link_clicks": 7,
+              "tasa_aterrizaje": null,
+              "plays_3s": 132,
+              "hook_rate": 33.08,
+              "p25": 48,
+              "p100": 3,
+              "retencion_completa": 6.25
             }
           ]
         },
@@ -3932,6 +3961,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-06",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5267,22 +5308,32 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "alertas": [
+      {
+        "nivel": "rojo",
+        "doctor": "Dr. Moreno",
+        "texto": "CAÍDA DE ENTREGA: la cuenta gastó solo $15.8 MXN ayer (-84% vs promedio 7d $98.5), con 399 impresiones (-86%) y apenas 5 visitas al perfil (vs 87 el día previo). La Campaña de tráfico casi dejó de entregar — revisar límite de presupuesto, estado de entrega y posibles rechazos de anuncios."
+      },
+      {
+        "nivel": "amarillo",
+        "doctor": "Dr. Moreno",
+        "texto": "TENDENCIA NEGATIVA Campaña de tráfico: el costo por visita al perfil subió a $3.16 (+180% vs ~$1.13 del día previo), efecto de la baja entrega. Debería normalizarse al restablecer el volumen; creativo sano (hook rate 33.1%, CTR 4.26%, frecuencia 1.02)."
+      },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD (6ª jornada): la cuenta no registró gasto ni impresiones ayer y no hay campañas activas con entrega. Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos."
+        "texto": "SIN ACTIVIDAD (7ª jornada): la cuenta no registró gasto ni impresiones ayer y no hay campañas activas con entrega. Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "La Campaña de tráfico mejoró ayer: 87 visitas al perfil de Instagram a $1.13 c/u (vs $1.53 el día previo, -26%), CTR 6.31% (+17.9% vs 7d) y hook rate 31.7%, con frecuencia sana (1.08) y CPC $0.56. Gasto $98.16 (-2.8% vs 7d). Sigue sin haber campaña de mensajes/WhatsApp activa, así que ese tráfico de calidad no se convierte en conversaciones medibles: reactivar una campaña de WhatsApp para transformar las visitas al perfil en valoraciones de Lipoescultura (CPA objetivo $6,450 MXN)."
+        "texto": "Prioridad: investigar por qué la Campaña de tráfico colapsó su entrega ayer ($15.8 vs ~$98/día habitual, -84%). Revisar límite de presupuesto, estado de entrega y rechazos. El creativo sigue sano (hook rate 33.1%, CTR 4.26%, frecuencia 1.02), así que es un problema de entrega/presupuesto, no de contenido. Además sigue sin haber campaña de mensajes/WhatsApp activa: ese tráfico no se convierte en valoraciones (CPA objetivo Lipoescultura $6,450 MXN)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin entrega por 6º día consecutivo (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar el pipeline; sin entrega no hay datos ni prospectos nuevos."
+        "texto": "Cuenta sin entrega por 7º día consecutivo (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar el pipeline; sin entrega no hay datos ni prospectos nuevos."
       }
     ]
   }
