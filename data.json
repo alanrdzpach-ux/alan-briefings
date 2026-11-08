@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T03:17:02-06:00",
+  "updated_at": "2026-11-08T03:16:15-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1166,6 +1166,18 @@
           "cpm": 39.6,
           "ctr": 4.26,
           "cpc": 0.93,
+          "messages": 0,
+          "cpa_est": 0
+        },
+        {
+          "date": "2026-11-07",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
           "messages": 0,
           "cpa_est": 0
         }
@@ -3973,6 +3985,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-07",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5308,32 +5332,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "CAÍDA DE ENTREGA: la cuenta gastó solo $15.8 MXN ayer (-84% vs promedio 7d $98.5), con 399 impresiones (-86%) y apenas 5 visitas al perfil (vs 87 el día previo). La Campaña de tráfico casi dejó de entregar — revisar límite de presupuesto, estado de entrega y posibles rechazos de anuncios."
-      },
-      {
-        "nivel": "amarillo",
-        "doctor": "Dr. Moreno",
-        "texto": "TENDENCIA NEGATIVA Campaña de tráfico: el costo por visita al perfil subió a $3.16 (+180% vs ~$1.13 del día previo), efecto de la baja entrega. Debería normalizarse al restablecer el volumen; creativo sano (hook rate 33.1%, CTR 4.26%, frecuencia 1.02)."
+        "texto": "ENTREGA DETENIDA: la cuenta gastó $0 y registró 0 impresiones ayer, cayendo desde $15.8 el 06-nov y un ritmo habitual de ~$98/día hasta el 05-nov. La Campaña de tráfico dejó de entregar por completo (2º día de colapso). Revisar urgente límite/estado de presupuesto, estado de entrega y posibles rechazos de anuncios: sin entrega no entra tráfico ni prospectos."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD (7ª jornada): la cuenta no registró gasto ni impresiones ayer y no hay campañas activas con entrega. Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos."
+        "texto": "SIN ACTIVIDAD (8ª jornada): la cuenta sigue sin gasto ni impresiones y sin campañas activas con entrega. Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Prioridad: investigar por qué la Campaña de tráfico colapsó su entrega ayer ($15.8 vs ~$98/día habitual, -84%). Revisar límite de presupuesto, estado de entrega y rechazos. El creativo sigue sano (hook rate 33.1%, CTR 4.26%, frecuencia 1.02), así que es un problema de entrega/presupuesto, no de contenido. Además sigue sin haber campaña de mensajes/WhatsApp activa: ese tráfico no se convierte en valoraciones (CPA objetivo Lipoescultura $6,450 MXN)."
+        "texto": "Acción #1: restablecer la entrega de la Campaña de tráfico hoy mismo. Ayer gastó $0 (0 impresiones), segundo día tras el desplome del 06-nov ($15.8 vs ~$98/día habitual). Verificar que el presupuesto no esté agotado/pausado, revisar estado de entrega y rechazos de anuncios. El creativo venía sano (hook rate 33.1%, CTR 4.26%, frecuencia ~1.0), así que es problema de entrega/presupuesto, no de contenido. Pendiente de fondo: sigue sin campaña de mensajes/WhatsApp activa, por lo que el tráfico no se convierte en valoraciones (CPA objetivo Lipoescultura $6,450 MXN)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin entrega por 7º día consecutivo (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar el pipeline; sin entrega no hay datos ni prospectos nuevos."
+        "texto": "Cuenta sin entrega por 8º día consecutivo (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar el pipeline; sin entrega no hay datos ni prospectos nuevos."
       }
     ]
   }
