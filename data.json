@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T03:16:15-06:00",
+  "updated_at": "2026-11-09T03:15:55-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1171,6 +1171,18 @@
         },
         {
           "date": "2026-11-07",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
+        },
+        {
+          "date": "2026-11-08",
           "spend": 0,
           "impressions": 0,
           "reach": 0,
@@ -3997,6 +4009,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-08",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5332,27 +5356,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "ENTREGA DETENIDA: la cuenta gastó $0 y registró 0 impresiones ayer, cayendo desde $15.8 el 06-nov y un ritmo habitual de ~$98/día hasta el 05-nov. La Campaña de tráfico dejó de entregar por completo (2º día de colapso). Revisar urgente límite/estado de presupuesto, estado de entrega y posibles rechazos de anuncios: sin entrega no entra tráfico ni prospectos."
+        "texto": "ENTREGA DETENIDA (2º día completo en $0): la cuenta gastó $0 y registró 0 impresiones el 08-nov, igual que el 07-nov, tras el desplome del 06-nov ($15.8 vs ~$98/día habitual hasta el 05-nov). Ninguna campaña activa entregó. Revisar HOY límite/estado de presupuesto, estado de entrega y rechazos de anuncios: sin entrega no entra tráfico ni prospectos."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD (8ª jornada): la cuenta sigue sin gasto ni impresiones y sin campañas activas con entrega. Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos."
+        "texto": "SIN ACTIVIDAD (9ª jornada consecutiva): la cuenta sigue en $0 de gasto y 0 impresiones, sin campañas activas con entrega. Reactivar al menos una campaña de mensajes/WhatsApp para reanudar la generación de prospectos."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Acción #1: restablecer la entrega de la Campaña de tráfico hoy mismo. Ayer gastó $0 (0 impresiones), segundo día tras el desplome del 06-nov ($15.8 vs ~$98/día habitual). Verificar que el presupuesto no esté agotado/pausado, revisar estado de entrega y rechazos de anuncios. El creativo venía sano (hook rate 33.1%, CTR 4.26%, frecuencia ~1.0), así que es problema de entrega/presupuesto, no de contenido. Pendiente de fondo: sigue sin campaña de mensajes/WhatsApp activa, por lo que el tráfico no se convierte en valoraciones (CPA objetivo Lipoescultura $6,450 MXN)."
+        "texto": "Acción #1: restablecer HOY la entrega de la cuenta. Dos días seguidos en $0 (0 impresiones el 07 y 08-nov). Verificar que el presupuesto de la Campaña de tráfico no esté agotado/pausado, revisar estado de entrega y posibles rechazos de anuncios. El creativo venía sano (hook rate 33.1%, CTR 4.26%, frecuencia ~1.0 antes del corte), así que es problema de entrega/presupuesto, no de contenido. Pendiente de fondo: sigue sin campaña de mensajes/WhatsApp activa, por lo que aun con tráfico no se generan valoraciones (CPA objetivo Lipoescultura $6,450 MXN)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin entrega por 8º día consecutivo (gasto e impresiones en 0). Reactivar al menos una campaña de mensajes/WhatsApp para reanudar el pipeline; sin entrega no hay datos ni prospectos nuevos."
+        "texto": "Acción #1: reactivar una campaña de mensajes/WhatsApp (p. ej. 'Rinoplastia | Dr Andrei | Avatares' o 'WhatsApp Mensajes'). Cuenta sin entrega por 9º día consecutivo (gasto e impresiones en 0); sin una campaña activa no hay prospectos. Confirmar presupuesto, método de pago y que los anuncios no estén en revisión."
       }
     ]
   }
