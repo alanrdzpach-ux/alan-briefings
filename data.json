@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T03:16:02-06:00",
+  "updated_at": "2026-11-11T03:15:33-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1195,6 +1195,18 @@
         },
         {
           "date": "2026-11-09",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
+        },
+        {
+          "date": "2026-11-10",
           "spend": 0,
           "impressions": 0,
           "reach": 0,
@@ -4045,6 +4057,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-10",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5380,27 +5404,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "ENTREGA DETENIDA (3er dia completo en $0): la cuenta gasto $0 y registro 0 impresiones el 09-nov, igual que el 07 y 08-nov. Ninguna de las campanas activas (Campana de trafico y ~20 publicaciones de mensajes) entrego. Van 4 dias desde el ultimo gasto real (06-nov $15.8; ~$98/dia hasta el 05-nov). Revisar HOY limite/estado del presupuesto de la cuenta y de la Campana de trafico, estado de entrega y posibles rechazos: sin entrega no entra trafico ni prospectos."
+        "texto": "ENTREGA DETENIDA (4o dia completo en $0): la cuenta gasto $0 y 0 impresiones el 10-nov, igual que 07, 08 y 09-nov. Ninguna de las ~22 campanas activas (Campana de trafico, Ventas, Avatares, Formulario y publicaciones de mensajes) entrego. Van 4 dias desde el ultimo gasto real (06-nov $15.8; ~$98/dia hasta el 05-nov). Revisar HOY limite de gasto de la cuenta, metodo de pago, estado del presupuesto y posibles rechazos de la Campana de trafico: sin entrega no entran clics ni prospectos."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD (10a jornada consecutiva): la cuenta sigue en $0 de gasto y 0 impresiones, y ya no tiene ninguna campana activa con entrega. Reactivar al menos una campana de mensajes/WhatsApp (p. ej. 'Rinoplastia | Dr Andrei | Avatares | WhatsApp') para reanudar la generacion de prospectos."
+        "texto": "SIN ACTIVIDAD (11a jornada consecutiva): la cuenta sigue en $0 y 0 impresiones el 10-nov, y no tiene ninguna campana activa con entrega. Reactivar al menos una campana de mensajes/WhatsApp con presupuesto para volver a generar conversaciones."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Accion #1: restablecer HOY la entrega de la cuenta. Tres dias seguidos en $0 (0 impresiones 07, 08 y 09-nov). Entrar a Ads Manager y verificar: (a) que el presupuesto de la cuenta y de la Campana de trafico no esten agotados ni pausados, (b) estado de entrega de la campana, (c) que no haya anuncios rechazados. El creativo venia sano antes del corte (hook rate ~33%, CTR 4.26%, frecuencia ~1.0), asi que es problema de entrega/presupuesto, no de contenido. Pendiente de fondo: sigue sin campana de mensajes/WhatsApp activa con gasto, por lo que aun con trafico no se generan valoraciones (CPA objetivo Lipoescultura $6,450 MXN)."
+        "texto": "Entrar a Meta Ads Manager y diagnosticar por que la cuenta lleva 4 dias sin entregar: revisar limite de gasto de la cuenta, estado del metodo de pago y el estado/rechazo de la Campana de trafico. Reactivarla con presupuesto diario (~$100) para recuperar el flujo de ~150 clics/dia que tenia hasta el 05-nov."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Accion #1: reactivar una campana de mensajes/WhatsApp. La cuenta lleva 10 dias en $0 y sin campanas activas; no entra ningun prospecto. Activar 'Rinoplastia | Dr Andrei | Avatares | WhatsApp' con un presupuesto diario de prueba y confirmar que empieza a entregar en las primeras horas."
+        "texto": "La cuenta lleva 11 dias en $0. Decidir si se reactiva: encender la campana de WhatsApp (Rinoplastia | Avatares) con un presupuesto de prueba de $50-100/dia, o confirmar formalmente que la cuenta queda en pausa para dejar de monitorearla a diario."
       }
     ]
   }
