@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T03:15:33-06:00",
+  "updated_at": "2026-11-12T03:16:37-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1216,6 +1216,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-11",
+          "spend": 172.21,
+          "impressions": 3876,
+          "reach": 3647,
+          "clicks": 189,
+          "cpm": 44.43,
+          "ctr": 4.88,
+          "cpc": 0.91,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2257,6 +2269,23 @@
               "p25": 48,
               "p100": 3,
               "retencion_completa": 6.25
+            },
+            {
+              "date": "2026-11-11",
+              "spend": 172.21,
+              "resultado": 109,
+              "costo_resultado": 1.58,
+              "impressions": 3876,
+              "clicks": 189,
+              "ctr": 4.88,
+              "frecuencia": 1.06,
+              "link_clicks": 124,
+              "tasa_aterrizaje": null,
+              "plays_3s": 1265,
+              "hook_rate": 32.64,
+              "p25": 410,
+              "p100": 45,
+              "retencion_completa": 10.98
             }
           ]
         },
@@ -4069,6 +4098,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-11",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5404,27 +5445,22 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "alertas": [
-      {
-        "nivel": "rojo",
-        "doctor": "Dr. Moreno",
-        "texto": "ENTREGA DETENIDA (4o dia completo en $0): la cuenta gasto $0 y 0 impresiones el 10-nov, igual que 07, 08 y 09-nov. Ninguna de las ~22 campanas activas (Campana de trafico, Ventas, Avatares, Formulario y publicaciones de mensajes) entrego. Van 4 dias desde el ultimo gasto real (06-nov $15.8; ~$98/dia hasta el 05-nov). Revisar HOY limite de gasto de la cuenta, metodo de pago, estado del presupuesto y posibles rechazos de la Campana de trafico: sin entrega no entran clics ni prospectos."
-      },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD (11a jornada consecutiva): la cuenta sigue en $0 y 0 impresiones el 10-nov, y no tiene ninguna campana activa con entrega. Reactivar al menos una campana de mensajes/WhatsApp con presupuesto para volver a generar conversaciones."
+        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 11-nov, 5o dia consecutivo sin entrega (desde 07-nov). Ninguna campana activa. Confirmar si la cuenta esta pausada a proposito o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Entrar a Meta Ads Manager y diagnosticar por que la cuenta lleva 4 dias sin entregar: revisar limite de gasto de la cuenta, estado del metodo de pago y el estado/rechazo de la Campana de trafico. Reactivarla con presupuesto diario (~$100) para recuperar el flujo de ~150 clics/dia que tenia hasta el 05-nov."
+        "texto": "Entrega REANUDADA tras 4 dias en $0 (06->11 nov). 'Campana de trafico' rindio bien: 109 visitas al perfil IG a $1.58 c/u, CTR 4.88%, hook rate 32.6%. Verificar que la cuenta siga entregando hoy y reactivar las campanas de mensajes/ventas (todas en $0) para generar conversaciones reales; hoy el CPA es solo estimado."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "La cuenta lleva 11 dias en $0. Decidir si se reactiva: encender la campana de WhatsApp (Rinoplastia | Avatares) con un presupuesto de prueba de $50-100/dia, o confirmar formalmente que la cuenta queda en pausa para dejar de monitorearla a diario."
+        "texto": "Cuenta sin gasto 5 dias seguidos. Decidir hoy: reactivar 'Follow me ADS' o 'Rinoplastia WhatsApp' con presupuesto, o confirmar pausa intencional. Sin datos no hay embudo que optimizar."
       }
     ]
   }
