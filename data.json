@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T03:17:14-06:00",
+  "updated_at": "2026-11-14T03:16:41-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1240,6 +1240,18 @@
           "cpc": 0.83,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-13",
+          "spend": 150.08,
+          "impressions": 3044,
+          "reach": 2774,
+          "clicks": 164,
+          "cpm": 49.3,
+          "ctr": 5.39,
+          "cpc": 0.92,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2315,6 +2327,23 @@
               "p25": 438,
               "p100": 65,
               "retencion_completa": 14.84
+            },
+            {
+              "date": "2026-11-13",
+              "spend": 150.08,
+              "resultado": 84,
+              "costo_resultado": 1.79,
+              "impressions": 3044,
+              "clicks": 164,
+              "ctr": 5.39,
+              "frecuencia": 1.1,
+              "link_clicks": 107,
+              "tasa_aterrizaje": null,
+              "plays_3s": 956,
+              "hook_rate": 31.41,
+              "p25": 313,
+              "p100": 47,
+              "retencion_completa": 15.02
             }
           ]
         },
@@ -4151,6 +4180,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-13",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5486,22 +5527,22 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 12-nov; la cuenta no entrega en todo noviembre. Ninguna campana activa (ultima entrega en octubre). Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 13-nov. La cuenta no entrega en todo noviembre y no tiene ninguna campana activa. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Segundo dia consecutivo de entrega solida: 'Campana de trafico' genero 117 visitas al perfil IG a $1.44 c/u (mejoro desde $1.58 el 11-nov), CTR 5.09%, hook rate 32%, frecuencia 1.05 (sin saturacion). Reactivar las campanas de mensajes/ventas (todas en $0) para convertir ese trafico en conversaciones reales; el CPA de hoy es solo estimado (~$138, muy por debajo del tope de $6,450)."
+        "texto": "'Campana de trafico' sigue siendo la unica activa: 84 visitas al perfil IG a $1.79 c/u (subio desde $1.44 el 12-nov), CTR 5.39%, hook rate 31.4%, frecuencia 1.10 (sin saturacion). El costo por visita subio +12% vs promedio 7d (dentro de rango normal). Reactivar las campanas de mensajes/ventas (todas en $0) para convertir ese trafico en conversaciones reales; el CPA de hoy es solo estimado (~$153 MXN, muy por debajo del tope de $6,450 de Lipoescultura)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin gasto todo noviembre (0 actividad 12+ dias). Decidir hoy: reactivar 'Follow me ADS' o 'Rinoplastia WhatsApp Avatares' con presupuesto, o confirmar pausa intencional. Sin datos no hay embudo que optimizar."
+        "texto": "Cuenta sin gasto en todo noviembre. Accion concreta: decidir hoy si se reactiva con un presupuesto diario (sugerido arrancar con una campana de mensajes a WhatsApp) o confirmar que la cuenta queda en pausa; lleva mas de 40 dias sin entrega."
       }
     ]
   }
