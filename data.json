@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T03:16:41-06:00",
+  "updated_at": "2026-11-15T03:17:22-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1252,6 +1252,18 @@
           "cpc": 0.92,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-14",
+          "spend": 171.89,
+          "impressions": 2913,
+          "reach": 2732,
+          "clicks": 165,
+          "cpm": 59.01,
+          "ctr": 5.66,
+          "cpc": 1.04,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2344,6 +2356,23 @@
               "p25": 313,
               "p100": 47,
               "retencion_completa": 15.02
+            },
+            {
+              "date": "2026-11-14",
+              "spend": 171.89,
+              "resultado": 84,
+              "costo_resultado": 2.05,
+              "impressions": 2913,
+              "clicks": 165,
+              "ctr": 5.66,
+              "frecuencia": 1.07,
+              "link_clicks": 111,
+              "tasa_aterrizaje": null,
+              "plays_3s": 1038,
+              "hook_rate": 35.63,
+              "p25": 338,
+              "p100": 52,
+              "retencion_completa": 15.38
             }
           ]
         },
@@ -4192,6 +4221,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-14",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5527,22 +5568,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "alertas": [
       {
         "nivel": "amarillo",
+        "doctor": "Dr. Moreno",
+        "texto": "TENDENCIA NEGATIVA en 'Campana de trafico': el costo por visita al perfil subio a $2.05 el 14-nov (+28% vs promedio 7d de $1.60). CTR y frecuencia siguen sanos (5.66% y 1.07); vigilar el creativo porque el costo lleva tres dias al alza (1.44 -> 1.79 -> 2.05)."
+      },
+      {
+        "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 13-nov. La cuenta no entrega en todo noviembre y no tiene ninguna campana activa. Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 14-nov. La cuenta no entrega en todo noviembre y no tiene ninguna campana activa. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "'Campana de trafico' sigue siendo la unica activa: 84 visitas al perfil IG a $1.79 c/u (subio desde $1.44 el 12-nov), CTR 5.39%, hook rate 31.4%, frecuencia 1.10 (sin saturacion). El costo por visita subio +12% vs promedio 7d (dentro de rango normal). Reactivar las campanas de mensajes/ventas (todas en $0) para convertir ese trafico en conversaciones reales; el CPA de hoy es solo estimado (~$153 MXN, muy por debajo del tope de $6,450 de Lipoescultura)."
+        "texto": "'Campana de trafico' sigue siendo la unica activa: $171.89 de gasto, 84 visitas al perfil IG a $2.05 c/u, 165 clics, CTR 5.66%, hook rate 35.6%, frecuencia 1.07 (sin saturacion). El costo por visita subio +28% vs promedio 7d. Accion: reactivar las campanas de mensajes/ventas (todas en $0) para convertir ese trafico en conversaciones reales; el CPA de hoy es solo estimado (~$174 MXN, muy por debajo del tope de $6,450 de Lipoescultura)."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin gasto en todo noviembre. Accion concreta: decidir hoy si se reactiva con un presupuesto diario (sugerido arrancar con una campana de mensajes a WhatsApp) o confirmar que la cuenta queda en pausa; lleva mas de 40 dias sin entrega."
+        "texto": "Cuenta sin gasto en todo noviembre (mas de 40 dias sin entrega). Accion concreta: decidir hoy si se reactiva con un presupuesto diario (sugerido arrancar con una campana de mensajes a WhatsApp) o confirmar formalmente que la cuenta queda en pausa."
       }
     ]
   }
