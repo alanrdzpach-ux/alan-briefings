@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T03:17:22-06:00",
+  "updated_at": "2026-11-16T03:19:42-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1264,6 +1264,18 @@
           "cpc": 1.04,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-15",
+          "spend": 112.85,
+          "impressions": 2102,
+          "reach": 2037,
+          "clicks": 107,
+          "cpm": 53.69,
+          "ctr": 5.09,
+          "cpc": 1.05,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2373,6 +2385,23 @@
               "p25": 338,
               "p100": 52,
               "retencion_completa": 15.38
+            },
+            {
+              "date": "2026-11-15",
+              "spend": 112.85,
+              "resultado": 58,
+              "costo_resultado": 1.95,
+              "impressions": 2102,
+              "clicks": 107,
+              "ctr": 5.09,
+              "frecuencia": 1.03,
+              "link_clicks": 64,
+              "tasa_aterrizaje": null,
+              "plays_3s": 725,
+              "hook_rate": 34.49,
+              "p25": 239,
+              "p100": 41,
+              "retencion_completa": 17.15
             }
           ]
         },
@@ -4233,6 +4262,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-15",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5568,27 +5609,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "TENDENCIA NEGATIVA en 'Campana de trafico': el costo por visita al perfil subio a $2.05 el 14-nov (+28% vs promedio 7d de $1.60). CTR y frecuencia siguen sanos (5.66% y 1.07); vigilar el creativo porque el costo lleva tres dias al alza (1.44 -> 1.79 -> 2.05)."
+        "texto": "Entrega recortada: gasto $112.85 (-32% vs promedio activo 7d de $165.79) y 58 visitas al perfil IG vs 84 el dia previo. La eficiencia se mantuvo sana: costo por visita $1.95 (-5% vs $2.05 del 14-nov), CTR 5.09%, frecuencia 1.03, hook rate 34.5%. Revisar presupuesto/entrega de 'Campana de trafico' para recuperar volumen."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 14-nov. La cuenta no entrega en todo noviembre y no tiene ninguna campana activa. Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 15-nov. La cuenta sigue sin entregar en todo noviembre y no tiene ninguna campana activa con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "'Campana de trafico' sigue siendo la unica activa: $171.89 de gasto, 84 visitas al perfil IG a $2.05 c/u, 165 clics, CTR 5.66%, hook rate 35.6%, frecuencia 1.07 (sin saturacion). El costo por visita subio +28% vs promedio 7d. Accion: reactivar las campanas de mensajes/ventas (todas en $0) para convertir ese trafico en conversaciones reales; el CPA de hoy es solo estimado (~$174 MXN, muy por debajo del tope de $6,450 de Lipoescultura)."
+        "texto": "'Campana de trafico' sigue siendo la unica activa: $112.85 de gasto, 58 visitas al perfil IG a $1.95 c/u (el costo bajo -5% vs ayer, cediendo la tendencia alcista de dias previos), 107 clics, CTR 5.09%, hook rate 34.5%, frecuencia 1.03 (sin saturacion). Dos focos hoy: (1) la entrega cayo 32% - revisar presupuesto/limites de la campana para recuperar volumen; (2) reactivar las campanas de mensajes/ventas (todas en $0) para convertir ese trafico en conversaciones reales. CPA solo estimado (~$175 MXN por cirugia desde el CPC de $1.05), muy por debajo del tope de $6,450 de Lipoescultura."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Cuenta sin gasto en todo noviembre (mas de 40 dias sin entrega). Accion concreta: decidir hoy si se reactiva con un presupuesto diario (sugerido arrancar con una campana de mensajes a WhatsApp) o confirmar formalmente que la cuenta queda en pausa."
+        "texto": "Cuenta sin gasto en todo noviembre (mas de 45 dias sin entrega). Accion concreta: decidir hoy si se reactiva con un presupuesto diario (sugerido arrancar con una campana de mensajes a WhatsApp) o confirmar formalmente que la cuenta queda en pausa."
       }
     ]
   }
