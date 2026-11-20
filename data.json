@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T03:18:14-06:00",
+  "updated_at": "2026-11-20T03:16:17-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1312,6 +1312,18 @@
           "cpc": 0.8,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-19",
+          "spend": 102.56,
+          "impressions": 2359,
+          "reach": 2314,
+          "clicks": 149,
+          "cpm": 43.48,
+          "ctr": 6.32,
+          "cpc": 0.69,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2489,6 +2501,23 @@
               "p25": 289,
               "p100": 37,
               "retencion_completa": 12.8
+            },
+            {
+              "date": "2026-11-19",
+              "spend": 102.56,
+              "resultado": 90,
+              "costo_resultado": 1.14,
+              "impressions": 2359,
+              "clicks": 149,
+              "ctr": 6.32,
+              "frecuencia": 1.02,
+              "link_clicks": 109,
+              "tasa_aterrizaje": null,
+              "plays_3s": 793,
+              "hook_rate": 33.62,
+              "p25": 266,
+              "p100": 35,
+              "retencion_completa": 13.16
             }
           ]
         },
@@ -4397,6 +4426,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-19",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5732,27 +5773,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "Dia fuerte en eficiencia con brecha de conversion: 82 visitas al perfil IG a $1.36 c/u (mejor costo de la semana, -24% vs promedio 7d de $1.79) y CTR 6.19% (+18% vs 7d). Pero ninguna campana de mensajes/ventas estuvo activa con gasto: el trafico al perfil no se esta convirtiendo en conversaciones de WhatsApp."
+        "texto": "Mejor dia de eficiencia de la semana: 90 visitas al perfil de Instagram a $1.14 c/u (vs promedio 7d de $1.76) y CTR 6.32% (+16% vs 7d). Gasto $102.56 (-22% vs 7d). Pero ninguna campana de mensajes/WhatsApp estuvo activa con gasto: el trafico al perfil sigue sin convertirse en conversaciones. Brecha de conversion abierta todo noviembre."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 18-nov. La cuenta sigue todo noviembre sin entregar y sin campanas activas con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 19-nov. La cuenta acumula todo noviembre sin entregar ni campanas activas con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Activar una campana de mensajes/WhatsApp o retargeting a visitantes del perfil para capitalizar las ~82 visitas diarias (hoy a $1.36) que no estan generando conversaciones. CPA estimado desde CPC ($0.80) ~$133 MXN, muy por debajo del maximo de $6,450 para Lipoescultura."
+        "texto": "El gancho esta funcionando (CTR 6.32%%, costo por visita $1.14). Activar hoy una campana de mensajes/WhatsApp o un retargeting a quienes visitaron el perfil IG para capturar esas 90 visitas diarias antes de que se enfrien."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Confirmar con el doctor si la pausa de noviembre es intencional; si se busca agenda, reactivar al menos una campana de WhatsApp. La cuenta lleva todo el mes sin entregar."
+        "texto": "Decidir el estatus de la cuenta: lleva todo noviembre en ceros. Si debe seguir activa, reactivar presupuesto en una campana; si es pausa intencional, dejarlo documentado para no alertar cada dia."
       }
     ]
   }
