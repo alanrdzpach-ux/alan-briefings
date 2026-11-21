@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T03:16:17-06:00",
+  "updated_at": "2026-11-21T03:17:01-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1324,6 +1324,18 @@
           "cpc": 0.69,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-20",
+          "spend": 79.5,
+          "impressions": 2196,
+          "reach": 2099,
+          "clicks": 103,
+          "cpm": 36.2,
+          "ctr": 4.69,
+          "cpc": 0.77,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -2518,6 +2530,23 @@
               "p25": 266,
               "p100": 35,
               "retencion_completa": 13.16
+            },
+            {
+              "date": "2026-11-20",
+              "spend": 79.5,
+              "resultado": 58,
+              "costo_resultado": 1.37,
+              "impressions": 2196,
+              "clicks": 103,
+              "ctr": 4.69,
+              "frecuencia": 1.05,
+              "link_clicks": 70,
+              "tasa_aterrizaje": null,
+              "plays_3s": 759,
+              "hook_rate": 34.56,
+              "p25": 327,
+              "p100": 53,
+              "retencion_completa": 16.21
             }
           ]
         },
@@ -4438,6 +4467,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-20",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5773,23 +5814,23 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "alertas": [
       {
         "nivel": "amarillo",
         "doctor": "Dr. Moreno",
-        "texto": "Mejor dia de eficiencia de la semana: 90 visitas al perfil de Instagram a $1.14 c/u (vs promedio 7d de $1.76) y CTR 6.32% (+16% vs 7d). Gasto $102.56 (-22% vs 7d). Pero ninguna campana de mensajes/WhatsApp estuvo activa con gasto: el trafico al perfil sigue sin convertirse en conversaciones. Brecha de conversion abierta todo noviembre."
+        "texto": "Trafico al perfil IG activo como unica campana: 58 visitas de Instagram a $1.37 c/u, gasto $79.50 (-35% vs promedio 7d de $121.47) y CTR 4.69% (-16% vs 7d de 5.61%). Sin ninguna campana de mensajes/WhatsApp con gasto: las visitas al perfil siguen sin convertirse en conversaciones. Brecha de conversion abierta todo noviembre."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 19-nov. La cuenta acumula todo noviembre sin entregar ni campanas activas con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD: $0 de gasto y 0 impresiones el 20-nov, sin campanas activas con gasto. La cuenta acumula todo noviembre en ceros. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "El gancho esta funcionando (CTR 6.32%%, costo por visita $1.14). Activar hoy una campana de mensajes/WhatsApp o un retargeting a quienes visitaron el perfil IG para capturar esas 90 visitas diarias antes de que se enfrien."
+        "texto": "El gancho sigue trayendo trafico barato (visita al perfil a $1.37, hook rate 34.6%). Activar hoy una campana de mensajes/WhatsApp o un retargeting a quienes visitaron el perfil IG para capitalizar esas visitas antes de que se enfrien; hoy el CTR bajo a 4.69% (-16% vs 7d), conviene refrescar el creativo."
       },
       {
         "doctor": "Dr. Andrei",
