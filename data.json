@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T03:20:00-06:00",
+  "updated_at": "2026-11-24T03:16:46-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1351,6 +1351,18 @@
         },
         {
           "date": "2026-11-22",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
+        },
+        {
+          "date": "2026-11-23",
           "spend": 0,
           "impressions": 0,
           "reach": 0,
@@ -4544,6 +4556,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-23",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5879,27 +5903,27 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "SIN ACTIVIDAD el 22-nov: $0 de gasto y 0 impresiones. La cuenta se apago por completo tras venir cayendo: ~$79.50/dia (20-nov) -> $9.07 (21-nov) -> $0 (22-nov). La unica campana que entregaba, 'Campana de trafico' (OUTCOME_TRAFFIC, visitas al perfil IG), sigue en ACTIVE pero dejo de gastar y de entregar. Revisar saldo/metodo de pago y limite de gasto de la cuenta."
+        "texto": "SIN ACTIVIDAD el 23-nov: $0 de gasto y 0 impresiones, segundo dia consecutivo apagada (0 tambien el 22-nov). Hay campanas en ACTIVE, incluida 'Campana de trafico', pero ninguna gasto ni entrego. La cuenta venia cayendo: ~$79.50/dia (20-nov) -> $9.07 (21-nov) -> $0 (22 y 23-nov). Revisar saldo/metodo de pago y limite de gasto de la cuenta hoy mismo."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD el 22-nov: $0 de gasto y 0 impresiones. La cuenta acumula todo noviembre en ceros, sin ninguna campana activa con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD el 23-nov: $0 de gasto y 0 impresiones. La cuenta acumula todo noviembre en ceros, sin ninguna campana activa con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Reactivar la entrega hoy: 'Campana de trafico' figura ACTIVE pero no gasto el 22-nov (venia cayendo $79.50 -> $9.07 -> $0). Verificar saldo y metodo de pago de la cuenta, el limite de gasto y la programacion del conjunto de anuncios. Es la cuenta que venia trayendo trafico barato (visita al perfil IG a ~$1.30, hook rate ~34%); no conviene dejarla apagada."
+        "texto": "Prioridad 1: reactivar la entrega. Van 2 dias en $0 pese a tener campanas ACTIVE. Verificar saldo y metodo de pago de la cuenta, el limite de gasto a nivel cuenta y la programacion/presupuesto de 'Campana de trafico'. Era la cuenta que traia trafico barato (visita al perfil IG a ~$1.30); cada dia apagada es inversion perdida."
       },
       {
         "doctor": "Dr. Andrei",
-        "texto": "Decidir el estatus de la cuenta: lleva todo noviembre en ceros. Si debe seguir activa, reactivar presupuesto en una campana; si es pausa intencional, dejarlo documentado para no alertar cada dia."
+        "texto": "Definir el estatus de la cuenta: lleva todo noviembre sin gastar. Si debe operar, reactivar presupuesto en una campana prioritaria; si es pausa intencional, documentarlo para dejar de alertar a diario."
       }
     ]
   }
