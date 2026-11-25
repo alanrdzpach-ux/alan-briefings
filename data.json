@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T03:16:46-06:00",
+  "updated_at": "2026-11-25T03:20:00-06:00",
   "cpa_targets": {
     "Dr. Moreno": {
       "Lipoescultura": 6450,
@@ -1363,6 +1363,18 @@
         },
         {
           "date": "2026-11-23",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
+        },
+        {
+          "date": "2026-11-24",
           "spend": 0,
           "impressions": 0,
           "reach": 0,
@@ -4568,6 +4580,18 @@
           "cpc": 0,
           "messages": 0,
           "cpa_est": 0
+        },
+        {
+          "date": "2026-11-24",
+          "spend": 0,
+          "impressions": 0,
+          "reach": 0,
+          "clicks": 0,
+          "cpm": 0,
+          "ctr": 0,
+          "cpc": 0,
+          "messages": 0,
+          "cpa_est": 0
         }
       ],
       "campaigns": [
@@ -5903,23 +5927,23 @@
     "leads": "Leads"
   },
   "briefing": {
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "alertas": [
       {
         "nivel": "rojo",
         "doctor": "Dr. Moreno",
-        "texto": "SIN ACTIVIDAD el 23-nov: $0 de gasto y 0 impresiones, segundo dia consecutivo apagada (0 tambien el 22-nov). Hay campanas en ACTIVE, incluida 'Campana de trafico', pero ninguna gasto ni entrego. La cuenta venia cayendo: ~$79.50/dia (20-nov) -> $9.07 (21-nov) -> $0 (22 y 23-nov). Revisar saldo/metodo de pago y limite de gasto de la cuenta hoy mismo."
+        "texto": "SIN ACTIVIDAD el 24-nov: $0 de gasto y 0 impresiones, tercer dia consecutivo apagada (0 tambien el 22 y 23-nov). Hay campanas en ACTIVE pero ninguna gasto ni entrego. La cuenta venia cayendo: ~$79.50/dia (20-nov) -> $9.07 (21-nov) -> $0 (22, 23 y 24-nov). Urge revisar hoy saldo/metodo de pago y limite de gasto a nivel cuenta."
       },
       {
         "nivel": "amarillo",
         "doctor": "Dr. Andrei",
-        "texto": "SIN ACTIVIDAD el 23-nov: $0 de gasto y 0 impresiones. La cuenta acumula todo noviembre en ceros, sin ninguna campana activa con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
+        "texto": "SIN ACTIVIDAD el 24-nov: $0 de gasto y 0 impresiones. La cuenta acumula todo noviembre en ceros, sin ninguna campana activa con gasto. Confirmar si es pausa intencional o reactivar presupuesto."
       }
     ],
     "recomendaciones": [
       {
         "doctor": "Dr. Moreno",
-        "texto": "Prioridad 1: reactivar la entrega. Van 2 dias en $0 pese a tener campanas ACTIVE. Verificar saldo y metodo de pago de la cuenta, el limite de gasto a nivel cuenta y la programacion/presupuesto de 'Campana de trafico'. Era la cuenta que traia trafico barato (visita al perfil IG a ~$1.30); cada dia apagada es inversion perdida."
+        "texto": "Prioridad 1: reactivar la entrega HOY. Van 3 dias en $0 pese a tener campanas ACTIVE. Verificar saldo y metodo de pago de la cuenta, el limite de gasto a nivel cuenta y la programacion/presupuesto de 'Campana de trafico'. Era la cuenta que traia trafico barato (visita al perfil IG a ~$1.30); cada dia apagada es inversion perdida."
       },
       {
         "doctor": "Dr. Andrei",
